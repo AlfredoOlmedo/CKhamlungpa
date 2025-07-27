@@ -1,0 +1,723 @@
+*{
+margin: 0;
+padding: 0%;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px;
+}
+body {
+background-image: url('/src/img/Background/TailMedRes.webp');
+background-repeat: repeat;
+background-color: #203E5E;
+}
+/*--> Tablet-----------------------------------------------------------------*/
+@media (max-width: 768px) {
+/*--All-----------------------------------------------------------------*/
+.BlueDesign {
+background-color: #203E5E;
+}
+.OrangeDesign{
+background-color: #D1992A;   
+}
+.Txt-titles{
+color: #710421;
+font-size: 1rem;
+}
+.Paraph-titles{
+font-size: 1rem;
+color: white;
+}
+.white-text{
+font-size: 0.8rem;    
+color: white;
+}
+a {
+text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+color: #710421;
+}
+.vinetas {
+width: 2rem;
+padding: 0 0.5% 0 0.1%;
+}
+.vinetas-collapse{
+width: 2rem;
+padding: 0 0.5% 0 0.1%;  
+}
+/*---Nav----------------------------------------------------------------*/
+.ckLogoHeader {
+width: 200px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+display: flex;
+flex-wrap: inherit;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+/*---index images---------------------------------------------*/
+.indexMainImgParallax {
+/* The image used */
+background-image: url("/src/img/768/Index_img/MAITREYA-37.webp");
+/* Set a specific height */
+min-height: 900px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.indexWheelImg{
+/* The image used */
+background-image: url("/src/img/768/Index_img/Festividades.jpeg");
+/* Set a specific height */
+ min-height: 900px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.pilaresImages {
+  width: 90%;
+  border-radius: 2%;
+}
+.Festiv-Img {
+  width: 100%;
+  border-radius: 10px;
+  }
+.hrGoldenNextEvents {
+height:1px;
+width:100%;
+background-color:#0066ff3c;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+/*----LZR Phrase--------------------------------------------------------*/
+.txtFraseLZR_uno {
+font-size: 0.9rem;
+font-weight: bolder;
+padding-top: 10%;
+color: #f4f5f9;
+}
+.txtFraseLZR_Dos {
+font-size: 0.9rem;
+font-style: italic;
+color: #f4f5f9;
+}
+/*---LZR Phrase Order near footer  Mobile-------------------------------------
+#phraseOrderMain {
+display: flex;
+}
+#phraseOrderPicture {
+order: 2;
+}
+#phaseOrderPhrase {
+order: 1;
+}
+*/
+----------------*/
+/*---Footer-------------------------------------------------------------*/
+.ckLogoFoot {
+width: 50px;
+}
+.footer-txt-color {
+color: #710421;
+}
+.address-ol {
+color: #710421;
+text-align: left;
+list-style-type: none;
+}
+.paddingSocialNetw {
+width: 10%;
+padding-right: 5%;
+}
+.ckTradeMark {
+font-size: 0.8rem;
+color: #710421;
+}
+.link-1:link {
+color: #710421;
+}
+.link-1:visited {
+color: #710421;
+}
+.link-1:hover {
+color: #710421;
+}
+.link-1:active {
+color: #710421;
+}
+.LZ_footer_img {
+  width: 20rem;
+}
+.LZ_footer_txt{
+  font-size: 1rem;
+  color: #ffffff;
+}
+/*---LZR Phrase Order near footer--Tablet < ONLY------------------------------------------------------*/
+#phraseOrderMain {
+display: flex;
+}
+#phraseOrderPicture {
+order: 2;
+}
+#phaseOrderPhrase {
+order: 1;
+}
+/*--CK Section--------------------------------------------------------------------*/
+.KhamlungpaText{
+font-size: 1rem;
+padding-left: 2%;
+color: azure;
+}
+.khamlungpa-Img {
+width: 70%;
+border-radius: 10px;
+}
+.Main-image-all-Sections {
+width: 100%;
+object-fit: cover;
+object-position: bottom;
+}
+.ckMainImgParallax {
+/* The image used */
+background-image: url("/src/img/768/Center_img/CenterMain.webp");
+/* Set a specific height */
+ min-height: 800px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*--Maestros Section-----------------------------------------------------*/
+.image {
+position: relative;
+object-fit: cover;
+width: 100%;
+}
+.OurTeachers {
+object-fit: cover;
+width: 100%;
+font-size: 0.8rem;
+color: white;
+}
+h2 {
+position: absolute;
+font-size: 140%;
+top: 90%;
+left: 0;
+height: 6%;
+width: 100%;
+text-align: center;
+background-color: rgba(209, 153, 42, 0.7);
+}
+h4 {
+position: absolute;
+font-size: 140%;
+top: 80%;
+left: 0;
+width: 100%;
+text-align: center;
+background-color: rgba(209, 153, 42, 0.7);
+}
+.TeachersPraphRef {
+font-size: 1.2rem;
+color:#D1992A;
+}
+.maestrosDesignTitle {
+font-size: 1rem;
+padding-left: 2%;
+}
+.maestrosDesign {
+font-size: 1rem;
+padding-left: 2%;
+}
+.Nuestrosmaestros {
+padding-top: 1rem;
+font-size: 0.9rem;
+color:#f4f5f9;
+}
+.maestrosMainImgParallax {
+/* The image used */
+background-image: url("/src/img/768/Teachers_img/TeachersMain.webp");
+/* Set a specific height */
+min-height: 800px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Sesion Meditacion-------------------------------------------------------------------*/
+.sesionMeditacionMainImgParallax {
+/* The image used */
+background-image: url("/src/img/768/Meditation/AprendiendoaMeditar.webp");
+/* Set a specific height */
+min-height: 800px; 
+  
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Evento Hatha Yoga-------------------------------------------------------------------*/
+.eventoHathaYogaMainImgParallax {
+/* The image used */
+background-image: url("/src/img/768/AFisicas/Hatha-Yoga-05.webp");
+  
+/* Set a specific height */
+min-height: 800px; 
+  
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Evento Budismo en pocas Palabras-------------------------------------------------------------------*/
+.eventoPocasPalabrasMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/768/Budismo/BudismoenPocasPalabras.webp");
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento--Descubre el budismo--Paarallax images----------------------------------------------*/
+.eventoDescubreBudismoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/768/Budismo/DescubreBudismo.webp");
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento Explorando el budismo--Paarallax images----------------------------------------------*/
+.eventoExplorandoBudismoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/768/Budismo/ExplorandoBudismo.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento--Programa Basico--Paarallax images----------------------------------------------*/
+.eventoProgramaBasicoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/768/Budismo/ProgramaBasico.webp");
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Etica-------------------------------------------------------------------*/
+.EticaImgParallax {
+/* The image used */
+background-image: url("/src/img/768/Etica/Etica.webp");
+  
+/* Set a specific height */
+min-height: 800px; 
+  
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---404------------------------------------------------------------------------------------------------------------------------*/
+.ckLogoHeaderError {
+width: 30vw;
+height: auto;
+}
+.error404Img {
+width: 45vw;
+height: auto;
+}
+.error404Txt {
+font-size: 1rem;
+color: #ffffff;
+}
+}
+/*---ebook------------------------------------------------------------------------------------------------------------------------*/
+.ebook-img{
+  width: 10%;
+}
+/*--< Desktop----------------------------------------------------------------*/
+@media (min-width: 768px) {
+/*--All-----------------------------------------------------------------*/
+.BlueDesign {
+background-color: #203E5E;
+}
+.OrangeDesign{
+background-color: #D1992A;   
+}
+.Txt-titles{
+color: #710421;
+font-size: 1rem;
+}
+.Paraph-titles{
+font-size: 1.5rem;
+color: white;
+}
+.white-text{
+font-size: 1rem;    
+color: white;
+}
+a {
+text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+color: #710421;
+}
+.vinetas {
+width: 2rem;
+padding: 0 0.5% 0 0.1%;
+}
+.vinetas-collapse{
+width: 2rem;
+padding: 0 0.5% 0 0.1%;  
+}
+/*---Nav----------------------------------------------------------------*/
+.ckLogoHeader {
+width: 200px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+display: flex;
+flex-wrap: inherit;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+/*---index images---------------------------------------------*/
+.indexMainImgParallax {
+/* The image used */
+background-image: url("/src/img/1440/Index_img/MAITREYA-37.webp");
+/* Set a specific height */
+min-height: 900px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.indexWheelImg{
+/* The image used */
+background-image: url("/src/img/1440/Index_img/Festividades.webp");
+/* Set a specific height */
+ min-height: 900px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.pilaresImages {
+  width: 90%;
+  border-radius: 2%;
+}
+.Festiv-Img {
+  width: 100%;
+  border-radius: 10px;
+  }
+.hrGoldenNextEvents {
+height:1px;
+width:100%;
+background-color:#0066ff3c;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+/*----LZR Phrase--------------------------------------------------------*/
+.txtFraseLZR_uno {
+font-size: 1.2rem;
+font-weight: bolder;
+padding-top: 10%;
+color: #f4f5f9;
+}
+.txtFraseLZR_Dos {
+font-size: 1.2rem;
+font-style: italic;
+color: #f4f5f9;
+}
+/*---LZR Phrase Order near footer  Mobile--------------------------------------------
+#phraseOrderMain {
+display: flex;
+}
+#phraseOrderPicture {
+order: 2;
+}
+#phaseOrderPhrase {
+order: 1;
+}
+*/
+---------*/
+/*---Footer-------------------------------------------------------------*/
+.ckLogoFoot {
+width: 50px;
+}
+.footer-txt-color {
+color: #710421;
+}
+.address-ol {
+color: #710421;
+text-align: left;
+list-style-type: none;
+}
+.paddingSocialNetw {
+width: 10%;
+padding-right: 5%;
+}
+.ckTradeMark {
+font-size: 0.8rem;
+color: #710421;
+}
+.link-1:link {
+color: #710421;
+}
+.link-1:visited {
+color: #710421;
+}
+.link-1:hover {
+color: #710421;
+}
+.link-1:active {
+color: #710421;
+}
+.LZ_footer_img {
+  width: 20rem;
+}
+.LZ_footer_txt{
+  font-size: 1rem;
+  color: #ffffff;
+}
+/*---LZR Phrase Order near footer--Tablet < ONLY---------------------------------------------------
+#phraseOrderMain {
+display: flex;
+}
+#phraseOrderPicture {
+order: 2;
+}
+#phaseOrderPhrase {
+order: 1;
+}
+---*/
+/*--CK Section--------------------------------------------------------------------*/
+.KhamlungpaText{
+font-size: 1rem;
+padding-left: 2%;
+color: azure;
+}
+.khamlungpa-Img {
+width: 70%;
+border-radius: 10px;
+}
+.Main-image-all-Sections {
+width: 100%;
+object-fit: cover;
+object-position: bottom;
+}
+.ckMainImgParallax {
+/* The image used */
+background-image: url("/src/img/1440/Center_img/CenterMain.webp");
+
+/* Set a specific height */
+ min-height: 800px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*--Maestros Section-----------------------------------------------------*/
+.image {
+position: relative;
+object-fit: cover;
+width: 100%;
+}
+.OurTeachers {
+object-fit: cover;
+width: 100%;
+font-size: 1rem;
+color: white;
+}
+h2 {
+position: absolute;
+font-size: 140%;
+top: 90%;
+left: 0;
+height: 6%;
+width: 100%;
+text-align: center;
+background-color: rgba(209, 153, 42, 0.7);
+}
+h4 {
+position: absolute;
+font-size: 140%;
+top: 80%;
+left: 0;
+width: 100%;
+text-align: center;
+background-color: rgba(209, 153, 42, 0.7);
+}
+.TeachersPraphRef {
+font-size: 1.2rem;
+color:#D1992A;
+}
+.maestrosDesignTitle {
+font-size: 1rem;
+padding-left: 2%;
+}
+.maestrosDesign {
+font-size: 1rem;
+padding-left: 2%;
+}
+.Nuestrosmaestros {
+font-size: 1rem;
+color:#f4f5f9;
+}
+.maestrosMainImgParallax {
+/* The image used */
+background-image: url("/src/img/1440/Teachers_img/TeachersMain.webp");
+/* Set a specific height */
+min-height: 800px; 
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Sesion Meditacion-------------------------------------------------------------------*/
+.sesionMeditacionMainImgParallax {
+/* The image used */
+background-image: url("/src/img/1440/Meditation/AprendiendoaMeditar.webp");
+  
+/* Set a specific height */
+min-height: 800px; 
+  
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Evento Hatha Yoga-------------------------------------------------------------------*/
+.eventoHathaYogaMainImgParallax {
+/* The image used */
+background-image: url("/src/img/1440/AFisicas/Hatha-Yoga-05.webp");
+  
+/* Set a specific height */
+min-height: 800px; 
+  
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*---Evento Budismo en pocas Palabras-------------------------------------------------------------------*/
+.eventoPocasPalabrasMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/1440/Budismo/BudismoenPocasPalabras.webp");
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento--Descubre el budismo--Paarallax images----------------------------------------------*/
+.eventoDescubreBudismoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/1440/Budismo/DescubreBudismo.webp");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento Explorando el budismo--Paarallax images----------------------------------------------*/
+.eventoExplorandoBudismoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/1440/Budismo/ExplorandoBudismo.webp");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Evento--Programa Basico--Paarallax images----------------------------------------------*/
+.eventoProgramaBasicoMainImgParallax {
+  /* The image used */
+  background-image: url("/src/img/1440/Budismo/ProgramaBasico.webp");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---Etica-------------------------------------------------------------------*/
+.EticaImgParallax {
+  /* The image used */
+  background-image: url("/src/img/1440/Etica/Etica.webp");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---404------------------------------------------------------------------------------------------------------------------------*/
+.ckLogoHeaderError {
+width: 10vw;
+height: auto;
+}
+.error404Img {
+width: 30vw;
+height: auto;
+}
+.error404Txt {
+font-size: 1.5rem;
+color: #ffffff;
+}
+/*---ebook------------------------------------------------------------------------------------------------------------------------*/
+.ebook-img{
+  width: 10%;
+}
+}
