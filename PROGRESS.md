@@ -10,94 +10,184 @@
 
 | Fase | Estado | Progreso | Deadline |
 |------|--------|----------|----------|
-| **FASE 1: Correcciones Inmediatas** | 🔴 No iniciado | 0% | 2-3 de mayo |
+| **FASE 1: Arquitectura SEO + Páginas Base** | ✅ COMPLETADO | 100% | ✅ 25 abr |
+| **FASE 1: Inyección de Contenido + Deploy** | 🟡 En Progreso | 5% | 29 abr |
 | **FASE 2: Mejoras de Conversión** | ⏳ En espera | 0% | 5-16 de mayo |
 | **FASE 3: Rediseño UX/UI** | ⏳ En espera | 0% | 19-30 de mayo |
 | **FASE 4: Contenido & Comunidad** | ⏳ En espera | 0% | 1-30 de junio |
 
 ---
 
-## 🎯 FASE 1: Correcciones Inmediatas (1-2 semanas)
+## ✅ FASE 1: Arquitectura SEO + Páginas Base (COMPLETADO)
 
-**Objetivo**: Arreglar 12 errores técnicos críticos en Template/  
-**Responsable**: Frontend Developer  
-**Sprint**: 25 abril - 2 mayo 2026  
+**Objetivo**: Crear infraestructura SEO + 3 páginas críticas + helpers  
+**Responsable**: Claude + User  
+**Sprint**: 25 abril 2026  
+**Estado**: ✅ COMPLETADO (100%)
 
-### Epic 1.1: Fixes de Contenido
+### Resumen de Logros
 
-| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
-|---|-------|--------|------------|-------------|----------|
-| 1.1.1 | Validar estructura Template/Khamlungpa Home.html | 🔴 Pendiente | Frontend Dev | 1h | 25 abr |
-| 1.1.2 | Revisar todos los `id=` y `href=#` contra sitemap | 🔴 Pendiente | Frontend Dev | 2h | 25 abr |
-| 1.1.3 | Crear archivo de títulos y meta descriptions por página | 🔴 Pendiente | Content Lead | 2h | 26 abr |
-| 1.1.4 | Validar que lang="es-MX" en Home.html | ✅ Completado | — | — | — |
+| # | Deliverable | Estado | Tiempo | Fecha |
+|---|-------------|--------|--------|-------|
+| 1.1 | robots.txt (IA + SEO) | ✅ | 0.5h | 25 abr |
+| 1.2 | sitemap.xml (24 URLs) | ✅ | 1h | 25 abr |
+| 1.3 | ai-instructions.txt (LLMs) | ✅ | 1h | 25 abr |
+| 1.4 | Empieza-aqui.html (FAQ) | ✅ | 3h | 25 abr |
+| 1.5 | Maestros.html (Bios) | ✅ | 3h | 25 abr |
+| 1.6 | Donar.html (3 opciones) | ✅ | 3h | 25 abr |
+| 1.7 | json-ld-schemas.js (7 types) | ✅ | 2h | 25 abr |
+| 1.8 | whatsapp-helper.js (20+ msgs) | ✅ | 1.5h | 25 abr |
+| 1.9 | CI/CD pipeline (GitHub Actions) | ✅ | 1.5h | 25 abr |
+| 1.10 | DEPLOY.md (deployment guide) | ✅ | 1.5h | 25 abr |
+| 1.11 | QUICKSTART.md (user plan) | ✅ | 1h | 25 abr |
+| 1.12 | FASE-1-SUMMARY.md (recap) | ✅ | 1.5h | 25 abr |
+| 1.13 | STATUS.txt (visual overview) | ✅ | 0.5h | 25 abr |
+| 1.14 | INDEX.md (navigation) | ✅ | 1h | 25 abr |
 
-### Epic 1.2: Crear Páginas Críticas (Tier 1)
+**Total FASE 1 Completado**: 16-17 horas | 17 files | 6 commits
 
-| # | Página | Estado | Responsable | Tiempo Est. | Deadline |
-|---|--------|--------|------------|-------------|----------|
-| 1.2.1 | **Empieza-aqui.html** — FAQ principiante | 🔴 Pendiente | Frontend Dev | 3h | 27 abr |
-| 1.2.2 | — Accordion con 8 preguntas | 🔴 Pendiente | Frontend Dev | 1h | 27 abr |
-| 1.2.3 | — CTA WhatsApp prellenado | 🔴 Pendiente | Frontend Dev | 0.5h | 27 abr |
-| 1.2.4 | **Donar.html** — Página donación | 🔴 Pendiente | Frontend Dev | 3h | 28 abr |
-| 1.2.5 | — Relato de misión | 🔴 Pendiente | Content Lead | 1h | 27 abr |
-| 1.2.6 | — 3 opciones donativo (único/mensual/benefactor) | 🔴 Pendiente | Frontend Dev | 1h | 28 abr |
-| 1.2.7 | **Maestros.html** — Perfiles de maestros | 🔴 Pendiente | Frontend Dev | 3h | 29 abr |
-| 1.2.8 | — Bio Ven. Norbu (foto + formación + años) | 🔴 Pendiente | Content Lead | 1h | 28 abr |
-| 1.2.9 | — Bio Gueshe Lobsang Dawa | 🔴 Pendiente | Content Lead | 1h | 28 abr |
+### Epic 1.1: SEO & Indexación IA ✅
 
-### Epic 1.3: Setup Técnico
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1.1.1 | Crear /robots.txt (permitir IA) | ✅ | Claude | 0.5h | ✅ 25 abr |
+| 1.1.2 | Crear /sitemap.xml con 24 URLs | ✅ | Claude | 1h | ✅ 25 abr |
+| 1.1.3 | Crear /ai-instructions.txt (LLMs) | ✅ | Claude | 1h | ✅ 25 abr |
+| 1.1.4 | json-ld-schemas.js (7 types) | ✅ | Claude | 2h | ✅ 25 abr |
+| 1.1.5 | Validación estructura | ✅ | Claude | 1h | ✅ 25 abr |
 
-| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
-|---|-------|--------|------------|-------------|----------|
-| 1.3.1 | Crear repo git + branch structure | 🔴 Pendiente | Tech Lead | 1h | 25 abr |
-| 1.3.2 | Setup CI/CD básico (GitHub Actions) | 🔴 Pendiente | Tech Lead | 2h | 26 abr |
-| 1.3.3 | Crear script para unificar nav/footer | 🔴 Pendiente | Frontend Dev | 2h | 27 abr |
-| 1.3.4 | Setup Google Workspace (Gmail + Google Forms) | 🔴 Pendiente | Content Lead | 1h | 28 abr |
-| 1.3.5 | Documentar estructura de carpetas | 🔴 Pendiente | Tech Lead | 1h | 29 abr |
+### Epic 1.2: Páginas Críticas ✅
 
-### Epic 1.4: SEO & Indexación para IA
+| # | Página | Estado | Responsable | Tiempo | Deadline |
+|---|--------|--------|------------|--------|----------|
+| 1.2.1 | **Empieza-aqui.html** — FAQ | ✅ | Claude | 3h | ✅ 25 abr |
+| 1.2.2 | — 8 accordion preguntas | ✅ | Claude | — | ✅ 25 abr |
+| 1.2.3 | — CTA WhatsApp + modal | ✅ | Claude | — | ✅ 25 abr |
+| 1.2.4 | **Maestros.html** — Perfiles | ✅ | Claude | 3h | ✅ 25 abr |
+| 1.2.5 | — Grid 2 columnas + lineage | ✅ | Claude | — | ✅ 25 abr |
+| 1.2.6 | **Donar.html** — Donación | ✅ | Claude | 3h | ✅ 25 abr |
+| 1.2.7 | — 3 opciones + 4 métodos | ✅ | Claude | — | ✅ 25 abr |
 
-| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
-|---|-------|--------|------------|-------------|----------|
-| 1.4.1 | Crear /robots.txt (permitir IA) | 🔴 Pendiente | Frontend Dev | 0.5h | 1 may |
-| 1.4.2 | Crear /sitemap.xml con todas las URLs | 🔴 Pendiente | Frontend Dev | 1h | 1 may |
-| 1.4.3 | Agregar JSON-LD LocalBusiness en Home.html | 🔴 Pendiente | Frontend Dev | 1h | 1 may |
-| 1.4.4 | Agregar meta tags SEO en todas las páginas (title, description, og:*) | 🔴 Pendiente | Content Lead | 1.5h | 1 may |
-| 1.4.5 | Crear /ai-instructions.txt para Claude, ChatGPT, Gemini | 🔴 Pendiente | Content Lead | 1h | 1 may |
-| 1.4.6 | Validar con html-validate | 🔴 Pendiente | QA | 1h | 1 may |
+### Epic 1.3: Integración ✅
 
-### Epic 1.5: Testing & QA
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1.3.1 | whatsapp-helper.js (20+ msgs) | ✅ | Claude | 1.5h | ✅ 25 abr |
+| 1.3.2 | Modal + FAB integration | ✅ | Claude | — | ✅ 25 abr |
+| 1.3.3 | Analytics tracking ready | ✅ | Claude | — | ✅ 25 abr |
+| 1.3.4 | Repo git + branches | ✅ | Claude | 0.5h | ✅ 25 abr |
+| 1.3.5 | CI/CD pipeline (GH Actions) | ✅ | Claude | 1.5h | ✅ 25 abr |
 
-| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
-|---|-------|--------|------------|-------------|----------|
-| 1.5.1 | Test responsive (mobile/tablet/desktop) | 🔴 Pendiente | QA | 2h | 2 may |
-| 1.5.2 | Test navegación + links internos | 🔴 Pendiente | QA | 1h | 2 may |
-| 1.5.3 | Lighthouse score (todos >85) | 🔴 Pendiente | QA | 1.5h | 2 may |
-| 1.5.4 | Test que robots.txt funciona (curl robots.txt) | 🔴 Pendiente | QA | 0.5h | 2 may |
-| 1.5.5 | Validar JSON-LD con https://schema.org/validator | 🔴 Pendiente | QA | 1h | 2 may |
+### Epic 1.4: Documentación ✅
 
-**Total Fase 1**: ~38-43 horas  
-**Hito**: Deploy a staging
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1.4.1 | DEPLOY.md (8 secciones) | ✅ | Claude | 1.5h | ✅ 25 abr |
+| 1.4.2 | QUICKSTART.md (user plan) | ✅ | Claude | 1h | ✅ 25 abr |
+| 1.4.3 | FASE-1-SUMMARY.md | ✅ | Claude | 1.5h | ✅ 25 abr |
+| 1.4.4 | STATUS.txt (visual) | ✅ | Claude | 0.5h | ✅ 25 abr |
+| 1.4.5 | INDEX.md (navigation) | ✅ | Claude | 1h | ✅ 25 abr |
+
+## 🟡 FASE 1B: Inyección de Contenido + Deployment (EN PROGRESO)
+
+**Objetivo**: Inyectar datos reales + validar + desplegar  
+**Responsable**: User (content) + Claude (validation)  
+**Sprint**: 26-29 de abril 2026  
+**Estado**: 🟡 EN PROGRESO (5%)
+
+### Epic 1B.1: Recolección de Contenido 🔴 BLOQUEADOR
+
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1B.1.1 | Dirección del centro | 🔴 Pendiente | User | — | 26 abr |
+| 1B.1.2 | WhatsApp Business número | 🔴 Pendiente | User | — | 26 abr |
+| 1B.1.3 | Email contacto | 🔴 Pendiente | User | — | 26 abr |
+| 1B.1.4 | 5 fotos (hero, maestros, espacio, OG) | 🔴 Pendiente | User | — | 27 abr |
+| 1B.1.5 | Bios maestros (Ven. Norbu, Gueshe) | 🔴 Pendiente | User | — | 27 abr |
+| 1B.1.6 | Horarios sesiones meditación | 🔴 Pendiente | User | — | 28 abr |
+| 1B.1.7 | Fechas programas próximos | 🔴 Pendiente | User | — | 28 abr |
+| 1B.1.8 | 2-3 testimonios reales | 🔴 Pendiente | User | — | 28 abr |
+
+### Epic 1B.2: Setup Servicios Terceros 🔴 BLOQUEADOR
+
+| # | Servicio | Estado | Responsable | Tiempo | Deadline |
+|---|----------|--------|------------|--------|----------|
+| 1B.2.1 | Google Workspace (Gmail + Forms) | 🔴 Pendiente | User | 1h | 26 abr |
+| 1B.2.2 | Meta Business (WhatsApp API) | 🔴 Pendiente | User | 1h | 27 abr |
+| 1B.2.3 | GitHub repository | 🔴 Pendiente | User | 0.5h | 27 abr |
+| 1B.2.4 | Cloudflare account | 🔴 Pendiente | User | 0.5h | 27 abr |
+| 1B.2.5 | Cambiar nameservers | 🔴 Pendiente | User | 0.5h | 28 abr |
+
+### Epic 1B.3: Inyección de Datos
+
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1B.3.1 | Actualizar json-ld-schemas.js | 🟡 Esperando contenido | Claude | 1h | 29 abr |
+| 1B.3.2 | Inyectar schemas en HTML | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
+| 1B.3.3 | Actualizar whatsapp-helper.js | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
+| 1B.3.4 | Actualizar meta tags | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
+
+### Epic 1B.4: Validación
+
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1B.4.1 | HTML validation (html-validate) | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
+| 1B.4.2 | Lighthouse >85 todas páginas | 🟡 Esperando contenido | Claude | 1h | 29 abr |
+| 1B.4.3 | Responsive test (360/768/1920px) | 🟡 Esperando contenido | Claude | 1h | 29 abr |
+| 1B.4.4 | JSON-LD validation (schema.org) | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
+
+### Epic 1B.5: Deployment
+
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1B.5.1 | Push a GitHub main | 🟡 Esperando setup | User | 0.5h | 29 abr |
+| 1B.5.2 | Cloudflare auto-deploy | 🟡 Esperando push | Auto | 5m | 29 abr |
+| 1B.5.3 | Verificar en HTTPS | 🟡 Esperando deploy | User | 0.5h | 29 abr |
+| 1B.5.4 | Enviar sitemap a Google SC | 🟡 Esperando deploy | User | 0.5h | 29 abr |
+| 1B.5.5 | Crear Google Business Profile | 🟡 Esperando deploy | User | 1h | 30 abr |
+
+**Total FASE 1B (pendiente)**: ~12-14 horas | Bloqueado por contenido del usuario
 
 ---
 
 ## 🚀 FASE 2: Mejoras de Conversión (2-4 semanas)
 
-**Objetivo**: Sistema de conversión funcional para El Curioso y El Practicante  
-**Responsable**: Frontend Dev + Backend (API WhatsApp)  
+**Objetivo**: Home.html + Google Workspace + Open Graph + conversión  
+**Responsable**: Claude + User  
 **Sprint**: 5-16 mayo 2026  
+**Estado**: ⏳ EN ESPERA (0% — bloqueado por FASE 1B deployment)
 
-### Epic 2.1: Integración WhatsApp
+### Epic 2.1: Home.html (Sistema Design Master)
 
 | # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
 |---|-------|--------|------------|-------------|----------|
-| 2.1.1 | Setup WhatsApp Business API | ⏳ Bloqueado | Backend Dev | 3h | 5 may |
-| 2.1.2 | Crear whatsapp-helper.js con mensajes prellenados | 🔴 Pendiente | Frontend Dev | 2h | 6 may |
-| 2.1.3 | Botón flotante WhatsApp (todas las páginas) | 🔴 Pendiente | Frontend Dev | 1.5h | 6 may |
-| 2.1.4 | Modal de WhatsApp con 6 opciones de mensaje | 🔴 Pendiente | Frontend Dev | 2h | 7 may |
-| 2.1.5 | Setup respuestas automáticas fuera de horario | ⏳ Bloqueado | Backend Dev | 1h | 8 may |
-| 2.1.6 | Test: enviar message desde cada página | 🔴 Pendiente | QA | 1.5h | 9 may |
+| 2.1.1 | Crear Home.html (hero + 5 secciones) | ⏳ Bloqueado | Claude | 4h | 5 may |
+| 2.1.2 | Hero section con foto + CTA | ⏳ Bloqueado | Claude | 1h | 5 may |
+| 2.1.3 | Esta semana (evento dinámico) | ⏳ Bloqueado | Claude | 1.5h | 5 may |
+| 2.1.4 | Tres caminos (3 cards) | ⏳ Bloqueado | Claude | 1.5h | 5 may |
+| 2.1.5 | Testimonial (slider si posible) | ⏳ Bloqueado | Claude | 1h | 6 may |
+| 2.1.6 | Newsletter signup (Google Forms) | ⏳ Bloqueado | Claude | 1h | 6 may |
+
+### Epic 2.2: Programas + Calendario
+
+| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
+|---|-------|--------|------------|-------------|----------|
+| 2.2.1 | Crear Programas.html (grid + filtros) | ⏳ Bloqueado | Claude | 5h | 8 may |
+| 2.2.2 | Crear fichas individuales (4 programas) | ⏳ Bloqueado | Claude | 12h | 12 may |
+| 2.2.3 | Crear Calendario.html (Google Calendar embed) | ⏳ Bloqueado | Claude | 3h | 10 may |
+| 2.2.4 | JSON-LD Event schema (dinámico) | ⏳ Bloqueado | Claude | 2h | 12 may |
+
+### Epic 2.3: Google Workspace Integration
+
+| # | Tarea | Estado | Responsable | Tiempo Est. | Deadline |
+|---|-------|--------|------------|-------------|----------|
+| 2.3.1 | Setup Google Form (newsletter) | ⏳ Bloqueado | User | 0.5h | 5 may |
+| 2.3.2 | Conectar Form → Sheet (respuestas) | ⏳ Bloqueado | User | 0.5h | 5 may |
+| 2.3.3 | Apps Script (envío automático de email) | ⏳ Bloqueado | Claude | 2h | 7 may |
+| 2.3.4 | Embed form en Home.html footer | ⏳ Bloqueado | Claude | 0.5h | 8 may |
+
+**Total FASE 2 (estimado)**: 25-30 horas  
+**Hito**: Home.html + Google Workspace + conversión funcional
 
 ### Epic 2.2: Integración Google Workspace + Newsletter
 
