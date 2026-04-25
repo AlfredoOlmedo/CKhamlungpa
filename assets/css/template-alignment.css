@@ -322,6 +322,26 @@ footer {
     height: 40px;
     border-radius: 8px;
   }
+
+  /* Normalize newsletter layout on mobile across all pages */
+  #newsletter .section-inner {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  #newsletter .news-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  #newsletter .news-form input,
+  #newsletter .news-form button {
+    width: 100%;
+    min-width: 0;
+  }
+  #newsletter [style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
 }
 
 @media (max-width: 640px) {
