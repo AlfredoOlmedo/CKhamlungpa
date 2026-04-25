@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.env
+
+# Permitir explícitamente agentes IA
+User-agent: anthropic-ai
+Allow: /
+Allow: /ai-instructions.txt
+
+User-agent: GPTBot
+Allow: /
+Allow: /ai-instructions.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /ai-instructions.txt
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://khamlungpa.com/sitemap.xml

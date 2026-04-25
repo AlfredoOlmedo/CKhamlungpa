@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Empieza Aquí — Guía para Principiantes | Centro Khamlungpa</title>
+<meta name="description" content="Guía completa para tu primera vez en Centro Khamlungpa. Preguntas frecuentes sobre meditación, budismo tibetano y cómo comenzar sin experiencia previa." />
+<link rel="canonical" href="https://khamlungpa.com/empieza-aqui">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Language" content="es-MX">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khamlungpa.com/empieza-aqui">
+<meta property="og:title" content="Empieza Aquí — Guía para Principiantes">
+<meta property="og:description" content="Guía completa para tu primera vez en Centro Khamlungpa">
+<meta property="og:image" content="https://khamlungpa.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#F4ECE0;
+    --paper-2:#EFE6D6;
+    --paper-3:#E8DDC8;
+    --ink:#2A2622;
+    --ink-2:#4A423A;
+    --ink-3:#6B6158;
+    --clay:#8B2E1F;
+    --clay-2:#A94430;
+    --terracotta:#C97B4A;
+    --ochre:#D4A35A;
+    --moss:#5C6B4E;
+    --cream:#FBF7EF;
+    --line:rgba(42,38,34,0.12);
+    --line-2:rgba(42,38,34,0.06);
+    --serif:"Fraunces","Times New Roman",serif;
+    --sans:"Inter",-apple-system,system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
+  ::selection{background:var(--clay);color:var(--cream);}
+
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--clay);}
+  .display{font-family:var(--serif);font-weight:400;letter-spacing:-0.022em;line-height:1.02;color:var(--ink);}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 22px;border-radius:999px;
+    font-family:var(--sans);font-weight:500;font-size:14.5px;
+    letter-spacing:0.01em;cursor:pointer;border:none;
+    transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
+    text-decoration:none;
+  }
+  .btn.primary{background:var(--clay);color:var(--cream);}
+  .btn.primary:hover{background:var(--clay-2);transform:translateY(-1px);box-shadow:0 8px 22px rgba(139,46,31,0.22);}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+  .btn.ghost:hover{background:rgba(42,38,34,0.04);border-color:var(--ink-3);}
+  .btn.wa{background:#25D366;color:#fff;}
+  .btn.wa:hover{background:#1fb958;}
+
+  header{
+    position:sticky;top:0;z-index:40;
+    background:rgba(244,236,224,0.9);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid transparent;
+    transition:border-color .2s, background .2s;
+  }
+  header.scrolled{border-bottom-color:var(--line);background:rgba(244,236,224,0.96);}
+  .nav{
+    max-width:1320px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 40px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand-txt-1{font-family:var(--serif);font-size:21px;line-height:1;letter-spacing:-0.01em;}
+  .brand-txt-2{font-family:var(--mono);font-size:9px;color:var(--ink-3);letter-spacing:0.12em;margin-top:3px;}
+  nav.links{display:flex;gap:28px;}
+  nav.links a{
+    font-size:13.5px;padding:6px 0;position:relative;color:var(--ink);
+    transition:color .15s;
+  }
+  nav.links a::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;
+    height:1px;background:var(--clay);
+    transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
+  }
+  nav.links a:hover{color:var(--clay);}
+  nav.links a:hover::after,
+  nav.links a.active::after{transform:scaleX(1);}
+  nav.links a.active{color:var(--clay);}
+  .nav-cta{display:flex;gap:10px;align-items:center;}
+  .menu-toggle{display:none;}
+
+  section{scroll-margin-top:80px;}
+  .section-inner{max-width:1320px;margin:0 auto;padding:80px 40px;}
+  .section-inner.tight{padding:64px 40px;}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:40px;flex-wrap:wrap;}
+  .section-head .titles h2{font-family:var(--serif);font-size:44px;font-weight:400;letter-spacing:-0.02em;line-height:1.05;margin-top:8px;}
+
+  .hero{
+    max-width:1320px;margin:0 auto;
+    padding:80px 40px 56px;
+  }
+  .hero h1{font-size:clamp(48px, 6.2vw, 72px);margin-top:14px;}
+  .hero p.lead{
+    font-size:18px;color:var(--ink-2);max-width:500px;
+    line-height:1.55;margin-top:24px;
+  }
+
+  .accordion{margin-top:48px;border-radius:12px;border:1px solid var(--line);overflow:hidden;}
+  .accordion-item{border-bottom:1px solid var(--line);}
+  .accordion-item:last-child{border-bottom:none;}
+  .accordion-header{
+    padding:28px;background:var(--cream);cursor:pointer;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    transition:background .15s;
+    user-select:none;
+  }
+  .accordion-header:hover{background:var(--paper-2);}
+  .accordion-header.open{background:var(--paper-2);}
+  .accordion-title{font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:-0.01em;}
+  .accordion-toggle{
+    width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;transition:transform .2s;
+  }
+  .accordion-header.open .accordion-toggle{transform:rotate(180deg);}
+  .accordion-content{
+    max-height:0;overflow:hidden;transition:max-height .25s ease;
+    background:var(--paper);
+  }
+  .accordion-content.open{max-height:1000px;}
+  .accordion-body{padding:28px;font-size:15px;color:var(--ink-2);line-height:1.65;}
+  .accordion-body p{margin-bottom:12px;}
+  .accordion-body p:last-child{margin-bottom:0;}
+
+  .cta-section{background:var(--clay);color:var(--cream);padding:56px 40px;text-align:center;border-radius:12px;margin-top:48px;}
+  .cta-section h3{font-family:var(--serif);font-size:32px;font-weight:400;letter-spacing:-0.01em;margin-bottom:16px;}
+  .cta-section p{font-size:16px;margin-bottom:24px;}
+
+  footer{background:var(--ink);color:rgba(251,247,239,0.72);padding:56px 40px 30px;}
+  .foot-inner{max-width:1320px;margin:0 auto;}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  .foot-col h4{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;color:var(--ochre);text-transform:uppercase;margin-bottom:14px;font-weight:500;}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .foot-col a{font-size:13px;transition:color .15s;}
+  .foot-col a:hover{color:var(--ochre);}
+  .foot-bottom{
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);
+    font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);
+  }
+
+  .fab{
+    position:fixed;right:24px;bottom:24px;z-index:30;
+    width:60px;height:60px;border-radius:60px;background:#25D366;color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 28px rgba(37,211,102,0.42);
+    cursor:pointer;transition:transform .2s;
+  }
+  .fab:hover{transform:scale(1.06);}
+
+  .modal-overlay{
+    position:fixed;inset:0;z-index:50;background:rgba(42,38,34,0.55);
+    display:none;align-items:center;justify-content:center;padding:20px;
+    backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+    opacity:0;transition:opacity .2s;
+  }
+  .modal-overlay.open{display:flex;opacity:1;}
+  .modal{
+    background:var(--cream);border-radius:18px;max-width:480px;width:100%;
+    padding:36px;position:relative;
+    box-shadow:0 40px 100px rgba(0,0,0,0.3);
+    animation:modalIn .25s ease;
+  }
+  @keyframes modalIn{from{transform:translateY(12px);opacity:0;} to{transform:translateY(0);opacity:1;}}
+  .modal-close{
+    position:absolute;top:18px;right:18px;width:36px;height:36px;
+    border-radius:36px;display:flex;align-items:center;justify-content:center;
+    transition:background .15s;
+  }
+  .modal-close:hover{background:rgba(42,38,34,0.08);}
+  .modal h3{font-family:var(--serif);font-size:30px;margin-top:6px;letter-spacing:-0.01em;line-height:1.15;}
+  .modal p{font-size:14px;color:var(--ink-2);margin-top:12px;line-height:1.55;}
+  .preset-list{display:flex;flex-direction:column;gap:10px;margin-top:22px;}
+  .preset{
+    text-align:left;padding:16px 18px;border-radius:12px;
+    background:var(--paper);border:1px solid var(--line);
+    transition:border-color .15s, transform .12s;
+    display:flex;gap:14px;align-items:flex-start;
+  }
+  .preset:hover{border-color:var(--clay);transform:translateX(2px);}
+  .preset .preset-num{font-family:var(--mono);font-size:10px;color:var(--clay);letter-spacing:0.1em;padding-top:2px;}
+  .preset .preset-body{flex:1;}
+  .preset .preset-title{font-family:var(--serif);font-size:16px;line-height:1.3;color:var(--ink);}
+  .preset .preset-msg{font-size:12px;color:var(--ink-3);margin-top:4px;font-style:italic;}
+
+  @media (max-width: 960px){
+    .nav{padding:18px 24px;}
+    nav.links{
+      display:none;
+      position:absolute;top:100%;left:0;right:0;
+      flex-direction:column;gap:0;
+      background:var(--paper);border-bottom:1px solid var(--line);
+      padding:16px 24px;
+    }
+    nav.links.open{display:flex;}
+    nav.links a{padding:14px 0;border-bottom:1px solid var(--line-2);}
+    .nav-cta .btn:not(.icon-btn){display:none;}
+    .menu-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;}
+    .hero{padding:48px 24px;}
+    .hero h1{font-size:44px;}
+    .section-inner{padding:56px 24px;}
+    .section-head h2{font-size:32px;}
+    .accordion-header{padding:20px;}
+    .accordion-body{padding:20px;}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:28px;}
+  }
+  @media (max-width: 560px){
+    .hero h1{font-size:38px;}
+    .section-head{flex-direction:column;align-items:flex-start;}
+    .foot-grid{grid-template-columns:1fr;}
+    .nav{padding:14px 18px;}
+    .fab{right:16px;bottom:16px;width:54px;height:54px;}
+  }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="nav">
+    <a href="/" class="brand" aria-label="Inicio Khamlungpa">
+      <svg width="26" height="26" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+        <rect x="7" y="7" width="6" height="6" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+      </svg>
+      <div>
+        <div class="brand-txt-1">Khamlungpa</div>
+        <div class="brand-txt-2">FPMT · GUADALAJARA · DESDE 2003</div>
+      </div>
+    </a>
+    <nav class="links" id="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/empieza-aqui" class="active">Empieza aquí</a>
+      <a href="/maestros">Maestros</a>
+      <a href="/programas">Programas</a>
+      <a href="/calendario">Calendario</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn wa" style="padding:10px 16px;font-size:13px;" onclick="openWA()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 21l1.6-5.2A8.5 8.5 0 1 1 8.2 19.4L3 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.8 8.6c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.6l-.4.5c-.1.1-.2.3 0 .6.3.5.8 1.2 1.4 1.6.7.5 1.3.8 1.6.9.3.1.5 0 .6-.1l.6-.6c.1-.2.3-.2.5-.1l1.5.7c.3.1.5.2.5.4 0 .2 0 1.1-.4 1.5-.4.4-1.4.9-2 .8-.5 0-1.3-.2-2.8-.8-2.4-.9-3.9-3.3-4-3.5-.1-.2-1-1.3-1-2.5 0-1.2.6-1.8.9-2.1Z" fill="currentColor"/></svg>
+        WhatsApp
+      </button>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero">
+    <div class="eyebrow">Tu primer paso</div>
+    <h1 class="display">Preguntas frecuentes para comenzar</h1>
+    <p class="lead">Todo lo que necesitas saber para tu primera sesión en Centro Khamlungpa. Sin experiencia previa, sin obligaciones.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Qué es el budismo tibetano?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>El budismo tibetano es una tradición milenaria que enfatiza la meditación y el estudio para alcanzar la iluminación. Combina enseñanzas antiguas con prácticas modernas accesibles a todos.</p>
+            <p>Centro Khamlungpa sigue la tradición Gelugpa, que es la más extendida en el Tíbet. Se basa en la compasión, la sabiduría y el entendimiento directo de la realidad.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Necesito experiencia previa en meditación?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>No. Centro Khamlungpa está diseñado para principiantes completos. Nuestras sesiones de meditación guiada comienzan con instrucciones básicas, así que cualquiera puede participar sin experiencia previa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Cuál es el costo?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>Las sesiones de meditación guiada son con donativo voluntario. No hay costo mínimo ni obligación de donar. Los cursos de estudio tienen un costo reducido según tu posibilidad de contribución.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Qué debo llevar a la primera sesión?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>Solo necesitas traer ropa cómoda. El centro proporciona cojines de meditación. Puedes traer tu propio cojín si lo prefieres. La sesión es presencial, pero también puedes participar online.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Debo tener creencias religiosas específicas?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>No necesitas cambiar tus creencias religiosas. Centro Khamlungpa es abierto a personas de cualquier trasfondo. La meditación y el budismo son compatibles con otras creencias espirituales.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Cuáles son los beneficios de la meditación?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>La meditación regular ayuda a: reducir estrés y ansiedad, mejorar concentración y claridad mental, desarrollar compasión por uno mismo y otros, encontrar paz interior, y fortalecer el bienestar emocional.</p>
+            <p>Los efectos se sienten gradualmente con la práctica constante.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Cómo es una sesión típica?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p><strong>Estructura típica (90 minutos):</strong></p>
+            <p>• Meditación guiada (30-40 min) — instrucciones paso a paso<br>
+            • Enseñanza breve (20-30 min) — conceptos budistas o meditación<br>
+            • Preguntas y respuestas (10-20 min) — un maestro responde dudas<br>
+            • Cierre tranquilo (5 min)</p>
+            <p>Puedes llegar cuando quieras durante los primeros 10 minutos. No hay lista de asistencia ni obligación de quedarte toda la sesión.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3 class="accordion-title">¿Hay actividades online?</h3>
+          <div class="accordion-toggle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <p>Sí. La mayoría de nuestras sesiones de meditación guiada están disponibles tanto presencial como online. Puedes participar desde casa si prefieres. Visita nuestro /calendario para ver horarios y enlaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h3>¿Listo para comenzar?</h3>
+      <p>Contacta con nosotros por WhatsApp. Te esperamos en tu primera sesión.</p>
+      <button class="btn primary" onclick="openWA('empieza_aqui')">
+        Enviar mensaje a WhatsApp
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h4>Centro Khamlungpa</h4>
+        <p style="font-size:13px;color:rgba(251,247,239,0.72);margin-bottom:16px;">Meditación y budismo tibetano en Guadalajara desde 2003. Abierto a todos.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/maestros">Maestros</a></li>
+          <li><a href="/programas">Programas</a></li>
+          <li><a href="/calendario">Calendario</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="/empieza-aqui">Empieza aquí</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/donar">Donar</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacidad">Privacidad</a></li>
+          <li><a href="/terminos">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Centro Khamlungpa. Todos los derechos reservados.</div>
+      <div>Afiliado FPMT desde 2005</div>
+    </div>
+  </div>
+</footer>
+
+<button class="fab" onclick="openWA()" aria-label="Abrir WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21l1.6-5.2A8.5 8.5 0 1 1 8.2 19.4L3 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M8.8 8.6c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.6l-.4.5c-.1.1-.2.3 0 .6.3.5.8 1.2 1.4 1.6.7.5 1.3.8 1.6.9.3.1.5 0 .6-.1l.6-.6c.1-.2.3-.2.5-.1l1.5.7c.3.1.5.2.5.4 0 .2 0 1.1-.4 1.5-.4.4-1.4.9-2 .8-.5 0-1.3-.2-2.8-.8-2.4-.9-3.9-3.3-4-3.5-.1-.2-1-1.3-1-2.5 0-1.2.6-1.8.9-2.1Z" fill="currentColor"/></svg>
+</button>
+
+<div class="modal-overlay" id="waModal" onclick="if(event.target===this) closeWA()">
+  <div class="modal">
+    <button class="modal-close" onclick="closeWA()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <h3>Escribir por WhatsApp</h3>
+    <p>Elige un tema para comenzar la conversación:</p>
+    <div class="preset-list" id="presetList"></div>
+  </div>
+</div>
+
+<script>
+const waMessages = {
+  empieza_aqui: {
+    title: "Primera vez",
+    msg: "Hola, es mi primera vez y me gustaría asistir a una sesión de meditación. ¿Cuál es la próxima disponible?"
+  },
+  general: {
+    title: "Información general",
+    msg: "Hola, me gustaría conocer más sobre Centro Khamlungpa y sus programas."
+  },
+  meditacion: {
+    title: "Meditación guiada",
+    msg: "¿Cuáles son los horarios de las sesiones de meditación guiada?"
+  },
+  programas: {
+    title: "Cursos y estudios",
+    msg: "Me interesaría aprender sobre los programas de estudio del budismo."
+  },
+  donar: {
+    title: "Apoyar el centro",
+    msg: "Me gustaría hacer una donación. ¿Cuáles son las opciones?"
+  },
+  retiro: {
+    title: "Retiro espiritual",
+    msg: "¿Hay retiros espirituales disponibles próximamente?"
+  }
+};
+
+function openWA(type='general'){
+  document.getElementById('waModal').classList.add('open');
+  const presetList = document.getElementById('presetList');
+  presetList.innerHTML = '';
+
+  Object.entries(waMessages).forEach(([key, data]) => {
+    const preset = document.createElement('div');
+    preset.className = 'preset';
+    preset.innerHTML = `
+      <div class="preset-num">${Object.keys(waMessages).indexOf(key)+1}</div>
+      <div class="preset-body">
+        <div class="preset-title">${data.title}</div>
+        <div class="preset-msg">"${data.msg}"</div>
+      </div>
+    `;
+    preset.onclick = () => sendWhatsApp(data.msg);
+    presetList.appendChild(preset);
+  });
+}
+
+function closeWA(){
+  document.getElementById('waModal').classList.remove('open');
+}
+
+function sendWhatsApp(msg){
+  const encoded = encodeURIComponent(msg);
+  window.open(`https://wa.me/?text=${encoded}`, '_blank');
+  closeWA();
+}
+
+function toggleAccordion(header){
+  const item = header.parentElement;
+  const isOpen = header.classList.contains('open');
+
+  document.querySelectorAll('.accordion-item').forEach(el => {
+    el.querySelector('.accordion-header').classList.remove('open');
+    el.querySelector('.accordion-content').classList.remove('open');
+  });
+
+  if(!isOpen){
+    header.classList.add('open');
+    header.nextElementSibling.classList.add('open');
+  }
+}
+
+function toggleMenu(){
+  document.getElementById('nav-links').classList.toggle('open');
+}
+
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  header.classList.toggle('scrolled', window.scrollY > 0);
+});
+</script>
+
+</body>
+</html>
