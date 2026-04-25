@@ -133,7 +133,22 @@
   .cta-section h3{font-family:var(--serif);font-size:32px;margin-bottom:16px;}
   .cta-section p{font-size:15px;max-width:500px;margin:0 auto 24px;}
 
-  footer{background:var(--ink);color:var(--cream);padding:56px 40px;margin-top:80px;}
+  #newsletter{background:var(--ink);color:var(--cream);}
+  #newsletter .section-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  #newsletter .eyebrow{color:var(--ochre);}
+  #newsletter .display{color:var(--cream);}
+  .news-form{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap;}
+  .news-form input{
+    flex:1;min-width:240px;padding:14px 18px;border-radius:999px;border:1px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.06);color:var(--cream);font:inherit;outline:none;transition:border-color .15s;
+  }
+  .news-form input::placeholder{color:rgba(255,255,255,0.45);}
+  .news-form input:focus{border-color:var(--ochre);}
+  .news-meta{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;margin-top:14px;}
+  .news-success{display:none;padding:14px 18px;background:rgba(212,163,90,0.15);border:1px solid var(--ochre);border-radius:10px;margin-top:16px;font-size:13.5px;color:var(--ochre);}
+  .news-success.visible{display:block;}
+
+  background:var(--ink);color:var(--cream);padding:56px 40px;margin-top:80px;}
   .foot-inner{max-width:1320px;margin:0 auto;}
   .foot-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:40px;margin-bottom:40px;}
   .foot-col h4{font-family:var(--serif);font-size:16px;margin-bottom:18px;}
@@ -319,9 +334,47 @@
       </button>
     </div>
   </div>
+<section id="newsletter">
+  <div class="section-inner">
+    <div>
+      <div class="eyebrow">Mantente conectado</div>
+      <h2 class="display" style="font-size:44px;margin-top:10px;">
+        Un correo al mes.<br>
+        <em class="accent" style="color:var(--ochre);">Lo esencial, nada más.</em>
+      </h2>
+      <p style="font-size:15px;color:rgba(251,247,239,0.7);margin-top:18px;line-height:1.6;max-width:440px;">
+        Calendario del mes, una enseñanza breve del Ven. Norbu y un recurso gratuito para tu práctica.
+        Sin spam, sin promociones. Podés darte de baja en cualquier momento.
+      </p>
+    </div>
+    <div>
+      <form class="news-form" id="news-form" novalidate>
+        <input type="email" name="email" id="news-email" placeholder="tu@correo.com" required>
+        <button type="submit" class="btn" style="background:var(--ochre);color:var(--ink);">
+          Suscribirme
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <div class="news-meta">MAILCHIMP · FRECUENCIA MENSUAL · BAJA EN 1 CLIC</div>
+      <div class="news-success" id="news-success">Listo. Revisá tu correo para confirmar la suscripción 🙏</div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+        <div>
+          <div class="overline" style="color:var(--ochre);">Visitar el centro</div>
+          <div style="font-family:var(--serif);font-size:18px;margin-top:8px;color:var(--cream);">Col. Americana</div>
+          <div style="font-size:12.5px;color:rgba(251,247,239,0.6);margin-top:4px;">Guadalajara, Jalisco</div>
+        </div>
+        <div>
+          <div class="overline" style="color:var(--ochre);">Escribir</div>
+          <div style="font-family:var(--serif);font-size:18px;margin-top:8px;color:var(--cream);">info@khamlungpa.com</div>
+          <div style="font-size:12.5px;color:rgba(251,247,239,0.6);margin-top:4px;">Respondemos en &lt; 24h</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
+
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
