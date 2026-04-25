@@ -11,217 +11,203 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<style>
-  :root{
-    --paper:#F4ECE0;
-    --paper-2:#EFE6D6;
-    --paper-3:#E8DDC8;
-    --ink:#2A2622;
-    --ink-2:#4A423A;
-    --ink-3:#6B6158;
-    --clay:#8B2E1F;
-    --clay-2:#A94430;
-    --cream:#FBF7EF;
-    --line:rgba(42,38,34,0.12);
-    --serif:"Fraunces","Times New Roman",serif;
-    --sans:"Inter",-apple-system,system-ui,sans-serif;
-    --mono:"JetBrains Mono",ui-monospace,monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;}
-  a{color:inherit;text-decoration:none;}
-  button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
-
-  header{position:sticky;top:0;z-index:40;background:rgba(244,236,224,0.95);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s;}
-  header.scrolled{border-bottom-color:var(--line);}
-  .nav{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;}
-  .brand{display:flex;align-items:center;gap:10px;}
-  .brand-txt-1{font-family:var(--serif);font-size:18px;}
-  nav.links{display:flex;gap:20px;}
-  nav.links a{font-size:13px;color:var(--ink);transition:color .15s;}
-  nav.links a:hover,nav.links a.active{color:var(--clay);}
-
-  .content{max-width:900px;margin:0 auto;padding:60px 40px;}
-  h1{font-family:var(--serif);font-size:48px;letter-spacing:-0.02em;margin-bottom:20px;color:var(--ink);}
-  h2{font-family:var(--serif);font-size:28px;letter-spacing:-0.01em;margin:40px 0 20px;color:var(--ink);}
-  h3{font-family:var(--serif);font-size:20px;margin:24px 0 12px;color:var(--ink);}
-  p{margin-bottom:16px;color:var(--ink-2);}
-  ul,ol{margin-left:24px;margin-bottom:16px;}
-  li{margin-bottom:8px;}
-  .intro-box{background:var(--cream);padding:32px;border-radius:8px;border-left:4px solid var(--clay);margin-bottom:40px;}
-  .intro-box h2{margin-top:0;}
-  .principle{background:var(--paper-3);padding:20px;border-radius:8px;margin-bottom:16px;}
-  .principle strong{color:var(--clay);}
-
-  footer{background:var(--ink);color:rgba(251,247,239,0.72);padding-bottom:80px;}
-  .foot-links{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px;}
-  .foot-col a{color:rgba(251,247,239,0.8);font-size:13px;display:block;margin-bottom:8px;}
-  .foot-col a:hover{color:#fff;}
-  .foot-bottom{text-align:center;border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;font-size:12px;color:rgba(251,247,239,0.6);}
-  .foot-col-title{font-size:14px;margin-bottom:12px;}
-
-  @media(max-width:768px){
-    .nav{padding:16px 24px;}
-    nav.links{display:none;}
-    .content{padding:40px 24px;}
-    h1{font-size:32px;}
-    .foot-links{grid-template-columns:1fr;}
-  }
-  #wa-fab{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;padding:0;border-radius:50%;box-shadow:0 4px 12px rgba(37,211,102,0.3);display:flex;align-items:center;justify-content:center;gap:0;}
-</style>
+<link rel="stylesheet" href="./assets/css/pages/politica-etica.css">
+<link rel="stylesheet" href="./assets/css/template-alignment.css">
 </head>
 <body>
 
 <header id="header">
   <div class="nav">
-    <a href="./index.html" class="brand">
-      <span class="brand-txt-1">Khamlungpa</span>
+    <a href="./index.html" class="brand" aria-label="Inicio Khamlungpa">
+      <img src="./assets/images/CKLogo.png" alt="Logo Centro Khamlungpa" class="brand-logo" loading="eager" decoding="async">
+      <div>
+        
+        <div class="brand-txt-2">FPMT · GUADALAJARA · DESDE 2003</div>
+      </div>
     </a>
-    <nav class="links">
+    <nav class="links" id="nav-links">
       <a href="./index.html">Inicio</a>
+      <a href="./empieza-aqui.html">Empieza aquí</a>
+      <a href="./maestros.html">Maestros</a>
+      <a href="./programas.html">Programas</a>
+      <a href="./calendario.html">Calendario</a>
+      <a href="./contacto.html">Contacto</a>
       <a href="./politica-etica.html" class="active">Ética</a>
-      <a href="./resolucion-conflictos.html">Conflictos</a>
-      <a href="./expresion-inconformidades.html">Inconformidades</a>
     </nav>
+    <div class="nav-cta">
+      <button type="button" class="btn ebook" onclick="openEbookModal()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Descarga tu eBook
+      </button>
+      <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
-<div class="content">
-
+<section class="hero">
+  <div class="eyebrow">Marco Ético</div>
   <h1>Política Ética</h1>
+  <p>Nuestro compromiso institucional para sostener un espacio seguro, respetuoso e íntegro para toda la comunidad.</p>
+  <div style="margin-top:24px;border-radius:12px;overflow:hidden;border:1px solid var(--line);"><img decoding="async" loading="eager" fetchpriority="high" src="./assets/images/Etica.jpg" alt="Política ética del centro" style="width:100%;height:320px;object-fit:cover;display:block;"></div>
+</section>
 
-  <div class="intro-box">
-    <h2>Ambiente de Integridad y Respeto</h2>
-    <p>Una de nuestras responsabilidades fundamentales, tanto hacia nosotros mismos como hacia la comunidad, es crear un entorno armonioso, respetuoso y de apoyo para el estudio y la práctica del budismo y la meditación.</p>
+<main class="content">
+  <div class="content-inner">
+    <div class="intro-box">
+      <h2 style="margin-top:0;">Ambiente de Integridad y Respeto</h2>
+      <p>Una de nuestras responsabilidades fundamentales, tanto hacia nosotros mismos como hacia la comunidad, es crear un entorno armonioso, respetuoso y de apoyo para el estudio y la práctica del budismo y la meditación.</p>
+    </div>
+
+    <p>En el Centro Khamlungpa, consideramos que la base del desarrollo humano y la felicidad reside en el cultivo de actitudes y comportamientos éticos. Todas las actividades y relaciones personales e institucionales de los centros FPMT en México se rigen por principios fundamentales.</p>
+
+    <div class="principle"><strong>No causar daño:</strong> Protegemos el bienestar físico y emocional de todas las personas.</div>
+    <div class="principle"><strong>No discriminar:</strong> Celebramos la diversidad y la inclusión.</div>
+    <div class="principle"><strong>Respetar ideas y creencias:</strong> Valoramos diferentes perspectivas y tradiciones.</div>
+    <div class="principle"><strong>Comunicación consciente:</strong> Nos expresamos con bondad y claridad.</div>
+    <div class="principle"><strong>Proteger a las personas:</strong> Especialmente a las más vulnerables.</div>
+    <div class="principle"><strong>Cuidar el medio ambiente:</strong> Responsabilidad con la naturaleza.</div>
+
+    
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 8px;">
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line);"><img decoding="async" loading="lazy" src="./assets/images/Etica.jpg" alt="Principios éticos" style="width:100%;height:140px;object-fit:cover;display:block;"></div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line);"><img decoding="async" loading="lazy" src="./assets/images/KARUNA MAY2018-184.JPG" alt="Comunidad segura" style="width:100%;height:140px;object-fit:cover;display:block;"></div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line);"><img decoding="async" loading="lazy" src="./assets/images/FPMT.jpeg" alt="Afiliación FPMT" style="width:100%;height:140px;object-fit:cover;display:block;"></div>
+    </div>
+
+    <h2>Política Ética Detallada</h2>
+
+    <h3>1. Los Cinco Preceptos Laicos</h3>
+    <p>La base de la ética para quienes colaboran, enseñan o participan en Centro Khamlungpa se sustenta en los cinco preceptos budistas:</p>
+    <ul>
+      <li><strong>No matar:</strong> Respetar la vida en todas sus formas.</li>
+      <li><strong>No robar:</strong> Respetar la propiedad ajena.</li>
+      <li><strong>No mantener conducta sexual inapropiada:</strong> Relaciones consensuales y respetuosas.</li>
+      <li><strong>No mentir:</strong> Honestidad en palabras y acciones.</li>
+      <li><strong>No consumir intoxicantes:</strong> Incluyendo alcohol, drogas y tabaco.</li>
+    </ul>
+
+    <h3>2. No Discriminación</h3>
+    <p>Centro Khamlungpa no tolera ningún tipo de discriminación en sus programas o actividades, ya sea por edad, etnia, nacionalidad, género, orientación sexual o afectiva, estado civil o diversidad funcional.</p>
+
+    <h3>3. No Acoso</h3>
+    <p>Nos comprometemos a crear un entorno seguro y digno para todas las personas. Ningún participante, voluntario o colaborador deberá ser objeto de acoso sexual, intimidación, bullying u otros tipos de acoso.</p>
+
+    <h3>4. Relaciones</h3>
+    <ul>
+      <li>Las relaciones sexuales entre maestros y estudiantes están prohibidas mientras el estudiante reciba enseñanzas.</li>
+      <li>Se desaconsejan relaciones en las que haya desequilibrio de poder.</li>
+      <li>Ningún miembro del personal, voluntariado o maestro deberá realizar insinuaciones sexuales hacia participantes.</li>
+    </ul>
+
+    <h3>5. Palabra Correcta</h3>
+    <p>Quienes ocupan posiciones de responsabilidad deben evitar el chisme, lenguaje abusivo o malintencionado. Las palabras duras pueden ser consideradas como acoso.</p>
+
+    <h3>6. Finanzas del Centro</h3>
+    <ul>
+      <li>Donaciones para proyectos específicos se utilizan exclusivamente para dicho fin.</li>
+      <li>Ingresos por artículos relacionados con el Dharma se destinan a actividades dhármicas.</li>
+    </ul>
+
+    <h3>7. Protección a Denunciantes</h3>
+    <p>Toda persona que reporte conductas inapropiadas o contrarias a esta política será protegida de cualquier represalia.</p>
+
+    <h2>Política para Maestros y Facilitadores</h2>
+    <h3>Confidencialidad</h3>
+    <p>Toda comunicación con estudiantes es privada. No debe divulgarse información sin consentimiento, salvo obligación legal.</p>
+    <h3>Honestidad</h3>
+    <p>Los maestros deben declarar con veracidad sus credenciales y corregir malentendidos sobre ellas.</p>
+    <h3>Relaciones Inapropiadas</h3>
+    <p>No deberán iniciarse relaciones sexuales con estudiantes durante cursos o retiros, ni hacer insinuaciones. Quienes enseñan no deben aprovechar su posición para establecer tales vínculos.</p>
+
+    <h2>Alcance de Esta Política</h2>
+    <p>Aplica a todas las actividades del Centro Khamlungpa, incluyendo interacciones presenciales, digitales, telefónicas y en redes sociales relacionadas con funciones o actividades del Centro.</p>
+
+    <h2>¿Cómo Presentar una Queja?</h2>
+    <ul>
+      <li><strong>Por escrito:</strong> Río de Janeiro 2675, Providencia 3a Sección, CP 44630, Guadalajara, México.</li>
+      <li><strong>Por correo:</strong> info@khamlungpa.com</li>
+      <li><strong>Verbalmente:</strong> Dirígete directamente al Director del Centro.</li>
+      <li><strong>Formulario en línea:</strong> <a href="./expresion-inconformidades.html" style="color:var(--clay);">Expresión de Inconformidades</a></li>
+    </ul>
   </div>
-
-  <p>En el Centro Khamlungpa, consideramos que la base del desarrollo humano y la felicidad reside en el cultivo de actitudes y comportamientos éticos. Todas las actividades y relaciones —personales e institucionales— de los centros FPMT en México, así como de las personas que colaboran en ellos, se rigen por principios fundamentales:</p>
-
-  <div class="principle"><strong>🛑 No causar daño</strong> — Protegemos el bienestar físico y emocional de todas las personas.</div>
-  <div class="principle"><strong>❤️ No discriminar</strong> — Celebramos la diversidad y la inclusión.</div>
-  <div class="principle"><strong>🙏 Respetar las ideas y creencias</strong> — Valoramos diferentes perspectivas y tradiciones.</div>
-  <div class="principle"><strong>💬 Usar una comunicación correcta y consciente</strong> — Nos expresamos con bondad y claridad.</div>
-  <div class="principle"><strong>🤗 Proteger a las personas</strong> — Especialmente a las más vulnerables.</div>
-  <div class="principle"><strong>🌱 Cuidar el medio ambiente</strong> — Responsabilidad con la naturaleza.</div>
-
-  <h2>Política Ética Detallada</h2>
-
-  <h3>📜 1. Los Cinco Preceptos Laicos</h3>
-  <p>La base de la ética para quienes colaboran, enseñan o participan en Centro Khamlungpa se sustenta en los cinco preceptos budistas:</p>
-  <ul>
-    <li><strong>No matar</strong> 🕊️ — Respetar la vida en todas sus formas.</li>
-    <li><strong>No robar</strong> ✋ — Respetar la propiedad ajena.</li>
-    <li><strong>No mantener conducta sexual inapropiada</strong> 🔞 — Relaciones consensuales y respetuosas.</li>
-    <li><strong>No mentir</strong> 🤥 — Honestidad en nuestras palabras y acciones.</li>
-    <li><strong>No consumir intoxicantes</strong> 🚬 — Incluyendo alcohol, drogas y tabaco, que afectan la claridad mental.</li>
-  </ul>
-
-  <h3>❤️ 2. No Discriminación</h3>
-  <p>Centro Khamlungpa no tolera ningún tipo de discriminación en sus programas o actividades, ya sea por:</p>
-  <ul>
-    <li>Edad</li>
-    <li>Etnia</li>
-    <li>Nacionalidad</li>
-    <li>Género</li>
-    <li>Orientación sexual o afectiva</li>
-    <li>Estado civil</li>
-    <li>Diversidad funcional</li>
-  </ul>
-
-  <h3>🚫 3. No Acoso</h3>
-  <p>Nos comprometemos a crear un entorno seguro y digno para todas las personas. Ningún participante, voluntario o colaborador deberá ser objeto de:</p>
-  <ul>
-    <li>Acoso sexual</li>
-    <li>Intimidación</li>
-    <li>Bullying</li>
-    <li>Otros tipos de acoso</li>
-  </ul>
-
-  <h3>🤝 4. Relaciones</h3>
-  <ul>
-    <li>Las relaciones sexuales entre maestros y estudiantes están <strong>prohibidas</strong> mientras el estudiante reciba enseñanzas.</li>
-    <li>Se desaconsejan relaciones en las que haya desequilibrio de poder.</li>
-    <li>Ningún miembro del personal, voluntariado o maestro deberá realizar insinuaciones sexuales hacia participantes.</li>
-  </ul>
-
-  <h3>✅ 5. Palabra Correcta</h3>
-  <p>Quienes ocupan posiciones de responsabilidad deben evitar el chisme, lenguaje abusivo o malintencionado. Las palabras duras pueden ser consideradas como acoso.</p>
-
-  <h3>🏦 6. Finanzas del Centro</h3>
-  <p>Todos los ingresos y egresos del Centro Khamlungpa deben cumplir con las normativas contables mexicanas:</p>
-  <ul>
-    <li>Donaciones para proyectos específicos se utilizan exclusivamente para dicho fin.</li>
-    <li>Ingresos por artículos relacionados con el Dharma se destinan a actividades dhármicas.</li>
-  </ul>
-
-  <h3>🛡️ 7. Protección a Denunciantes</h3>
-  <p>Toda persona que reporte conductas inapropiadas o contrarias a esta política será protegida de cualquier represalia.</p>
-
-  <h2>Política Adicional para Maestros y Facilitadores</h2>
-
-  <h3>🛡 Confidencialidad</h3>
-  <p>Toda comunicación con estudiantes es privada. No debe divulgarse información sin consentimiento, salvo obligación legal.</p>
-
-  <h3>🤝 Honestidad</h3>
-  <p>Los maestros deben declarar con veracidad sus credenciales y corregir malentendidos sobre ellas.</p>
-
-  <h3>🚫 Relaciones Inapropiadas</h3>
-  <p>No deberán iniciarse relaciones sexuales con estudiantes durante cursos o retiros, ni hacer insinuaciones. Quienes enseñan no deben aprovechar su posición para establecer tales vínculos.</p>
-
-  <h2>Alcance de Esta Política</h2>
-  <p>Esta Política Ética aplica a <strong>todas las actividades</strong> del Centro Khamlungpa, incluyendo:</p>
-  <ul>
-    <li>Interacciones presenciales</li>
-    <li>Interacciones digitales</li>
-    <li>Comunicación telefónica</li>
-    <li>Redes sociales</li>
-  </ul>
-  <p>Siempre que estén relacionadas con funciones o actividades del Centro. <strong>Todos los miembros del equipo, voluntariado y personal docente deben adherirse a esta política.</strong></p>
-
-  <h2>Ambiente Seguro y Respetuoso</h2>
-  <p>Queremos que todos nuestros visitantes y miembros de la comunidad se sientan valorados, protegidos y en confianza.</p>
-  <p>Si consideras que has sido objeto de un comportamiento inapropiado, acoso o intimidación, te invitamos a informar del incidente a un miembro del equipo presente y ponerte en contacto con nuestros responsables de salvaguardar. Ellos se asegurarán de que el asunto sea investigado y abordado de forma comprensiva, respetuosa y adecuada.</p>
-
-  <h2>¿Cómo Presentar una Queja?</h2>
-  <p>Puedes comunicar tu queja a través de los siguientes medios:</p>
-  <ul>
-    <li><strong>Por escrito:</strong> Río de Janeiro 2675, Providencia 3a Sección, CP 44630, Guadalajara, México</li>
-    <li><strong>Por correo electrónico:</strong> info@khamlungpa.com</li>
-    <li><strong>Verbalmente:</strong> Dirígete directamente al Director del Centro</li>
-    <li><strong>Formulario en línea:</strong> <a href="./expresion-inconformidades.html">Sección de Expresión de Inconformidades</a></li>
-  </ul>
-
-</div>
+</main>
 
 <footer>
-  <div class="foot-links">
-    <div class="foot-col">
-      <h4 class="foot-col-title">Políticas</h4>
-      <a href="./politica-etica.html">Política Ética</a>
-      <a href="./resolucion-conflictos.html">Resolución de Conflictos</a>
-      <a href="./expresion-inconformidades.html">Expresión de Inconformidades</a>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h4>Centro</h4>
+        <ul>
+          <li><a href="./index.html">Centro Khamlungpa</a></li>
+          <li><a href="./maestros.html">Maestros</a></li>
+          <li><a href="https://fpmt.org/" target="_blank" rel="noopener noreferrer">FPMT Internacional</a></li>
+          <li><a href="https://fpmt.org/media/resources/dharma-dates/" target="_blank" rel="noopener noreferrer">Calendario FPMT</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Nuestro Entorno</h4>
+        <ul>
+          <li><a href="./politica-etica.html">Politica Etica</a></li>
+          <li><a href="./resolucion-conflictos.html">Resolucion de Conflictos</a></li>
+          <li><a href="./expresion-inconformidades.html">Expresion de Inconformidad</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Siguenos en</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/khamlungpa" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://www.instagram.com/khamlungpa/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="mailto:info@khamlungpa.com">info@khamlungpa.com</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Afiliados a</h4>
+        <ul>
+          <li><a href="https://fpmt.org/" target="_blank" rel="noopener noreferrer">FPMT Internacional</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col foot-map-col">
+        <h4>Ubicacion en Maps</h4>
+        <a class="foot-map-link" href="https://maps.app.goo.gl/kbMHBYkf2oXotLHNA" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+        <div class="foot-map-wrap">
+          <iframe
+            title="Ubicacion Centro Khamlungpa"
+            src="https://www.google.com/maps?q=Rio+de+Janeiro+2675,+Guadalajara&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </div>
-    <div class="foot-col">
-      <h4 class="foot-col-title">Centro</h4>
-      <a href="./index.html">Inicio</a>
-      <a href="./maestros.html">Maestros</a>
-      <a href="./contacto.html">Contacto</a>
+    <div class="foot-bottom">
+      <span>© 2026 · CENTRO KHAMLUNGPA · FPMT AFFILIATE</span>
+      <span>ES · EN (PROXIMAMENTE)</span>
     </div>
-    <div class="foot-col">
-      <h4 class="foot-col-title">FPMT</h4>
-      <a href="https://fpmt.org/" target="_blank">FPMT Internacional</a>
-    </div>
-  </div>
-  <div class="foot-bottom">
-    <p>© 2026 Centro Khamlungpa. Todos los derechos reservados. | Afiliado FPMT desde 2005.</p>
   </div>
 </footer>
 
-<script>
-const header=document.getElementById('header');
-window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>20);});
-</script>
+<script src="./assets/js/pages/politica-etica.js" defer></script>
 
+
+<div id="ebook-modal" class="ebook-modal-overlay" aria-hidden="true">
+  <div class="ebook-modal" role="dialog" aria-modal="true" aria-label="Descarga tu eBook" onclick="event.stopPropagation()">
+    <div class="ebook-modal-head">
+      <div class="ebook-modal-title">Descarga tu eBook</div>
+      <button type="button" class="ebook-modal-close" onclick="closeEbookModal()" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="ebook-modal-body">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqg25ZZ9oYa7jXPiDOG2QsEEc3Hnzeu-EEUpbmz7Gg2mPGjQ/viewform?embedded=true" loading="lazy" title="Formulario de eBook"></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/site-shared.js" defer></script>
 </body>
 </html>

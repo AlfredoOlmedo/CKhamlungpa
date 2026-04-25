@@ -2,36 +2,36 @@
 
 **Centro Khamlungpa**: Rediseño integral del sitio web y ecosistema digital  
 **Última actualización**: 25 de abril de 2026  
-**Fuentes de verdad**: `plan_estrategico.txt` | `user_journey.txt`
+**Fuentes de verdad**: `strategy/plan_estrategico.txt` | `strategy/user_journey.txt`
 
 ---
 
 ## 📍 Empieza aquí según tu rol
 
 ### 👨‍💼 Dueño del Proyecto / Producto
-1. Lee `user_journey.txt` (sección "Los tres perfiles de visitante") — entiende a tus usuarios
-2. Lee `plan_estrategico.txt` (sección "Hoja de Ruta: Fases y Prioridades") — priorización clara
+1. Lee `strategy/user_journey.txt` (sección "Los tres perfiles de visitante") — entiende a tus usuarios
+2. Lee `strategy/plan_estrategico.txt` (sección "Hoja de Ruta: Fases y Prioridades") — priorización clara
 3. Revisa `PLAN.md` en esta carpeta para adaptarlo a tu realidad
 
 ### 👨‍💻 Desarrollador / Tech Lead
-1. Lee `plan_estrategico.txt` (sección "Errores Técnicos Críticos") — qué arreglar primero
-2. Lee `plan_estrategico.txt` (sección "Stack Tecnológico Recomendado") — arquitectura
+1. Lee `strategy/plan_estrategico.txt` (sección "Errores Técnicos Críticos") — qué arreglar primero
+2. Lee `strategy/plan_estrategico.txt` (sección "Stack Tecnológico Recomendado") — arquitectura
 3. Ve a `DEVELOPMENT.md` para setup local
 
 ### 🎨 Diseñador / UX
-1. Lee `user_journey.txt` completo — estructura la experiencia alrededor de estos journeys
-2. Lee `plan_estrategico.txt` (sección "Nueva Arquitectura de Información") — sitemap y páginas
-3. Sigue `user_journey.txt` (sección "Diseño del Sitio Web por Etapa del Journey") para cada página
+1. Lee `strategy/user_journey.txt` completo — estructura la experiencia alrededor de estos journeys
+2. Lee `strategy/plan_estrategico.txt` (sección "Nueva Arquitectura de Información") — sitemap y páginas
+3. Sigue `strategy/user_journey.txt` (sección "Diseño del Sitio Web por Etapa del Journey") para cada página
 
 ### 📱 Content / SEO Lead
-1. Lee `plan_estrategico.txt` (sección "Plan SEO Local") — palabras clave y estrategia
-2. Lee `plan_estrategico.txt` (sección "Estrategia de Contenidos") — blog, recursos, lead magnets
-3. Lee `user_journey.txt` (sección "Estrategia de Redes Sociales") — Instagram, WhatsApp, newsletter
+1. Lee `strategy/plan_estrategico.txt` (sección "Plan SEO Local") — palabras clave y estrategia
+2. Lee `strategy/plan_estrategico.txt` (sección "Estrategia de Contenidos") — blog, recursos, lead magnets
+3. Lee `strategy/user_journey.txt` (sección "Estrategia de Redes Sociales") — Instagram, WhatsApp, newsletter
 
 ### 🎯 Marketing / Community
-1. Lee `user_journey.txt` (sección "User Journeys" — los 3 perfiles)
-2. Lee `user_journey.txt` (sección "Ecosistema Digital") — rol de cada canal
-3. Lee `user_journey.txt` (sección "Estrategia de Redes Sociales") — tácticas por plataforma
+1. Lee `strategy/user_journey.txt` (sección "User Journeys" — los 3 perfiles)
+2. Lee `strategy/user_journey.txt` (sección "Ecosistema Digital") — rol de cada canal
+3. Lee `strategy/user_journey.txt` (sección "Estrategia de Redes Sociales") — tácticas por plataforma
 
 ---
 
@@ -126,7 +126,7 @@ Medibles con GA4 + Google Search Console (ya instalados):
 
 ## 🚨 12 Errores Críticos a Arreglar (Fase 1)
 
-Listado completo en `plan_estrategico.txt` (sección "Errores Técnicos Críticos"):
+Listado completo en `strategy/plan_estrategico.txt` (sección "Errores Técnicos Críticos"):
 
 1. `lang="en"` → cambiar a `lang="es-MX"`
 2. Títulos únicos en cada página (actualmente "Centro Khamlungpa" en todas)
@@ -147,10 +147,10 @@ Listado completo en `plan_estrategico.txt` (sección "Errores Técnicos Crítico
 
 ## 📞 Contacto & Siguientes Pasos
 
-- **Fuentes de verdad**: `plan_estrategico.txt` | `user_journey.txt` (en raíz del proyecto)
+- **Fuentes de verdad**: `strategy/plan_estrategico.txt` | `strategy/user_journey.txt` (en `docs/strategy/`)
 - **Para detalles de implementación**: Ve a `PLAN.md` o `DEVELOPMENT.md`
 - **Para mockups**: Revisa los archivos HTML en `Template/`
 
 ---
 
-**Este README fue generado a partir de `plan_estrategico.txt` y `user_journey.txt` como documentos únicos de verdad.**
+**Este README fue generado a partir de `strategy/plan_estrategico.txt` y `strategy/user_journey.txt` como documentos únicos de verdad.**

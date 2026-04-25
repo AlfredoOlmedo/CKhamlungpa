@@ -15,14 +15,14 @@
 | Necesito... | Ir a... | Propósito |
 |------------|---------|-----------|
 | Entender el proyecto | [README.md](README.md) (este archivo) | Visión general + navegación |
-| Ver el plan de trabajo | [PROGRESS.md](PROGRESS.md) | Kanban detallado por fase |
-| Ver tareas específicas | [KANBAN.md](KANBAN.md) | Backlog + TO DO + IN PROGRESS |
+| Ver el plan de trabajo | [PROGRESS.md](docs/project/status/PROGRESS.md) | Kanban detallado por fase |
+| Ver tareas específicas | [KANBAN.md](docs/project/status/KANBAN.md) | Backlog + TO DO + IN PROGRESS |
 | Entender la estrategia | [docs/PLAN.md](docs/PLAN.md) | 4 fases con tareas y tiempos |
 | Entender los usuarios | [docs/CUSTOMER-JOURNEY-STRATEGY.md](docs/CUSTOMER-JOURNEY-STRATEGY.md) | Los 3 perfiles + journeys |
 | Setup técnico | [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | Cómo empezar a desarrollar |
-| SEO & Indexación IA | [SEO.md](SEO.md) | Robots.txt, sitemap, JSON-LD, ai-instructions |
-| Auditoría & benchmarking | [plan_estrategico.txt](plan_estrategico.txt) | Análisis completo (Fuente de Verdad) |
-| Diseño de experiencia | [user_journey.txt](user_journey.txt) | Journeys + tácticas (Fuente de Verdad) |
+| SEO & Indexación IA | [SEO.md](docs/project/seo/SEO.md) | Robots.txt, sitemap, JSON-LD, ai-instructions |
+| Auditoría & benchmarking | [plan_estrategico.txt](docs/strategy/plan_estrategico.txt) | Análisis completo (Fuente de Verdad) |
+| Diseño de experiencia | [user_journey.txt](docs/strategy/user_journey.txt) | Journeys + tácticas (Fuente de Verdad) |
 | Ver el sitio | [Template/](Template/) | Prototipos HTML funcionales |
 
 ---
@@ -82,13 +82,13 @@ El nuevo sitio está basado en un **System Design** coherente:
 Khamlungpa-2026/
 │
 ├── README.md                           # Este archivo (visión general)
-├── PROGRESS.md                         # Kanban detallado por fase ⭐ LEER PRIMERO
-├── KANBAN.md                           # Tablero visual de tareas
+├── docs/project/status/PROGRESS.md     # Kanban detallado por fase ⭐ LEER PRIMERO
+├── docs/project/status/KANBAN.md       # Tablero visual de tareas
 │
-├── plan_estrategico.txt                # ⭐ FUENTE DE VERDAD #1
+├── docs/strategy/plan_estrategico.txt  # ⭐ FUENTE DE VERDAD #1
 │                                       # Auditoría técnica, benchmarking, 12 errores críticos
 │
-├── user_journey.txt                    # ⭐ FUENTE DE VERDAD #2
+├── docs/strategy/user_journey.txt      # ⭐ FUENTE DE VERDAD #2
 │                                       # 3 perfiles, journeys, tácticas por canal
 │
 ├── docs/                               # Documentación derivada
@@ -96,7 +96,7 @@ Khamlungpa-2026/
 │   ├── PLAN.md                         # Plan de 4 fases (derivado de plan_estrategico.txt)
 │   ├── DEVELOPMENT.md                  # Guía técnica para developers
 │   ├── CUSTOMER-JOURNEY-STRATEGY.md    # Deep dive en perfiles (derivado de user_journey.txt)
-│   └── Nota.md                         # Archivo archivado
+│   └── notes/Nota.md                   # Archivo archivado
 │
 ├── Template/                           # 🎨 SISTEMA DE DISEÑO (la web nueva)
 │   ├── Khamlungpa Home.html            # Landing page interactivo ⭐ PROTOTIPO BASE
@@ -140,7 +140,7 @@ Khamlungpa-2026/
 
 **Hito**: 3 páginas funcionales en staging
 
-**Ver detalle**: [PROGRESS.md](PROGRESS.md) sección FASE 1
+**Ver detalle**: [PROGRESS.md](docs/project/status/PROGRESS.md) sección FASE 1
 
 ---
 
@@ -158,7 +158,7 @@ Khamlungpa-2026/
 
 **Hito**: MVP en producción con conversión
 
-**Ver detalle**: [PROGRESS.md](PROGRESS.md) sección FASE 2
+**Ver detalle**: [PROGRESS.md](docs/project/status/PROGRESS.md) sección FASE 2
 
 ---
 
@@ -179,7 +179,7 @@ Khamlungpa-2026/
 
 **Hito**: Sitio V1 completo
 
-**Ver detalle**: [PROGRESS.md](PROGRESS.md) sección FASE 3
+**Ver detalle**: [PROGRESS.md](docs/project/status/PROGRESS.md) sección FASE 3
 
 ---
 
@@ -198,7 +198,7 @@ Khamlungpa-2026/
 
 **Hito**: Centro digital autónomo
 
-**Ver detalle**: [PROGRESS.md](PROGRESS.md) sección FASE 4
+**Ver detalle**: [PROGRESS.md](docs/project/status/PROGRESS.md) sección FASE 4
 
 ---
 
@@ -232,19 +232,19 @@ El sitio está diseñado para servir a **3 tipos de persona**:
 
 ### Para Desarrolladores
 1. Lee [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) — setup local
-2. Revisa [PROGRESS.md](PROGRESS.md) — tasks asignadas a ti
+2. Revisa [PROGRESS.md](docs/project/status/PROGRESS.md) — tasks asignadas a ti
 3. Mira [Template/Khamlungpa Home.html](Template/Khamlungpa%20Home.html) — referencia de diseño
 4. Copia la estructura HTML de Home al crear nuevas páginas
 
 ### Para Content Lead
 1. Lee [docs/CUSTOMER-JOURNEY-STRATEGY.md](docs/CUSTOMER-JOURNEY-STRATEGY.md) — entiende los perfiles
-2. Revisa [PROGRESS.md](PROGRESS.md) — tasks de contenido asignadas
+2. Revisa [PROGRESS.md](docs/project/status/PROGRESS.md) — tasks de contenido asignadas
 3. Recolecta: fotos del centro, bios de maestros, testimonios reales
 4. Escribe títulos + meta descriptions para cada página
 
 ### Para Product Owner
-1. Lee [plan_estrategico.txt](plan_estrategico.txt) + [user_journey.txt](user_journey.txt) — contexto completo
-2. Revisa [PROGRESS.md](PROGRESS.md) — estado por fase
+1. Lee [plan_estrategico.txt](docs/strategy/plan_estrategico.txt) + [user_journey.txt](docs/strategy/user_journey.txt) — contexto completo
+2. Revisa [PROGRESS.md](docs/project/status/PROGRESS.md) — estado por fase
 3. Ejecuta daily standup (10am) + sprint reviews (viernes)
 4. Resuelve bloqueadores
 
@@ -333,14 +333,14 @@ El sitio está diseñado para servir a **3 tipos de persona**:
 
 **Antes de cambiar cualquier cosa, revisa estos dos**:
 
-1. **[plan_estrategico.txt](plan_estrategico.txt)** (549 líneas)
+1. **[plan_estrategico.txt](docs/strategy/plan_estrategico.txt)** (549 líneas)
    - Auditoría técnica completa
    - 12 errores críticos
    - Benchmarking (Lion's Roar, FPMT, Tushita, Kadampa, Casa Tibet, etc.)
    - Stack tecnológico recomendado
    - KPIs a 6 meses
 
-2. **[user_journey.txt](user_journey.txt)** (692 líneas)
+2. **[user_journey.txt](docs/strategy/user_journey.txt)** (692 líneas)
    - Los 3 perfiles detallados
    - 5-7 etapas por journey
    - Fricción crítica + soluciones
@@ -439,4 +439,4 @@ El sitio está diseñado para servir a **3 tipos de persona**:
 
 El sitio nuevo va a hacer que cada visitante —sin importar si es curioso por primera vez, practicante serio, o miembro comprometido— encuentre exactamente lo que necesita en el momento que lo necesita.
 
-**¿Listo?** Lee [PROGRESS.md](PROGRESS.md) y asigna las primeras tareas.
+**¿Listo?** Lee [PROGRESS.md](docs/project/status/PROGRESS.md) y asigna las primeras tareas.

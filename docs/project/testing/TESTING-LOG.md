@@ -486,3 +486,43 @@ All TIER 1 tests are passing. Code is production-ready.
 **Deployment Target**: April 29, 2026 PM (subject to successful final verification)
 
 🙏 Metta a Centro Khamlungpa
+
+---
+
+## Regression Testing — Template Alignment Refactor
+
+**Date**: April 25, 2026  
+**Scope**: Root pages (`index.html`, `empieza-aqui.html`, `programas.html`, `calendario.html`, `maestros.html`, `donar.html`, `contacto.html`, `politica-etica.html`, `resolucion-conflictos.html`, `expresion-inconformidades.html`)
+
+### Executed Checks
+
+1. **Local link/reference integrity (href/src)**
+- Method: CLI scan for local `./` references and filesystem existence check.
+- Result: ✅ PASS (no missing local paths detected).
+
+2. **HTML structure sanity check**
+- Method: verify presence of closing `</html>`, `</head>`, `</body>` and tag-balance smoke checks.
+- Result: ✅ PASS.
+
+3. **Shared assets integration check**
+- Method: grep per page for:
+  - `assets/css/pages/<page>.css`
+  - `assets/css/template-alignment.css`
+  - `assets/js/pages/<page>.js`
+  - `assets/js/site-shared.js`
+- Result: ✅ PASS (all root pages linked correctly).
+
+4. **JavaScript syntax validation**
+- Method: `node --check` on `assets/js/site-shared.js` and `assets/js/pages/*.js`.
+- Result: ✅ PASS (`JS syntax OK`).
+
+5. **Branding consistency check**
+- Method: grep for `CKLogo.png` and brand line text.
+- Result: ✅ PASS (logo + institutional line present across root pages).
+
+### Tooling Note
+- `html-validate` was not available in this runtime (`command not found`).
+- Recommendation: run html-validate in CI or with local dev dependency installed.
+
+### Outcome
+**Regression status**: ✅ PASS for CLI-level structural and reference checks after alignment/refactor.
