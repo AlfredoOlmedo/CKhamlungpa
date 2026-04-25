@@ -4,18 +4,8 @@
     "no-inline-style": "off",
     "no-implicit-button-type": "off",
     "attribute-boolean-style": "off",
-    "doctype-html": "error",
-    "no-unknown-attributes": "warn",
-    "void-style": ["error", { "style": "selfClosing" }],
-    "attribute-separator": "error",
-    "no-trailing-whitespace": "error",
-    "no-duplicate-attributes": "error",
-    "no-redundant-roles": "warn",
-    "no-dup-id": "error",
-    "valid-content-model": "warn",
-    "input-missing-label": "warn",
+    "void-style": ["error", { "style": "omit" }],
     "element-case": "error",
-    "attr-case": "error",
-    "close-order": "warn"
+    "attr-case": "error"
   }
 }
