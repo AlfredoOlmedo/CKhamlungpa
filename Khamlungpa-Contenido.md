@@ -29,7 +29,13 @@ https://maps.app.goo.gl/kbMHBYkf2oXotLHNA
 ## Contacto
 Telefono 52 33 3122 105252 33 3122 1052
 Whatsaap 52 33 3183 748452 33 3183 7484
-Email info@khamlungpa.com
-
+Email   info@khamlungpa.com
 Facebook    https://www.facebook.com/khamlungpa
-Instagram 
+Instagram   info@khamlungpa.com
+FPMT Internacional  https://fpmt.org/
+
+## Nuestro Entorno:
+Politica Ética
+Resolución de Conflictos
+Expresión de Inconformidades
+

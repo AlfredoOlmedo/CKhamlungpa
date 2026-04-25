@@ -16,16 +16,16 @@ const localBusinessSchema = {
   "email": "info@khamlungpa.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "[Dirección completa]",
+    "streetAddress": "Río de Janeiro 2675, Providencia 3a. Secc",
     "addressLocality": "Guadalajara",
     "addressRegion": "Jalisco",
-    "postalCode": "[Código postal]",
+    "postalCode": "44630",
     "addressCountry": "MX"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "[Latitud]",
-    "longitude": "[Longitud]"
+    "latitude": "20.6789",
+    "longitude": "-103.2586"
   },
   "sameAs": [
     "https://www.instagram.com/centrokhamlungpa",
@@ -42,6 +42,36 @@ const localBusinessSchema = {
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": "Monday",
+      "opens": "19:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:30",
+      "closes": "08:45"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "20:00",
+      "closes": "21:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:30",
+      "closes": "08:45"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "20:00",
+      "closes": "21:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
       "opens": "20:00",
       "closes": "21:30"
     }
