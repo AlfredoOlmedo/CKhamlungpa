@@ -233,6 +233,19 @@
     .nav{padding:14px 18px;}
     .fab{right:16px;bottom:16px;width:54px;height:54px;}
   }
+  .modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.4);}
+  .modal.active{display:flex;align-items:center;justify-content:center;}
+  .modal-content{background-color:var(--paper);padding:40px;border-radius:12px;max-width:600px;width:90%;box-shadow:0 4px 20px rgba(0,0,0,0.15);}
+  .modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;}
+  .modal-header h2{margin:0;font-family:var(--serif);font-size:28px;letter-spacing:-0.01em;}
+  .modal-close{background:none;border:none;cursor:pointer;font-size:28px;color:var(--ink-3);transition:color .15s;}
+  .modal-close:hover{color:var(--ink);}
+  .modal-body{margin-bottom:24px;color:var(--ink-2);}
+  .modal-footer{display:flex;gap:12px;justify-content:flex-end;}
+  .modal-footer a{padding:12px 24px;border-radius:8px;background:var(--clay);color:var(--cream);text-decoration:none;font-weight:500;transition:background .15s;display:inline-block;}
+  .modal-footer a:hover{background:var(--clay-2);}
+  .modal-footer button{padding:12px 24px;border-radius:8px;background:var(--paper-3);color:var(--ink);border:none;cursor:pointer;font-weight:500;transition:background .15s;}
+  .modal-footer button:hover{background:var(--paper-2);}
 </style>
 </head>
 <body>
@@ -433,6 +446,7 @@
           <li><a href="./empieza-aqui.html">Empieza aquí</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
           <li><a href="./donar.html">Donar</a></li>
+          <li><a href="javascript:void(0)" onclick="openEbookModal()">Accede a tu eBook</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -547,7 +561,37 @@ window.addEventListener('scroll', () => {
   const header = document.getElementById('header');
   header.classList.toggle('scrolled', window.scrollY > 0);
 });
+function openEbookModal(){
+  document.getElementById('ebookModal').classList.add('active');
+}
+
+function closeEbookModal(){
+  document.getElementById('ebookModal').classList.remove('active');
+}
+
+window.addEventListener('click', (event) => {
+  const modal = document.getElementById('ebookModal');
+  if(event.target === modal){
+    closeEbookModal();
+  }
+});
 </script>
 
+<div id="ebookModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Accede a tu eBook</h2>
+      <button type="button" class="modal-close" onclick="closeEbookModal()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p>Completa el formulario para acceder a nuestro eBook exclusivo sobre meditación y budismo tibetano. Aprenderás técnicas prácticas y profundizarás en la filosofía FPMT.</p>
+      <p><strong>El acceso es gratuito</strong> para todos los miembros de la comunidad Khamlungpa.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" onclick="closeEbookModal()">Cancelar</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzU7TLqFFZfypJG4BAlxVWXklB8S3T1hcg0UH49CRmVicr6Q/viewform?usp=dialog" target="_blank">Acceder al eBook →</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
