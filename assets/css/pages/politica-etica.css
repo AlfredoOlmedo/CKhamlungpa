@@ -88,3 +88,11 @@
     .foot-grid{grid-template-columns:1fr;}
     .nav{padding:14px 18px;}
   }
+
+  @media (max-width: 960px){
+    .hero,.content{padding-left:20px !important;padding-right:20px !important;}
+    .content-inner{max-width:100%;}
+    .foot-inner{padding-left:20px !important;padding-right:20px !important;}
+    .foot-grid{grid-template-columns:1fr !important;gap:20px !important;}
+    [style*="display:grid"][style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important;gap:14px !important;}
+  }
