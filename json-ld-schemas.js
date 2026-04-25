@@ -12,7 +12,7 @@ const localBusinessSchema = {
   "description": "Único centro budista FPMT en Guadalajara. Meditación guiada, estudios budistas tibetanos. 20+ años.",
   "image": "https://khamlungpa.com/og-image.jpg",
   "url": "https://khamlungpa.com",
-  "telephone": "+52-[NÚMERO]",
+  "telephone": "+52-333-122-1052",
   "email": "info@khamlungpa.com",
   "address": {
     "@type": "PostalAddress",

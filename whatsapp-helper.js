@@ -3,8 +3,8 @@
  * Pre-written messages by user persona and context
  */
 
-// WhatsApp Business Phone (replace with real number from Meta Business Account)
-const WHATSAPP_PHONE = "[TBD - obtener de Meta Business]";
+// WhatsApp Business Phone
+const WHATSAPP_PHONE = "5233318374";
 
 /**
  * Message templates organized by journey stage and persona

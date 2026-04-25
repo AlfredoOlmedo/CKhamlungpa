@@ -292,4 +292,105 @@ Aprenda la definición del tantra, cómo se trabaja el tantra y porqué es un gr
 Prácticas de integracion
 Emprendiendo prácticas intensivas de purificación y de retiro del Lam-rim, prepare su mente de la mejor manera posible para ganar realizaciones en camino hacia la iluminación. Las prácticas de la purificación incluyen: 100.000 postraciones, retiro de tres meses de Vajrasattva y Nyung Ne. Ésta es una gran manera de sellar las bendiciones de este programa con el modulo final de Experiencias.
 
-## 
+## EXPLORANDO EL BUDISMO
+Nivel Intermedio
+Dirigido por: Ven. Norbu
+Este curso tiene una duración de tres años.
+Todos los martes de 20:00 a 21:30 hrs.
+Presencial y en linea.
+
+Qué es Explorando el Budismo
+
+Es un nuevo programa desarrollado por los Servicios de Educación de la FPMT Este Programa tiene un nivel de estudio intermedio y nos prepara para participar en estudios budistas más avanzados; mediante la introducción y profundización a conceptos más filosóficos budistas clave, meditación, discusión, debate y práctica.
+
+A quién va dirigido:
+A personas que deseen participar en estudios después del curso Descubriendo el Budismo, sin embargo si no has asistido a enseñanzas budistas con anterioridad, encontrarás para tu vida una gran cantidad de significado en estas enseñanzas.
+
+De qué consta
+De 10 Temas Principales que presentan temas fundamentales para profundizar conceptos filosóficos
+
+Cuando conocemos los diferentes tipos de mentes, aprendemos como reducir las emociones aflictivas y como generar estados mentales constructivos y saludables. Estaremos estudiando por algunos meses: Que es la mente y cómo funciona?. Los diferentes tipos de objetos y las maneras distintas de aprehenderlos. Como podemos transformar nuestra mente y sacarle todo su potencial? Evidencias a cerca de la neuroplasticidad. La ciencia explorando el poder de la consciencia. Se produce la consciencia en el cerebro? De qué forma la meditación impacta el cerebro.
+
+Módulos del programa
+1.- Explorando la mente (desde la óptica budista, la ciencia y la neurociencia).
+2.- Conociendo la meditación (los diferentes tipos de meditación, los emplazamientos en Mindfulness).
+3.- Las diferentes verdades (las 4 verdades nobles y sus diferentes aspectos).
+4.- Explorando el Camino (las diversas aspiraciones en la vida, la concentración y la Bodichita).
+5.- Adiestrando a nuestra Mente (Puntos clave para ayudar a nuestra mente a recuperarse de momentos difíciles en la vida).
+6.- Explorando algunas prácticas y oraciones.
+7.- Comenzando con las prácticas preliminares (como apoyo para generar las causas para experimentar felicidad).
+8.- Escuelas filosóficas budistas.
+9.- Principios del Debate Budista.
+10.- Tierras y caminos (los caminos hacia la iluminación).
+
+## PROGRAMA BÁSICO
+Nivel de estudios avanzados
+Imparte: Gueshe Lobsang Dawa
+Coordinación: Ven. Thubten Norbu
+
+El Programa Básico de Estudios Budistas de la FPMT
+
+Fue diseñado por Lama Zopa Rimpoché bajo la tradición de Lama Je Tsong Khapa, para impartirse en cinco años.
+
+Ha sido pensado para estudiantes de Dharma que quieran avanzar más allá de los cursos introductorios y estén interesados a comprometerse a un estudio y práctica más profundos. Les ofrece la oportunidad de desarrollar un buen entendimiento del camino completo a la iluminación y de experimentar los beneficios de un estudio orientado a la práctica.
+
+El plan de estudios consiste en nueve temas, más tres suplementos opcionales. Se estudian textos raíces y comentarios, que se complementan con el apoyo de un grupo de estudio, meditaciones, retiros, exámenes, estudio personal, lecturas y consejos para la práctica de cada estudiante.
+
+La FPMT entregará el Certificado del Programa Básico de la FPMT a los estudiantes que completen con éxito el examen global y cumplan todos los requisitos. Los candidatos para este examen deben completar todo el plan de estudios y tres meses de retiro de Lam Rim al final del programa. Asimismo, satisfacer los criterios de conducta ética y práctica que caracterizan los valores de un auténtico estudiante de Dharma.
+
+
+¿Qué ofrece el Programa Básico?
+- Enseñanzas de los nueve temas del Programa Básico.
+- Estudio de los textos raíces y comentarios estándar recomendados.
+- La oportunidad de exámenes por cada tema.
+- La opción de prepararse para el examen final y el certificado de la FPMT.
+- Cursos y retiros de Lam Rim durante el Programa.
+- Planificación de meditaciones, estudio y debate continuado como elementos integrales de los cursos por medio del grupo de estudio.
+- Material de estudio y práctica para la meditación, bibliografía, transcripción de las enseñanzas, esquemas y audios.
+- Tutoría para el estudio y meditación para los estudiantes matriculados.
+
+Cómo participar:
+- Asistiendo a módulos específicos de tu interés.
+- Asistiendo a todo el programa y cumpliendo con los requisitos que señala la organización.
+
+Inscripción en el Programa básico
+Para sacar el máximo provecho de este Programa, es altamente recomendable comprometerse con el estudio y la meditación de los textos raíces. Sólo los estudiantes inscritos podrán recibir el material didáctico de estudio y serán candidatos para recibir el Diploma del Programa Básico si cumplen con todos los requisitos que la organización señala. El material de estudio se distribuye para uso personal y está sujeto a derechos de autor, por lo que no podrá copiarse o reproducirse para ningún fin. Es posible inscribirse para todo el curso o parcialmente para alguno de sus módulos en cualquier momento. Las personas que quieran asistir ocasionalmente al Programa pueden también inscribirse. Las aportaciones que se piden para los cursos son para sufragar los gastos que conllevan la organización del Programa y el mantenimiento del Centro. Las personas con dificultad para contribuir con la aportación mensual, por favor contactarse con la dirección del Centro, para ver las facilidades que se pudieran otorgar, así como otras formas de colaboración. Tu inscripción es indispensable para asistir a las clases y para enviarte el material de estudio.
+
+Módulos del Programa Básico
+- Mente y Cognición
+- El Sutra del Corazón
+- La Rueda de las Armas afiladas
+- Postulados
+- Bodisatvacharyavatara (Shantideva)
+- Lam Rim.
+- El Ornamento de las Realizaciones Claras.
+- El Sublime Continuo del Mahayana.
+- Fundamento del Mantra Secreto.
+
+Mente y Cognición
+Introducción al conocimiento budista de la mente y de sus funciones. Incluye tanto una presentación de la cognición en sus variadas formas, válidas y distorsionadas, como la psicología budista sobre los estados mentales positivos y negativos relevantes para la práctica del camino hacia la liberación.
+
+El Sutra del Corazón
+Revela la verdad de la vacuidad a través de un corto diálogo entre dos de los discípulos más ilustres de Buda: Avalokiteshvara y Sariputra. Los comentarios tradicionales amplían el estilo críptico del sutra a fin de esclarecer la naturaleza de la sabiduría que comprende la vacuidad, así como las prácticas del “método” que son su complemento esencial.
+
+La Rueda de Armas Afiladas
+Explicación de los medios para desarrollar y aumentar la actitud Mahayana la aspiración de convertirse en un buda para beneficiar a todos los seres y, en especial, cómo transformar las circunstancias adversas con ese fin.
+
+Lam Rim (Las Etapas del Camino)
+El camino gradual o "Lam Rim" es una célebre síntesis de las enseñanzas esenciales de Buda. En este módulo se estudia el Lam Rim mediano de Lama Tsong Khapa, que es un comentario a "Una Luz en el camino" de Lama Atisha. Las enseñanzas de Lam Rim exponen el camino gradual a la Iluminación desde la correcta devoción al maestro espiritual hasta la sabiduría de la vacuidad para el logro de la Iluminación.
+
+Postulados
+Basados en la idea de que Buda enseñó cosas diferentes según las capacidades de las distintas personas, los discípulos tibetanos sistematizaron las numerosas corrientes del pensamiento budista indio en cuatro escuelas de Postulados, como medio para acercarse a las enseñanzas filosóficas más profundas mediante niveles más accesibles.
+
+Bodisatvacharyavatara (Shantideva)
+El compromiso con las acciones del bodisatva" basadas en los inspiradores versos de Shantideva sobre la aspiración y la práctica mahayana. Compuestos hace más de mil años son aún hoy ampliamente considerados como la guía auténtica y más completa para el practicante. Un clásico, que ofrece desde prácticas sencillas para tratar las emociones destructivas hasta el análisis más refinado sobre la verdad última.
+
+El Ornamento de las Realizaciones Claras
+El texto raíz para el estudio de los niveles y tipos de realización en el camino de la Iluminación. Tradicionalmente, constituye la base para el estudio extenso de los programas de estudios en las universidades monásticas.
+
+El Sublime Continuo Mahayana
+Una de las enseñanzas más importantes en todas las tradiciones del budismo tibetano, que esclarece el significado de nuestro potencial búdico, y en especial la vacuidad de la mente que permite evolucionar hacia el estado de plena iluminación.
+
+Fundamentos del Mantra Secreto
+"Fundamentos y caminos del mantra secreto" nos da un visión general concisa de la estructura del camino tántrico. Una distinción especial del Tantra es su inigualable combinación de método y sabiduría, lograda a través de meditar en la forma perfecta de un buda completamente vacía de existencia real.
+
