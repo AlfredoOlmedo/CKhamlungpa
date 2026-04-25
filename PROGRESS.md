@@ -136,17 +136,39 @@
 | 1B.4.3 | Responsive test (360/768/1920px) | 🟡 Esperando contenido | Claude | 1h | 29 abr |
 | 1B.4.4 | JSON-LD validation (schema.org) | 🟡 Esperando contenido | Claude | 0.5h | 29 abr |
 
-### Epic 1B.5: Deployment
+### Epic 1B.5: Testing (🔴 CRITICAL GATE BEFORE DEPLOYMENT)
 
 | # | Tarea | Estado | Responsable | Tiempo | Deadline |
 |---|-------|--------|------------|--------|----------|
-| 1B.5.1 | Push a GitHub main | 🟡 Esperando setup | User | 0.5h | 29 abr |
-| 1B.5.2 | Cloudflare auto-deploy | 🟡 Esperando push | Auto | 5m | 29 abr |
-| 1B.5.3 | Verificar en HTTPS | 🟡 Esperando deploy | User | 0.5h | 29 abr |
-| 1B.5.4 | Enviar sitemap a Google SC | 🟡 Esperando deploy | User | 0.5h | 29 abr |
-| 1B.5.5 | Crear Google Business Profile | 🟡 Esperando deploy | User | 1h | 30 abr |
+| 1B.5.1 | HTML validation (html-validate all pages) | 🟡 Esperando contenido | Claude | 0.5h | 28 abr |
+| 1B.5.2 | Lighthouse audit (all pages >85) | 🟡 Esperando contenido | Claude | 1.5h | 28 abr |
+| 1B.5.3 | robots.txt validation | 🟡 Esperando deploy | Claude | 0.5h | 28 abr |
+| 1B.5.4 | sitemap.xml validation | 🟡 Esperando deploy | Claude | 0.5h | 28 abr |
+| 1B.5.5 | JSON-LD schema validation (schema.org) | 🟡 Esperando contenido | Claude | 1h | 28 abr |
+| 1B.5.6 | Meta tags audit (all pages) | 🟡 Esperando contenido | Claude | 1h | 28 abr |
+| 1B.5.7 | Responsive design (360/768/1920px) | 🟡 Esperando contenido | User | 2h | 28 abr |
+| 1B.5.8 | WhatsApp links testing (mobile) | 🟡 Esperando contenido | User | 1.5h | 28 abr |
+| 1B.5.9 | Link integrity check (all nav + footer) | 🟡 Esperando contenido | User | 1.5h | 28 abr |
+| 1B.5.10 | Performance audit (load time, Core Web Vitals) | 🟡 Esperando contenido | Claude | 1h | 28 abr |
+| 1B.5.11 | Accessibility review (keyboard nav, ARIA) | 🟡 Esperando contenido | User | 1h | 28 abr |
+| 1B.5.12 | Cross-browser testing (Chrome/Firefox/Safari) | 🟡 Esperando contenido | User | 1h | 28 abr |
+| 1B.5.13 | Create TESTING-LOG.md (document all results) | 🟡 Esperando pruebas | Claude | 1h | 28 abr |
+| 1B.5.14 | Final approval (all TIER 1 tests pass) | 🟡 Esperando pruebas | Both | 0.5h | 28 abr |
 
-**Total FASE 1B (pendiente)**: ~12-14 horas | Bloqueado por contenido del usuario
+**⚠️ NO DEPLOYMENT UNTIL ALL TESTS PASS**
+
+### Epic 1B.6: Deployment (Only after Testing Complete ✅)
+
+| # | Tarea | Estado | Responsable | Tiempo | Deadline |
+|---|-------|--------|------------|--------|----------|
+| 1B.6.1 | Push a GitHub main | 🔴 Bloqueado (waiting tests) | User | 0.5h | 29 abr PM |
+| 1B.6.2 | Cloudflare auto-deploy | 🔴 Bloqueado (waiting push) | Auto | 5m | 29 abr PM |
+| 1B.6.3 | Verificar en HTTPS | 🔴 Bloqueado (waiting deploy) | User | 0.5h | 29 abr PM |
+| 1B.6.4 | Enviar sitemap a Google SC | 🔴 Bloqueado (waiting deploy) | User | 0.5h | 29 abr PM |
+| 1B.6.5 | Crear Google Business Profile | 🔴 Bloqueado (waiting deploy) | User | 1h | 30 abr |
+
+**Total FASE 1B.5 (Testing)**: ~15-17 horas | Critical gate before deployment  
+**Total FASE 1B.6 (Deployment)**: ~3 horas | Only after all tests pass
 
 ---
 

@@ -159,33 +159,100 @@ Tareas que están validadas, con dependencias resueltas, listas para asignar.
 └── [ ] Validar JSON-LD con schema.org/validator
 ```
 
-### Próxima Semana (29 abr - 5 may) — DEPLOYMENT
+### Esta Semana (28 abr) — 🧪 TESTING PHASE (CRITICAL GATE)
 ```
-[Deployment a GitHub + Cloudflare] (30m-1h)
+[TIER 1: CRITICAL TESTS - MUST PASS] ⚠️ NO DEPLOYMENT IF ANY FAIL
+├── [HTML Validation]
+│   └── [ ] npx html-validate '*.html' → 0 errors
+├── [Lighthouse Audit] (all pages)
+│   ├── [ ] Empieza-aqui >85 all categories
+│   ├── [ ] Maestros >85 all categories
+│   ├── [ ] Donar >85 all categories
+│   └── [ ] Home (when created) >85 all categories
+├── [robots.txt Validation]
+│   └── [ ] curl + manual check → valid, AI agents allowed
+├── [sitemap.xml Validation]
+│   └── [ ] curl + XML validator → valid, all URLs present
+├── [JSON-LD Schemas]
+│   └── [ ] schema.org/validator → 0 errors all pages
+├── [Meta Tags Audit]
+│   └── [ ] Manual check → title, description, og:* on all pages
+├── [Responsive Design]
+│   ├── [ ] 360px (mobile) - no horizontal scroll
+│   ├── [ ] 768px (tablet) - all content readable
+│   └── [ ] 1920px (desktop) - proper layout
+├── [WhatsApp Links]
+│   ├── [ ] Test on real mobile device
+│   ├── [ ] Verify pre-filled messages
+│   └── [ ] Test FAB + modal presets
+├── [Link Integrity]
+│   ├── [ ] All nav links work (no 404)
+│   ├── [ ] All footer links work
+│   └── [ ] External links open in new tab
+└── [Mobile Touch Targets]
+    └── [ ] All buttons ≥44x44px
+
+[TIER 2: IMPORTANT TESTS - SHOULD PASS]
+├── [ ] Load time <3s on 4G (DevTools throttling)
+├── [ ] No render-blocking CSS
+├── [ ] Images optimized (<100KB each)
+├── [ ] No console errors (DevTools)
+├── [ ] Keyboard navigation (Tab through all elements)
+├── [ ] ARIA labels present on interactive elements
+├── [ ] Font loading without layout shift (CLS)
+├── [ ] Viewport meta tag present
+└── [ ] Canonical tags on all pages
+
+[TIER 3: NICE-TO-HAVE TESTS]
+├── [ ] Cross-browser (Chrome/Firefox/Safari)
+├── [ ] PWA manifest valid
+├── [ ] Open Graph preview on social media
+└── [ ] Email client rendering (if applicable)
+
+[TESTING DOCUMENTATION]
+└── [ ] Create TESTING-LOG.md with all results
+```
+
+### 🚫 DEPLOYMENT GATE 🚫
+```
+                    Testing Complete?
+                       /         \
+                     YES          NO
+                      ↓            ↓
+                  PROCEED ──→ FIX & RE-TEST
+                      ↓
+                [Deploy to Production]
+                      ↓
+            (ONLY after all tests pass)
+```
+
+### Próxima Semana (29 abr PM - 30 abr) — 🚀 DEPLOYMENT (AFTER TESTING)
+```
+[Deploy a GitHub + Cloudflare] (only if testing ✅)
 ├── [ ] User: Push código a GitHub main branch
 ├── [ ] Cloudflare: Auto-deploy desde GitHub
 ├── [ ] User: Verificar en https://khamlungpa.com
 ├── [ ] User: Confirmar HTTPS funciona
-└── [ ] Both: Test todas las páginas son accesibles
+└── [ ] Both: Acceder a todas las páginas
 
-[Google Search Console Setup] (30m)
+[Google Search Console Setup]
 ├── [ ] User: Registrar propiedad khamlungpa.com
 ├── [ ] User: Verificar por DNS
 ├── [ ] User: Enviar sitemap.xml
 └── [ ] Both: Monitorear "Coverage" en 7 días
 
-[Google Business Profile Setup] (1-2h)
+[Google Business Profile Setup]
 ├── [ ] User: Crear perfil GBP
-├── [ ] User: Agregar fotos + horarios + categoría
-├── [ ] User: Verificar (SMS o postal)
+├── [ ] User: Agregar fotos + horarios
+├── [ ] User: Verificar identidad
 └── [ ] Both: Monitorear views
 
-[Validación Post-Deploy] (1h)
-├── [ ] Verificar curl https://khamlungpa.com/robots.txt
-├── [ ] Verificar curl https://khamlungpa.com/sitemap.xml
-├── [ ] Verificar JSON-LD en browser DevTools
-├── [ ] Test WhatsApp link en móvil real
-└── [ ] Test all pages Lighthouse >85
+[Post-Deploy Smoke Test]
+├── [ ] Verificar robots.txt accessible
+├── [ ] Verificar sitemap.xml accessible
+├── [ ] JSON-LD en DevTools (one final check)
+├── [ ] WhatsApp FAB works on mobile
+└── [ ] Google Search Console shows site
 ```
 
 ---
