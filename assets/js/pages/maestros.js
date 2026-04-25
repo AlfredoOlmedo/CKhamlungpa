@@ -47,7 +47,7 @@ function closeWA(){
 
 function sendWhatsApp(msg){
   const encoded = encodeURIComponent(msg);
-  window.open(`https://wa.me/5233318374?text=${encoded}`, '_blank');
+  window.open(`https://wa.me/523331837484?text=${encoded}`, '_blank');
   closeWA();
 }
 

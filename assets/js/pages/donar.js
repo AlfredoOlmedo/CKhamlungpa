@@ -1,6 +1,6 @@
 function openWA(){
   const msg = encodeURIComponent("Hola, quisiera hacer una donación al Centro Khamlungpa. ¿Cuáles son las opciones disponibles?");
-  window.open(`https://wa.me/5233318374?text=${msg}`, '_blank');
+  window.open(`https://wa.me/523331837484?text=${msg}`, '_blank');
 }
 
 function donateMethod(method){
@@ -10,7 +10,7 @@ function donateMethod(method){
     benefactor: "Me gustaría ser benefactor del centro. ¿Cuál es el proceso para compromisos sostenidos?"
   };
   const msg = encodeURIComponent(messages[method] || messages.unica);
-  window.open(`https://wa.me/5233318374?text=${msg}`, '_blank');
+  window.open(`https://wa.me/523331837484?text=${msg}`, '_blank');
 }
 
 

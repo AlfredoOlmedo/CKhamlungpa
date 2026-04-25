@@ -1,6 +1,6 @@
 function openWA(){
   const msg = encodeURIComponent("Hola, tengo una pregunta sobre Centro Khamlungpa.");
-  window.open(`https://wa.me/5233318374?text=${msg}`, '_blank');
+  window.open(`https://wa.me/523331837484?text=${msg}`, '_blank');
 }
 
 

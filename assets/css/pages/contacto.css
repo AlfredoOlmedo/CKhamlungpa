@@ -133,6 +133,7 @@
   .news-success.visible{display:block;}
 
   footer{background:var(--ink);color:var(--cream);padding:56px 40px;margin-top:80px;}
+  #newsletter + footer{margin-top:0;}
   .foot-inner{max-width:1320px;margin:0 auto;}
   .foot-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:40px;margin-bottom:40px;}
   .foot-col h4{font-family:var(--serif);font-size:16px;margin-bottom:18px;}
