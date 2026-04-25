@@ -1,0 +1,549 @@
+CENTRO KHAMLUNGPA
+Plan Estratégico Digital 2025–2026
+Auditoría · Benchmarking · Hoja de Ruta
+Guadalajara, México  |  Tradición FPMT  |  Budismo Tibetano Mahayana
+Versión 1.0  —  Abril 2026
+Índice
+1.  Resumen Ejecutivo	3
+2.  Diagnóstico: Estado Actual del Sitio	4
+3.  Errores Técnicos Críticos	5
+4.  Benchmarking Competitivo	7
+5.  Patrones de Éxito del Nicho	9
+6.  Nueva Arquitectura de Información	10
+7.  Plan SEO Local	12
+8.  Estrategia de Contenidos	13
+9.  Estrategia de Comunidad y Conversión	14
+10.  Hoja de Ruta: Fases y Prioridades	15
+11.  Stack Tecnológico Recomendado	17
+12.  KPIs y Métricas de Seguimiento	18
+1. Resumen Ejecutivo
+Centro Khamlungpa es el único centro FPMT activo en Guadalajara, con más de 20 años de trayectoria, maestros certificados y programas de estudio budista de profundidad excepcional. Sin embargo, su presencia digital no está a la altura de esa autoridad institucional.
+Este documento consolida tres análisis realizados sobre el sitio web khamlungpa.com:
+Auditoría técnica del código fuente (14 páginas HTML analizadas)
+Benchmarking contra los sitios más exitosos del nicho a nivel global y nacional
+Análisis estratégico de UX, conversión, SEO y comunidad
+La conclusión central es la siguiente:
+Diagnóstico: El sitio tiene base, autoridad y contenido de calidad. Pero hoy funciona como un folleto estático en lugar de una puerta de entrada activa para nuevos visitantes.
+Scorecard del estado actual
+Área
+Estado
+Prioridad
+Claridad de propuesta de valor
+Débil
+Alta
+Contenido educativo
+Bueno
+Media
+UX para nuevos visitantes
+Débil
+Alta
+Conversión / WhatsApp
+Mejorable
+Alta
+SEO local Guadalajara
+Subexplotado
+Alta
+Calidad técnica del código
+Con errores
+Alta
+Comunidad y redes integradas
+Desconectada
+Media
+Confianza institucional
+Alta
+Mantener
+2. Diagnóstico: Estado Actual del Sitio
+2.1 Lo que funciona bien
+Imágenes en formato WebP — correcto para rendimiento
+Bootstrap 5.3.3 actualizado con hashes de integridad SRI
+Google Analytics GA4 instalado en todas las páginas
+WhatsApp con href wa.me correctamente formateado
+Mapa de Google Maps embebido en el index
+Política Ética completa (7 principios + formularios FPMT)
+Contenido educativo de profundidad excepcional en páginas de cursos
+Google Fonts cargados de forma eficiente
+2.2 Problemas identificados
+El análisis del código fuente de las 14 páginas HTML reveló los siguientes problemas agrupados por categoría:
+Problemas de identidad y audiencia
+No hay una propuesta de valor clara en el hero de la homepage
+No existe una página o sección &apos;Soy nuevo / Empieza aquí&apos;
+El menú usa &apos;C. Khamlungpa&apos; como label, confuso para visitantes nuevos
+No hay testimonios de practicantes ni fotos de la comunidad en acción
+Problemas de conversión
+No hay botón de donación en ninguna de las 14 páginas del sitio
+WhatsApp está solo en el footer, no como CTA por actividad
+El modal del Ebook tiene el título vacío — el usuario no sabe qué va a recibir
+Varios cursos tienen todos los campos en &apos;Por Definir&apos; (fecha, hora, facilitador)
+La tabla de festividades muestra fechas de 2025 — no actualizada
+Problemas de arquitectura
+El nav, footer y 3 modales están copiados en los 14 archivos — cualquier cambio requiere editar 14 archivos
+El menú del index.html tiene items que no aparecen en el resto de páginas (inconsistencia)
+No hay breadcrumbs ni indicador visual de página activa
+El único ítem &apos;Calendario&apos; redirige a FPMT externa, sin calendario propio
+3. Errores Técnicos Críticos
+Estos son errores concretos encontrados en el código fuente que deben corregirse con prioridad máxima, independientemente de cualquier rediseño.
+#
+Error
+Impacto
+Fix
+1
+lang=&quot;en&quot; en todo el sitio que está en español
+SEO + Accesibilidad
+Cambiar a lang=&quot;es-MX&quot; en los 14 archivos
+2
+Mismo &lt;title&gt; en las 14 páginas: &apos;Centro Khamlungpa&apos;
+SEO crítico
+Título único por página con keyword local
+3
+Meta description idéntica en todas las páginas
+SEO crítico
+Description única de 150–160 chars por página
+4
+&apos;Tienda&apos; apunta a 404.html en todas las páginas
+UX / confianza
+Quitar del menú hasta tener tienda real
+5
+&apos;English&apos; apunta a 404.html en todas las páginas
+UX / confianza
+Quitar o marcar como &apos;Próximamente&apos;
+6
+&apos;Clases de Hata Yoga&apos; apunta a 404.html — el archivo Evento-Hatha-Yoga.html existe pero nunca se enlaza
+Tráfico perdido
+Cambiar href a Evento-Hatha-Yoga.html
+7
+Email con typo en Etica.html: &apos;info@khmalungpa.com&apos;
+Contacto roto
+Corregir a info@khamlungpa.com
+8
+Párrafos duplicados en DalaiLama.html — mismo texto aparece dos veces
+SEO / contenido
+Eliminar el bloque duplicado
+9
+Atributo async en imágenes (solo válido en scripts)
+HTML inválido
+Reemplazar por loading=&quot;lazy&quot;
+10
+Sin etiquetas H1 semánticas — se usan &lt;strong&gt; con CSS
+SEO / accesibilidad
+Convertir a jerarquía H1 &gt; H2 &gt; H3 real
+11
+Copyright fijo: &apos;Centro Khamlungpa @ 2020&apos;
+Imagen de abandono
+Hacer dinámico con JS: new Date().getFullYear()
+12
+&apos;Explorando el Budismo&apos; solo aparece en el menú del index, no en las demás páginas
+Navegación inconsistente
+Unificar el nav en todos los archivos
+Estimación de tiempo: Los 12 errores anteriores pueden corregirse en el código existente en aproximadamente 4–6 horas de trabajo técnico. No requieren rediseño.
+4. Benchmarking Competitivo
+Se analizaron los sitios más exitosos del nicho en dos categorías: referentes globales y competidores en México.
+4.1 Referentes Globales
+Lion&apos;s Roar — lionsroar.com
+El sitio de budismo más visitado en idioma español/inglés. Modelo híbrido: contenido gratuito + membresía premium + cursos + donaciones. Tiene sección dedicada en español. Sus claves de éxito son:
+Membresía premium con acceso a workshops, meditaciones en vivo y e-books
+Blog de contenido SEO con cientos de artículos indexados
+Meditaciones guiadas en vivo semanales (Zoom) como beneficio de membresía
+Directorio global de centros budistas
+Maestro residente mensual con charlas y Q&amp;A exclusivos
+FPMT — fpmt.org
+La organización madre de Khamlungpa. 162 centros en 38 países. Sus claves digitales son:
+Página específica &apos;New to Buddhism?&apos; con cursos introductorios sin doctrina pesada
+Online Learning Center con más de 50 módulos en español, inglés y francés
+Tienda Dharma integrada y donaciones visibles en todo el sitio
+Programa &apos;Discovering Buddhism at Home&apos; completamente online
+Vipassana — dhamma.org
+Modelo de claridad radical. El sitio comunica sin ambigüedad: cómo inscribirse, qué esperar, cuánto cuesta (nada), cómo se sostiene (donaciones de graduados) y dónde hay centros. La transparencia total genera confianza máxima.
+4.2 Competidores en México
+Sitio
+Fortaleza principal
+Tecnología
+Amenaza para Khamlungpa
+Kadampa México
+kadampamexico.org
+Inscripción online con pago, membresías, red nacional de sitios por ciudad
+Odoo (ERP completo)
+Alta
+Casa Tibet México
+casatibet.org.mx
+148K seguidores FB, blog activo, red latinoamericana, aval del Dalai Lama
+WordPress + blog
+Media
+Kadampa Satélite
+meditarensatelite.org
+2 e-books gratuitos como lead magnet, tienda Tharpa, café físico
+WordPress
+Media
+Budismo CDMX
+budismo.org.mx
+Calendario dinámico con precio y modalidad, suscripción a Google Calendar
+WordPress + Events
+Baja
+Oportunidad clave: Khamlungpa es el único centro FPMT activo en Guadalajara. Kadampa tiene presencia en la ciudad, pero nadie trabaja el SEO local de &apos;budismo tibetano Guadalajara&apos; ni &apos;meditación Guadalajara&apos; con contenido de calidad. Esta ventana de posicionamiento existe ahora.
+5. Patrones de Éxito del Nicho
+Estos son los elementos que aparecen en todos los sitios exitosos del nicho sin excepción:
+#
+Patrón
+Descripción
+Estado Khamlungpa
+1
+Calendario en primer plano
+Horarios de clase visibles en homepage sin clicks adicionales
+Parcial — tabla estática sin fechas dinámicas
+2
+Pago/donación integrado
+Mecanismo de pago o donación en el sitio mismo, no solo WhatsApp
+Ausente — no hay botón de donación
+3
+Captación de email activa
+Newsletter, e-book gratuito o membresía para capturar contactos
+Modal de ebook sin título ni descripción visibles
+4
+Ruta de aprendizaje visible
+Principiante → Intermedio → Avanzado claramente marcado
+Existe el contenido pero disperso y sin jerarquía visual
+5
+Maestros con perfil humano
+Bio personal, estudios, qué enseñan y por qué — no solo nombre
+Páginas de maestros muy cortas
+6
+Contenido SEO continuo
+Blog activo con artículos para capturar búsquedas orgánicas
+No existe blog
+7
+Clases online en paralelo
+Modalidad híbrida o transmisión como oferta permanente
+Se menciona pero no está bien comunicado
+8
+Lead magnet gratuito
+E-book, meditación guiada MP3, o primera clase gratis con valor claro
+Modal de ebook sin título visible
+6. Nueva Arquitectura de Información
+Estructura de páginas recomendada para el rediseño del sitio, basada en las mejores prácticas del benchmarking y las necesidades específicas de Khamlungpa.
+6.1 Mapa del Sitio
+Página / Sección
+Contenido principal
+Objetivo
+/ (Home)
+Hero con propuesta de valor + actividades de la semana + programas + mapa + CTA
+Convertir visitante nuevo en contacto
+/empieza-aqui
+¿Necesito experiencia? ¿Tengo que ser budista? ¿Qué pasa en una sesión? FAQ de principiante
+Eliminar miedo y fricción del primer contacto
+/meditacion
+Tipos de meditación, horarios, modalidad, facilitadores, WhatsApp
+SEO local: &apos;meditación Guadalajara&apos;
+/budismo-tibetano
+Qué es el budismo tibetano, linaje Gelugpa, FPMT, tradición Mahayana
+SEO: &apos;budismo tibetano Guadalajara&apos;
+/programas
+Listado de todos los programas con nivel, modalidad y CTA por cada uno
+Navegación y conversión a inscripción
+/programa/budismo-pocas-palabras
+Ficha completa: nivel, fechas, horarios, módulos, facilitador, costo
+Inscripción a curso específico
+/programa/descubre-el-budismo
+Ídem — 14 módulos detallados ya existentes en el código
+Inscripción a curso específico
+/programa/explorando-el-budismo
+Ídem — 10 módulos ya existentes en el código
+Inscripción a curso específico
+/programa/programa-basico
+Ídem — 9 módulos ya existentes en el código
+Inscripción a curso específico
+/programa/70-temas
+Ficha del programa de 70 temas con horarios y facilitador
+Inscripción a curso específico
+/calendario
+Calendario mensual dinámico con todos los eventos, filtro por tipo
+Visibilidad de actividades y captación
+/maestros
+Perfiles completos: foto, bio, linaje, estudios, qué enseñan
+Confianza y autoridad
+/comunidad
+Fotos del centro, testimonios, galería, redes sociales integradas
+Social proof y retención
+/donar
+Por qué donar, cómo se usa el dinero, opciones de donativo
+Generación de ingresos
+/etica
+Política ética FPMT ya existente — mantener con mejoras de UX
+Confianza institucional
+/contacto
+WhatsApp, email, dirección, mapa, horarios de atención
+Conversión final
+6.2 Propuesta de Valor y Narrativa
+El hero de la homepage debe responder en menos de 5 segundos las preguntas del visitante nuevo. Narrativa propuesta:
+&quot;Meditación y budismo tibetano en Guadalajara
+Un espacio para calmar la mente, estudiar el Dharma y cultivar compasión en la vida diaria. Actividades presenciales y en línea. No necesitas experiencia previa.&quot;
+6.3 Estructura del Menú Principal
+Menú simplificado orientado al visitante nuevo, con botón de acción principal:
+Inicio
+Meditación
+Budismo / Programas
+Maestros
+Calendario
+Donar / Apoyar
+Contacto
++ Botón: WhatsApp (fijo)
+7. Plan SEO Local
+Khamlungpa tiene una ventana de oportunidad única en SEO local. Los competidores principales (Casa Tibet, Kadampa nacional) están concentrados en CDMX. Nadie está trabajando sistemáticamente las búsquedas de Guadalajara en este nicho.
+7.1 Palabras Clave Objetivo
+Keyword
+Volumen estimado
+Competencia
+Página objetivo
+meditación en Guadalajara
+Alto
+Media
+/meditacion
+clases de meditación Guadalajara
+Medio
+Baja
+/meditacion
+budismo tibetano Guadalajara
+Medio
+Baja
+/budismo-tibetano
+centro budista Guadalajara
+Medio
+Baja
+/
+meditación para principiantes Guadalajara
+Medio
+Baja
+/empieza-aqui
+FPMT México Guadalajara
+Bajo
+Muy baja
+/
+retiro espiritual Guadalajara
+Medio
+Media
+/calendario
+budismo para principiantes
+Alto
+Alta
+/empieza-aqui
+qué es el budismo tibetano
+Alto
+Alta
+/budismo-tibetano
+cómo meditar por primera vez
+Alto
+Alta
+/empieza-aqui
+7.2 Fixes de SEO Técnico Inmediatos
+Corregir lang=&apos;en&apos; a lang=&apos;es-MX&apos; en todos los archivos
+Título único por página con formato: [Tema] | [Ciudad] | Centro Khamlungpa
+Meta description única de 150–160 caracteres por página
+Agregar Open Graph completo: og:image, og:url, og:type en todas las páginas
+Implementar JSON-LD LocalBusiness en el index: dirección, teléfono, horarios
+Implementar JSON-LD Event en las páginas de cursos y sesiones
+Registrar/optimizar perfil en Google Business Profile con fotos, horarios y posts
+Crear sitemap.xml y enviarlo a Google Search Console
+Configurar robots.txt correctamente
+8. Estrategia de Contenidos
+El sitio actual no tiene blog ni ningún mecanismo de contenido continuo. Esto significa que Google no tiene razón para rastrear el sitio frecuentemente, y que no se están capturando búsquedas informacionales de alto volumen.
+8.1 Blog / Recursos
+Crear una sección /recursos o /blog con artículos que respondan búsquedas reales del público objetivo. Frecuencia mínima recomendada: 2 artículos por mes.
+Temas prioritarios para los primeros 6 meses:
+Cómo meditar por primera vez — guía paso a paso
+Qué es el budismo tibetano y en qué se diferencia de otras tradiciones
+Los 4 tipos de meditación que practicamos en Khamlungpa
+Budismo para principiantes: por dónde empezar si tienes curiosidad
+Qué es el Lam Rim y por qué es el corazón de la práctica
+Diferencias entre meditación de atención y meditación analítica
+Cómo se sostiene un centro budista: la tradición del donativo
+Retiros espirituales en Guadalajara: qué esperar y cómo prepararse
+8.2 Recursos Descargables (Lead Magnets)
+Mejorar el ebook existente y crear recursos adicionales para capturar emails:
+Guía &apos;Primeros pasos en la meditación&apos; — con técnicas básicas y práctica de 7 días
+Glosario de términos budistas para principiantes (PDF)
+Audio de meditación guiada introductoria (mp3 de 15 minutos)
+Calendario de festividades budistas 2026 descargable
+8.3 Reutilización de Contenido Existente
+El sitio ya tiene contenido educativo excepcional que solo necesita mejor presentación:
+Los 14 módulos de &apos;Descubre el Budismo&apos; pueden convertirse en 14 artículos de blog
+Los 10 módulos de &apos;Explorando el Budismo&apos; ídem
+Los 9 módulos del &apos;Programa Básico&apos; ídem
+Esto equivale a 33 artículos listos — solo necesitan formato web adecuado con H1/H2, meta description y CTA.
+9. Estrategia de Comunidad y Conversión
+9.1 WhatsApp como Canal Principal
+WhatsApp ya es el canal de contacto del centro pero no está tratado como herramienta de conversión sistemática:
+Agregar botón flotante de WhatsApp visible en todas las páginas
+Cada página de actividad debe tener su propio botón con mensaje prellenado
+Ejemplos de mensajes prellenados:
+Meditación: &apos;Hola, quiero asistir a la meditación guiada. Es mi primera vez, ¿qué necesito saber?&apos;
+Cursos: &apos;Hola, me interesa el curso Descubre el Budismo. ¿Cuándo comienza la siguiente edición?&apos;
+General: &apos;Hola, me gustaría conocer el centro. ¿Cuándo puedo visitar?&apos;
+9.2 Donaciones
+El centro subsiste por donativos pero no los solicita en ninguna de sus 14 páginas. Modelo recomendado inspirado en Vipassana y Spirit Rock:
+Página /donar con historia clara: &apos;Tu generosidad sostiene el Dharma en Guadalajara&apos;
+Opciones: donativo único (transferencia/tarjeta) y donativo mensual recurrente
+Integrar botón de donación en el footer de todas las páginas
+Sección en homepage: &apos;El centro se sostiene por la generosidad de la comunidad&apos;
+9.3 Newsletter
+Convertir el modal de ebook en un sistema de captación real:
+Ponerle título visible al modal: &apos;Descarga nuestra Guía de Meditación para Principiantes&apos;
+Conectar el Google Form a un sistema de envío de email (Mailchimp gratuito o similar)
+Newsletter mensual con: actividades del mes, reflexión del Dharma, recursos gratuitos
+9.4 Integración de Redes Sociales
+Embeber feed de Instagram en la homepage (muestra comunidad activa)
+Agregar botón de compartir en artículos del blog
+Crear grupo de WhatsApp para comunidad (complemento a las sesiones presenciales)
+Canal de YouTube con meditaciones guiadas y charlas de maestros
+10. Hoja de Ruta: Fases y Prioridades
+El plan se organiza en 4 fases con criterio de impacto vs. esfuerzo. Las primeras dos fases no requieren rediseño visual.
+Fase 1 — Corrección Inmediata (1–2 semanas) · Sin rediseño
+Objetivo: Eliminar errores que dañan la confianza y el SEO hoy mismo.
+Tarea
+Esfuerzo
+Impacto
+Cambiar lang=&apos;en&apos; a lang=&apos;es-MX&apos; en 14 archivos
+30 min
+Alto (SEO)
+Poner título único en cada página
+2 horas
+Alto (SEO)
+Poner meta description única en cada página
+2 horas
+Alto (SEO)
+Corregir 4 links a 404.html (Tienda, English, Yoga, English)
+20 min
+Alto (UX)
+Corregir typo en email de Etica.html
+5 min
+Medio (contacto)
+Eliminar párrafos duplicados en DalaiLama.html
+15 min
+Medio (SEO)
+Actualizar copyright a 2026 con JS dinámico
+10 min
+Bajo (imagen)
+Actualizar festividades budistas a 2026
+30 min
+Medio (confianza)
+Reemplazar atributo async por loading=&apos;lazy&apos; en imágenes
+1 hora
+Medio (HTML válido)
+Poner título visible en el modal del Ebook
+15 min
+Medio (conversión)
+Fase 2 — Mejoras de Conversión (2–4 semanas) · Sin rediseño
+Objetivo: Aumentar el número de visitantes que contactan por WhatsApp o preguntan por un curso.
+Agregar botón flotante de WhatsApp con mensaje prellenado en todas las páginas
+Agregar CTA de WhatsApp al final de cada página de programa/actividad
+Crear página /empieza-aqui con FAQ para principiantes
+Agregar sección de donación en homepage y crear página /donar
+Unificar el menú de navegación en todos los archivos (o migrar a include JS)
+Implementar Open Graph completo con og:image en todas las páginas
+Configurar Google Business Profile y optimizarlo
+Crear y enviar sitemap.xml a Search Console
+Fase 3 — Rediseño UX/UI (1–2 meses)
+Objetivo: Modernizar la experiencia del sitio y hacer al visitante nuevo el protagonista.
+Nuevo hero con propuesta de valor clara y 3 botones de acción
+Tarjetas visuales para actividades de la semana en homepage
+Fichas de programas con estructura: nivel / modalidad / horario / módulos / CTA
+Calendario dinámico conectado a Google Calendar
+Perfiles de maestros expandidos con bio, linaje y fotos
+Sección de comunidad: galería, testimonios, vida del centro
+Migrar nav/footer a componente único (sistema de includes o framework)
+Implementar JSON-LD LocalBusiness y Event
+Diseño mobile-first revisado
+Fase 4 — Contenido y Comunidad Digital (3–6 meses)
+Objetivo: Construir presencia orgánica y comunidad que funcione sin publicidad paga.
+Crear blog /recursos con los primeros 8 artículos SEO
+Convertir los módulos de cursos existentes en artículos de blog
+Publicar 2 artículos por mes mínimo
+Lanzar newsletter mensual con Mailchimp o similar
+Meditaciones guiadas en audio para descarga (lead magnet de valor)
+Canal de YouTube con meditaciones y charlas (integrado al sitio)
+Feed de Instagram integrado en homepage
+Grupo de WhatsApp para comunidad activa
+11. Stack Tecnológico Recomendado
+El sitio actual es HTML/CSS/JS estático con Bootstrap. Dos opciones según recursos disponibles:
+Opción A — Mejora del sitio actual (menor esfuerzo)
+Mantener la base HTML/Bootstrap pero incorporar:
+Componente de nav/footer unificado con includes JS o template literal
+Google Calendar embebido para el calendario de actividades
+WhatsApp Business API para botón flotante y mensajes prellenados
+Mailchimp (gratuito hasta 500 suscriptores) para newsletter
+Google Business Profile para SEO local
+Ventaja: bajo costo, implementación rápida. Ideal para Fase 1 y 2.
+Opción B — Migración a plataforma moderna (mayor impacto)
+Capa
+Tecnología
+Justificación
+Frontend
+Next.js + Tailwind CSS
+SEO server-side rendering, componentes reutilizables, fácil de mantener
+Hosting
+Cloudflare Pages (gratis)
+CDN global, dominio propio, deploy desde Git
+CMS / Blog
+Notion + Notionismo o Sanity
+No técnico, el equipo del centro puede publicar artículos sin código
+Calendario
+Google Calendar API embebida
+El centro ya usa Google Calendar — solo hace falta conectarlo
+Pagos / Donativos
+Stripe o MercadoPago
+Donaciones únicas y recurrentes con checkout seguro
+Email / Newsletter
+Mailchimp (gratis hasta 500)
+Automatización básica y formularios
+Analytics
+GA4 (ya instalado)
+Mantener el ID existente G-ZEZXR7RS6Y
+Recomendación: Iniciar con Opción A para las Fases 1 y 2 (correcciones inmediatas y conversión). Evaluar Opción B para Fase 3 si hay recursos de desarrollo disponibles.
+12. KPIs y Métricas de Seguimiento
+Métricas para medir el impacto de cada fase. Todas medibles con GA4 (ya instalado) y Google Search Console (gratuito).
+KPI
+Herramienta
+Estado actual (est.)
+Meta 6 meses
+Sesiones mensuales
+GA4
+Por medir
++50% vs baseline
+Tasa de rebote homepage
+GA4
+Por medir
+&lt; 60%
+Clics en WhatsApp
+GA4 events
+No configurado
+&gt; 30/mes
+Posición &apos;meditación Guadalajara&apos;
+Search Console
+No en top 10
+Top 5
+Posición &apos;budismo tibetano Guadalajara&apos;
+Search Console
+No en top 10
+Top 3
+Suscriptores newsletter
+Mailchimp
+0 (no hay)
+&gt; 100
+Donativos recibidos online
+MercadoPago/Stripe
+0 (no hay canal)
+Establecer baseline
+Páginas por sesión
+GA4
+Por medir
+&gt; 2.5
+Tiempo en página (blog)
+GA4
+N/A (no hay blog)
+&gt; 2 min promedio
+Impresiones Google Maps
+Google Business
+Por medir
++30%
+Conclusión
+Centro Khamlungpa tiene todos los activos que necesita para ser la referencia digital del budismo tibetano en Guadalajara: autoridad institucional FPMT, 20 años de trayectoria, maestros calificados y contenido educativo de profundidad excepcional.
+Las mejoras propuestas no buscan cambiar la esencia del centro sino hacerla más accesible: que quien llegue por primera vez sepa inmediatamente dónde está, qué puede hacer y cómo dar el primer paso.
+Frase guía del proyecto: Khamlungpa ya informa. El objetivo es que empiece a guiar.
+— Centro Khamlungpa · Plan Estratégico Digital 2025–2026 —

@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Khamlungpa · Documentación del Sistema Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F4ECE0;
+    --paper-2:#EFE6D6;
+    --paper-3:#E8DDC8;
+    --ink:#2A2622;
+    --ink-2:#4A423A;
+    --ink-3:#6B6158;
+    --clay:#8B2E1F;
+    --clay-2:#A94430;
+    --terracotta:#C97B4A;
+    --ochre:#D4A35A;
+    --moss:#5C6B4E;
+    --cream:#FBF7EF;
+    --line:rgba(42,38,34,0.12);
+    --line-2:rgba(42,38,34,0.06);
+    --serif:"Fraunces","Times New Roman",serif;
+    --sans:"Inter",-apple-system,system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:var(--clay);text-decoration:none;border-bottom:1px solid rgba(139,46,31,0.25);transition:border-color .15s;}
+  a:hover{border-color:var(--clay);}
+  code{font-family:var(--mono);font-size:0.88em;background:var(--paper-3);padding:2px 6px;border-radius:4px;color:var(--ink);}
+  pre{font-family:var(--mono);background:var(--ink);color:var(--cream);padding:18px 22px;border-radius:10px;overflow-x:auto;font-size:12.5px;line-height:1.6;margin:14px 0;}
+  pre code{background:none;padding:0;color:inherit;}
+  ::selection{background:var(--clay);color:var(--cream);}
+
+  /* Layout */
+  .wrap{display:grid;grid-template-columns:280px 1fr;max-width:1440px;margin:0 auto;min-height:100vh;}
+  aside{
+    position:sticky;top:0;align-self:start;height:100vh;
+    border-right:1px solid var(--line);padding:36px 28px;overflow-y:auto;
+    background:var(--cream);
+  }
+  aside::-webkit-scrollbar{width:6px;}
+  aside::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px;}
+
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:32px;}
+  .brand-t1{font-family:var(--serif);font-size:20px;line-height:1;}
+  .brand-t2{font-family:var(--mono);font-size:9px;color:var(--ink-3);letter-spacing:0.12em;margin-top:3px;}
+  .doc-label{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;color:var(--clay);text-transform:uppercase;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line);}
+
+  .toc-group{margin-bottom:24px;}
+  .toc-group-title{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--ink-3);text-transform:uppercase;margin-bottom:10px;padding-left:2px;}
+  .toc-link{display:block;padding:6px 10px;border-radius:6px;font-size:13.5px;color:var(--ink-2);border:none;margin:1px 0;transition:background .15s, color .15s;border-left:2px solid transparent;}
+  .toc-link:hover{background:var(--paper-2);color:var(--ink);}
+  .toc-link.active{background:var(--paper-3);color:var(--clay);border-left-color:var(--clay);font-weight:500;}
+
+  main{padding:56px 72px 120px;max-width:920px;}
+
+  /* Cover */
+  .cover{
+    background:var(--ink);color:var(--cream);border-radius:16px;padding:56px;margin-bottom:56px;
+    position:relative;overflow:hidden;
+  }
+  .cover::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 100% 0%, rgba(139,46,31,0.35), transparent 55%);
+    pointer-events:none;
+  }
+  .cover-eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;color:var(--ochre);text-transform:uppercase;}
+  .cover h1{font-family:var(--serif);font-size:56px;line-height:1.02;letter-spacing:-0.025em;margin-top:16px;font-weight:400;}
+  .cover h1 em{font-style:italic;color:var(--ochre);}
+  .cover p{font-size:16px;color:rgba(251,247,239,0.75);margin-top:22px;max-width:600px;line-height:1.6;}
+  .cover-meta{display:flex;gap:32px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.12);flex-wrap:wrap;position:relative;}
+  .cover-meta > div{min-width:120px;}
+  .cover-meta .k{font-family:var(--mono);font-size:10px;color:var(--ochre);letter-spacing:0.12em;}
+  .cover-meta .v{font-family:var(--serif);font-size:18px;margin-top:4px;}
+
+  /* Section scaffold */
+  section{margin-bottom:72px;scroll-margin-top:40px;}
+  h2{font-family:var(--serif);font-size:38px;font-weight:400;letter-spacing:-0.022em;line-height:1.1;color:var(--ink);margin-top:8px;margin-bottom:16px;}
+  h3{font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-0.01em;margin-top:36px;margin-bottom:12px;color:var(--ink);}
+  h4{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;color:var(--clay);text-transform:uppercase;margin-top:28px;margin-bottom:10px;font-weight:500;}
+  p{margin:10px 0;color:var(--ink-2);}
+  p.lead{font-size:17px;color:var(--ink-2);line-height:1.6;max-width:680px;}
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;color:var(--clay);text-transform:uppercase;}
+  ul, ol{padding-left:22px;margin:10px 0;color:var(--ink-2);}
+  li{margin-bottom:6px;}
+  strong{color:var(--ink);font-weight:600;}
+
+  hr{border:none;height:1px;background:var(--line);margin:40px 0;}
+
+  /* Callout */
+  .callout{
+    background:var(--cream);border:1px solid var(--line);border-left:3px solid var(--clay);
+    border-radius:8px;padding:18px 22px;margin:20px 0;
+  }
+  .callout.warn{border-left-color:var(--terracotta);}
+  .callout.ok{border-left-color:var(--moss);}
+  .callout .t{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay);margin-bottom:6px;}
+  .callout.warn .t{color:var(--terracotta);}
+  .callout.ok .t{color:var(--moss);}
+  .callout p{margin:0;font-size:14px;color:var(--ink-2);}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--ink-3);text-transform:uppercase;font-weight:500;border-bottom:1px solid var(--ink-3);}
+  td code{font-size:0.85em;}
+
+  /* Token swatch */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));gap:12px;margin:16px 0;}
+  .swatch{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--cream);}
+  .swatch .box{height:66px;}
+  .swatch .meta{padding:10px 12px;}
+  .swatch .name{font-family:var(--mono);font-size:11px;letter-spacing:0.05em;color:var(--ink);}
+  .swatch .val{font-family:var(--mono);font-size:10px;color:var(--ink-3);margin-top:3px;}
+
+  /* Type samples */
+  .type-row{display:grid;grid-template-columns:140px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line);align-items:baseline;}
+  .type-row:last-child{border-bottom:1px solid var(--line);}
+  .type-spec{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:0.04em;line-height:1.55;}
+  .type-spec strong{color:var(--ink);font-weight:600;display:block;font-size:11px;letter-spacing:0.14em;}
+
+  /* File tree */
+  .tree{font-family:var(--mono);font-size:12.5px;background:var(--cream);padding:20px 24px;border-radius:10px;border:1px solid var(--line);line-height:1.85;}
+  .tree .folder{color:var(--clay);font-weight:500;}
+  .tree .comment{color:var(--ink-3);font-style:italic;}
+
+  /* Page cards */
+  .page-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0;}
+  .page-card{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:20px 22px;}
+  .page-card .path{font-family:var(--mono);font-size:11px;color:var(--clay);letter-spacing:0.04em;}
+  .page-card .name{font-family:var(--serif);font-size:19px;margin-top:4px;letter-spacing:-0.01em;}
+  .page-card .desc{font-size:13px;color:var(--ink-2);margin-top:8px;line-height:1.55;}
+  .page-card .tags{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap;}
+  .page-card .tag{font-family:var(--mono);font-size:9px;padding:3px 8px;background:var(--paper-3);border-radius:20px;letter-spacing:0.06em;color:var(--ink-3);text-transform:uppercase;}
+  .page-card .tag.curioso{background:rgba(201,123,74,0.15);color:var(--terracotta);}
+  .page-card .tag.practicante{background:rgba(139,46,31,0.12);color:var(--clay);}
+  .page-card .tag.comunidad{background:rgba(92,107,78,0.15);color:var(--moss);}
+
+  /* KPI grid */
+  .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;margin:16px 0;}
+  .kpi{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:20px;}
+  .kpi .k{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--ink-3);text-transform:uppercase;}
+  .kpi .v{font-family:var(--serif);font-size:32px;color:var(--clay);margin-top:8px;letter-spacing:-0.02em;line-height:1;}
+  .kpi .s{font-size:11.5px;color:var(--ink-3);margin-top:6px;}
+
+  /* Journey matrix */
+  .journey{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0;}
+  .j-col{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:22px;border-top:3px solid var(--clay);}
+  .j-col.curioso{border-top-color:var(--terracotta);}
+  .j-col.comunidad{border-top-color:var(--moss);}
+  .j-col .tag{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--clay);text-transform:uppercase;}
+  .j-col.curioso .tag{color:var(--terracotta);}
+  .j-col.comunidad .tag{color:var(--moss);}
+  .j-col .title{font-family:var(--serif);font-size:22px;margin-top:6px;letter-spacing:-0.01em;}
+  .j-col .q{font-size:13px;color:var(--ink-2);margin-top:10px;font-style:italic;line-height:1.5;}
+  .j-col h5{font-family:var(--mono);font-size:9.5px;letter-spacing:0.12em;color:var(--ink-3);text-transform:uppercase;margin-top:18px;margin-bottom:6px;font-weight:500;}
+  .j-col ul{padding-left:16px;font-size:12.5px;color:var(--ink-2);}
+  .j-col li{margin-bottom:4px;}
+
+  /* Phase roadmap */
+  .phases{display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;margin:18px 0;}
+  .phase{background:var(--cream);border:1px solid var(--line);border-top:3px solid var(--clay);border-radius:10px;padding:18px;}
+  .phase.p2{border-top-color:var(--terracotta);}
+  .phase.p3{border-top-color:var(--moss);}
+  .phase.p4{border-top-color:var(--ink);}
+  .phase .n{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--clay);}
+  .phase.p2 .n{color:var(--terracotta);}
+  .phase.p3 .n{color:var(--moss);}
+  .phase.p4 .n{color:var(--ink);}
+  .phase .name{font-family:var(--serif);font-size:16px;margin-top:4px;line-height:1.2;}
+  .phase .dur{font-family:var(--mono);font-size:9px;letter-spacing:0.08em;color:var(--ink-3);margin-top:4px;}
+  .phase ul{padding-left:14px;font-size:11.5px;color:var(--ink-2);margin-top:10px;}
+  .phase li{margin-bottom:3px;}
+
+  /* Misc */
+  .kbd{font-family:var(--mono);font-size:10.5px;padding:2px 7px;background:var(--cream);border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 0 var(--line);}
+  .pill{display:inline-block;font-family:var(--mono);font-size:9.5px;padding:2px 8px;border-radius:20px;background:var(--paper-3);color:var(--ink-3);letter-spacing:0.08em;text-transform:uppercase;margin-right:4px;}
+  .pill.alto{background:var(--clay);color:var(--cream);}
+  .pill.medio{background:var(--ochre);color:var(--ink);}
+
+  .link-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;}
+  .link-list a{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--cream);border:1px solid var(--line);border-radius:8px;color:var(--ink);border-bottom-color:var(--line);font-size:14px;}
+  .link-list a:hover{border-color:var(--clay);background:var(--paper-2);}
+  .link-list a .arr{margin-left:auto;color:var(--clay);}
+
+  @media (max-width: 1000px){
+    .wrap{grid-template-columns:1fr;}
+    aside{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}
+    main{padding:40px 32px 80px;}
+    .cover{padding:36px;}
+    .cover h1{font-size:38px;}
+    h2{font-size:30px;}
+    .page-grid,.journey,.phases{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<!-- ═══════════════════════ SIDEBAR ═══════════════════════ -->
+<aside>
+  <div class="brand">
+    <svg width="26" height="26" viewBox="0 0 20 20" fill="none">
+      <rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+      <rect x="7" y="7" width="6" height="6" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+    </svg>
+    <div>
+      <div class="brand-t1">Khamlungpa</div>
+      <div class="brand-t2">DOCS · V1.0</div>
+    </div>
+  </div>
+
+  <div class="doc-label">Documentación del sistema</div>
+
+  <div class="toc-group">
+    <div class="toc-group-title">01 · Visión</div>
+    <a class="toc-link" href="#overview">Resumen ejecutivo</a>
+    <a class="toc-link" href="#principles">Principios rectores</a>
+    <a class="toc-link" href="#personas">Los tres perfiles</a>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-title">02 · Diseño</div>
+    <a class="toc-link" href="#brand">Marca y voz</a>
+    <a class="toc-link" href="#colors">Color</a>
+    <a class="toc-link" href="#type">Tipografía</a>
+    <a class="toc-link" href="#spacing">Espacio y superficies</a>
+    <a class="toc-link" href="#components">Componentes</a>
+    <a class="toc-link" href="#imagery">Imágenes y placeholders</a>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-title">03 · Producto</div>
+    <a class="toc-link" href="#sitemap">Arquitectura</a>
+    <a class="toc-link" href="#pages">Inventario de páginas</a>
+    <a class="toc-link" href="#ecosystem">Ecosistema digital</a>
+    <a class="toc-link" href="#whatsapp">Protocolo WhatsApp</a>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-title">04 · Implementación</div>
+    <a class="toc-link" href="#files">Archivos del proyecto</a>
+    <a class="toc-link" href="#stack">Stack técnico</a>
+    <a class="toc-link" href="#seo">SEO y metadatos</a>
+    <a class="toc-link" href="#a11y">Accesibilidad</a>
+    <a class="toc-link" href="#roadmap">Roadmap 6 meses</a>
+    <a class="toc-link" href="#kpis">KPIs y seguimiento</a>
+  </div>
+
+  <div class="toc-group">
+    <div class="toc-group-title">05 · Handoff</div>
+    <a class="toc-link" href="#content">Contenido requerido</a>
+    <a class="toc-link" href="#checklist">Checklist de lanzamiento</a>
+    <a class="toc-link" href="#glossary">Glosario</a>
+  </div>
+</aside>
+
+<!-- ═══════════════════════ MAIN ═══════════════════════ -->
+<main>
+
+<!-- ───────── COVER ───────── -->
+<div class="cover">
+  <div class="cover-eyebrow">Documentación del sistema · Abril 2026</div>
+  <h1>Khamlungpa.<br><em>Sistema digital.</em></h1>
+  <p>Todo lo que un equipo (o un colaborador nuevo) necesita para entender, mantener y hacer crecer el ecosistema digital del Centro Khamlungpa — desde los tokens de diseño hasta el plan estratégico a seis meses.</p>
+  <div class="cover-meta">
+    <div><div class="k">VERSIÓN</div><div class="v">1.0</div></div>
+    <div><div class="k">ESTADO</div><div class="v">Diseño completo</div></div>
+    <div><div class="k">CENTRO</div><div class="v">Khamlungpa · GDL</div></div>
+    <div><div class="k">LINAJE</div><div class="v">FPMT · Gelugpa</div></div>
+  </div>
+</div>
+
+<!-- ───────── 01 · VISIÓN ───────── -->
+<section id="overview">
+  <div class="eyebrow">01 · Visión</div>
+  <h2>Resumen ejecutivo</h2>
+  <p class="lead">Khamlungpa es el único centro FPMT activo en Guadalajara, fundado en 2003 y afiliado al linaje desde 2005. Este sistema digital transforma el sitio actual — un folleto estático — en una puerta de entrada viva al Dharma.</p>
+
+  <h4>Problema</h4>
+  <p>El sitio actual funciona como tarjeta de presentación. No guía al visitante, no responde a las preguntas del primer contacto, no conecta con los canales donde la comunidad ya está (WhatsApp, Instagram). La conversión — de curioso a practicante — depende casi exclusivamente de referencia personal.</p>
+
+  <h4>Oportunidad</h4>
+  <p>Tres perfiles llegan al sitio con necesidades muy distintas. Si el sistema atiende a cada uno con claridad desde la primera pantalla, el centro puede crecer sin diluir el rigor del linaje.</p>
+
+  <div class="kpi-grid">
+    <div class="kpi"><div class="k">Sesiones orgánicas</div><div class="v">+120%</div><div class="s">Mes 6 vs mes 0</div></div>
+    <div class="kpi"><div class="k">Conversaciones WA</div><div class="v">+300%</div><div class="s">con presets por página</div></div>
+    <div class="kpi"><div class="k">Respuesta WA</div><div class="v">&lt; 2h</div><div class="s">en horario hábil</div></div>
+    <div class="kpi"><div class="k">Donantes recurrentes</div><div class="v">≥ 40</div><div class="s">al mes 6</div></div>
+  </div>
+</section>
+
+<section id="principles">
+  <h2>Principios rectores</h2>
+  <p>Cada decisión de diseño responde a uno de estos principios. Cuando algo no encaje con ninguno, hay que replantearlo — no agregar una regla más.</p>
+
+  <h4>01 · Cálido antes que pulido</h4>
+  <p>Preferimos un sitio que se sienta humano a uno técnicamente impecable. Fotos reales sobre stock, voz conversacional sobre corporativa, espacio sobre densidad.</p>
+
+  <h4>02 · Linaje visible, no escondido</h4>
+  <p>El nombre (Khamlungpa), FPMT, Gelugpa, Lama Tsongkhapa — no son notas al pie. Son parte de la identidad desde la primera pantalla.</p>
+
+  <h4>03 · Cada página tiene un siguiente paso claro</h4>
+  <p>Ninguna pantalla termina en "gracias por leer". Siempre hay una acción: meditación del lunes, WhatsApp prellenado, inscripción, donar.</p>
+
+  <h4>04 · El sitio no cierra — abre a un canal vivo</h4>
+  <p>El cierre real de cualquier conversación ocurre por WhatsApp. El sitio informa y reduce fricción; WhatsApp convierte.</p>
+
+  <div class="callout">
+    <div class="t">Principio de decisión</div>
+    <p><strong>"¿Qué necesita escuchar esta persona en este momento para sentirse bienvenida y saber cuál es su siguiente paso?"</strong> — Si una decisión de diseño no responde esta pregunta, probablemente es ruido.</p>
+  </div>
+</section>
+
+<section id="personas">
+  <h2>Los tres perfiles</h2>
+  <p class="lead">Todo el sistema — navegación, copy, CTAs, jerarquía de contenido — se organiza alrededor de estos tres visitantes. No son segmentos de marketing; son arquetipos de necesidad.</p>
+
+  <div class="journey">
+    <div class="j-col curioso">
+      <div class="tag">El Curioso</div>
+      <div class="title">"Nunca medité."</div>
+      <div class="q">¿Tengo que ser budista? ¿Cuesta? ¿Qué me pongo?</div>
+      <h5>Miedos</h5>
+      <ul><li>Sentirse fuera de lugar</li><li>Compromiso no deseado</li><li>Jargón incomprensible</li></ul>
+      <h5>Necesita</h5>
+      <ul><li>Permiso de asistir sin compromiso</li><li>Respuestas concretas</li><li>Un primer paso tangible</li></ul>
+      <h5>Destino</h5>
+      <ul><li><code>/empieza-aqui</code></li><li>Meditación guiada del lunes</li></ul>
+    </div>
+    <div class="j-col">
+      <div class="tag">El Practicante</div>
+      <div class="title">"Ya practico."</div>
+      <div class="q">¿Es un linaje serio? ¿Qué estudios hay? ¿Quién enseña?</div>
+      <h5>Miedos</h5>
+      <ul><li>Enseñanza diluida o new-age</li><li>Falta de estructura</li><li>Maestros no cualificados</li></ul>
+      <h5>Necesita</h5>
+      <ul><li>Credenciales del linaje</li><li>Programas con estructura clara</li><li>Bios de maestros</li></ul>
+      <h5>Destino</h5>
+      <ul><li><code>/programas</code></li><li><code>/maestros</code></li></ul>
+    </div>
+    <div class="j-col comunidad">
+      <div class="tag">La Comunidad</div>
+      <div class="title">"Vengo al centro."</div>
+      <div class="q">¿Qué hay esta semana? ¿Cómo apoyo? ¿Cómo me conecto?</div>
+      <h5>Miedos</h5>
+      <ul><li>Perder actividades importantes</li><li>Que el centro cierre</li><li>Desconexión en periodos largos</li></ul>
+      <h5>Necesita</h5>
+      <ul><li>Calendario actualizado</li><li>Canal para donar</li><li>Newsletter y grupo WA</li></ul>
+      <h5>Destino</h5>
+      <ul><li><code>/calendario</code></li><li><code>/donar</code></li></ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ───────── 02 · DISEÑO ───────── -->
+<section id="brand">
+  <div class="eyebrow">02 · Diseño</div>
+  <h2>Marca y voz</h2>
+  <p>Dirección visual: <strong>editorial, cálido, contemplativo</strong>. Referencias: Lion's Roar, Tricycle, editoriales universitarias — no la estética genérica de meditación app.</p>
+
+  <h4>Voz</h4>
+  <ul>
+    <li><strong>Clara antes que sabia.</strong> Evitamos citas crípticas fuera de contexto. Las palabras tibetanas se traducen y explican.</li>
+    <li><strong>Cálida antes que espiritual.</strong> Hablamos como una persona que quiere recibir a otra, no como un tratado.</li>
+    <li><strong>Concreta antes que abstracta.</strong> "Lunes 20:00, presencial en Col. Americana" antes que "conecta con la paz interior".</li>
+  </ul>
+
+  <h4>Lo que evitamos</h4>
+  <ul>
+    <li>Fotos stock de personas meditando al amanecer en la playa</li>
+    <li>Ilustraciones de Buda, mandalas genéricos o iconografía religiosa de catálogo</li>
+    <li>Gradientes de app spa, fondos difusos, degradados morados</li>
+    <li>Copy tipo "despierta tu luz interior", "viaje transformacional"</li>
+    <li>Emoji decorativos en titulares (los 🙏 y 💫 se quedan en WhatsApp)</li>
+  </ul>
+</section>
+
+<section id="colors">
+  <h2>Color</h2>
+  <p>Paleta "warm paper & clay" — evoca el papel de textos antiguos y la arcilla de las thangkas, sin caer en rojos saturados ni dorados de catálogo.</p>
+
+  <h4>Base</h4>
+  <div class="swatches">
+    <div class="swatch"><div class="box" style="background:#F4ECE0"></div><div class="meta"><div class="name">--paper</div><div class="val">#F4ECE0</div></div></div>
+    <div class="swatch"><div class="box" style="background:#EFE6D6"></div><div class="meta"><div class="name">--paper-2</div><div class="val">#EFE6D6</div></div></div>
+    <div class="swatch"><div class="box" style="background:#E8DDC8"></div><div class="meta"><div class="name">--paper-3</div><div class="val">#E8DDC8</div></div></div>
+    <div class="swatch"><div class="box" style="background:#FBF7EF"></div><div class="meta"><div class="name">--cream</div><div class="val">#FBF7EF</div></div></div>
+  </div>
+
+  <h4>Tinta</h4>
+  <div class="swatches">
+    <div class="swatch"><div class="box" style="background:#2A2622"></div><div class="meta"><div class="name">--ink</div><div class="val">#2A2622</div></div></div>
+    <div class="swatch"><div class="box" style="background:#4A423A"></div><div class="meta"><div class="name">--ink-2</div><div class="val">#4A423A</div></div></div>
+    <div class="swatch"><div class="box" style="background:#6B6158"></div><div class="meta"><div class="name">--ink-3</div><div class="val">#6B6158</div></div></div>
+  </div>
+
+  <h4>Acentos</h4>
+  <div class="swatches">
+    <div class="swatch"><div class="box" style="background:#8B2E1F"></div><div class="meta"><div class="name">--clay</div><div class="val">#8B2E1F · primario</div></div></div>
+    <div class="swatch"><div class="box" style="background:#A94430"></div><div class="meta"><div class="name">--clay-2</div><div class="val">#A94430 · hover</div></div></div>
+    <div class="swatch"><div class="box" style="background:#C97B4A"></div><div class="meta"><div class="name">--terracotta</div><div class="val">#C97B4A · Curioso</div></div></div>
+    <div class="swatch"><div class="box" style="background:#D4A35A"></div><div class="meta"><div class="name">--ochre</div><div class="val">#D4A35A · invitación</div></div></div>
+    <div class="swatch"><div class="box" style="background:#5C6B4E"></div><div class="meta"><div class="name">--moss</div><div class="val">#5C6B4E · Comunidad</div></div></div>
+  </div>
+
+  <div class="callout">
+    <div class="t">Semántica de color</div>
+    <p><strong>Clay</strong> es la voz principal (primario, acento, links). <strong>Terracotta</strong> identifica al perfil Curioso. <strong>Moss</strong> identifica a Comunidad. <strong>Ochre</strong> se reserva para invitaciones y estados destacados sobre fondos oscuros.</p>
+  </div>
+
+  <h4>Tweaks disponibles</h4>
+  <p>El canvas principal (<code>Khamlungpa Sistema Digital.html</code>) expone 4 paletas alternativas como Tweaks: <strong>Clay</strong> (por defecto), <strong>Stone</strong> (frío, más sobrio), <strong>Amber</strong> (cálido dorado), <strong>Forest</strong> (verde mineral). Son intercambiables sin reescribir componentes.</p>
+</section>
+
+<section id="type">
+  <h2>Tipografía</h2>
+  <p>Tres familias. Ninguna decorativa — cada una tiene una tarea.</p>
+
+  <div class="type-row">
+    <div class="type-spec">
+      <strong>SERIF · DISPLAY</strong>
+      Fraunces<br>
+      400 / 500 italic<br>
+      letter-spacing: -0.022em<br>
+      line-height: 1.02
+    </div>
+    <div style="font-family:var(--serif);font-size:44px;line-height:1.05;letter-spacing:-0.022em;">
+      Calmar la mente, <em style="font-style:italic;color:var(--clay);">cultivar compasión.</em>
+    </div>
+  </div>
+  <div class="type-row">
+    <div class="type-spec">
+      <strong>SANS · BODY</strong>
+      Inter<br>
+      400 / 500<br>
+      15.5–17 px<br>
+      line-height: 1.55
+    </div>
+    <div style="font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--ink-2);max-width:440px;">
+      Un espacio para calmar la mente, estudiar el Dharma y cultivar compasión. Abierto a todos — no necesitas experiencia previa.
+    </div>
+  </div>
+  <div class="type-row">
+    <div class="type-spec">
+      <strong>MONO · LABEL</strong>
+      JetBrains Mono<br>
+      400 / 500<br>
+      9–11 px<br>
+      letter-spacing: 0.12–0.18em<br>
+      TEXT-TRANSFORM: UPPERCASE
+    </div>
+    <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;color:var(--clay);text-transform:uppercase;">
+      Desde 2003 · Afiliado FPMT 2005
+    </div>
+  </div>
+
+  <h4>Jerarquía recomendada (Desktop)</h4>
+  <table>
+    <thead><tr><th>Rol</th><th>Familia</th><th>Tamaño</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td>H1 Hero</td><td>Fraunces 400</td><td>72–88 px</td><td>Titular principal</td></tr>
+      <tr><td>H2 Sección</td><td>Fraunces 400</td><td>38–48 px</td><td>Títulos de sección</td></tr>
+      <tr><td>H3 Subsección</td><td>Fraunces 500</td><td>22–28 px</td><td>Ficha de programa, pregunta FAQ</td></tr>
+      <tr><td>Lead</td><td>Inter 400</td><td>17–18 px</td><td>Subtítulo de hero, intro de página</td></tr>
+      <tr><td>Body</td><td>Inter 400</td><td>15–16 px</td><td>Texto corrido</td></tr>
+      <tr><td>Eyebrow / Label</td><td>JetBrains Mono 500</td><td>10–11 px</td><td>Etiquetas, fecha, metadatos</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="spacing">
+  <h2>Espacio y superficies</h2>
+
+  <h4>Radios</h4>
+  <table>
+    <thead><tr><th>Token</th><th>Valor</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td><code>--r-sm</code></td><td>4 px</td><td>Placeholders de foto</td></tr>
+      <tr><td><code>--r-md</code></td><td>8 px</td><td>Inputs, chips, tags</td></tr>
+      <tr><td><code>--r-lg</code></td><td>14 px</td><td>Cards, modales</td></tr>
+      <tr><td><code>--r-xl</code></td><td>22 px</td><td>Device frames, piezas editoriales</td></tr>
+      <tr><td>999 px</td><td>pill</td><td>Botones, tags redondeadas</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Espaciado de sección</h4>
+  <ul>
+    <li>Padding vertical de sección: <code>80px</code> desktop · <code>56px</code> tablet · <code>48px</code> mobile</li>
+    <li>Max-width de contenido: <code>1320px</code></li>
+    <li>Padding horizontal: <code>40px</code> desktop · <code>24px</code> mobile</li>
+    <li>Gap entre cards en grid: <code>16–24px</code></li>
+  </ul>
+
+  <h4>Líneas</h4>
+  <p><code>--line</code> (rgba 12%) para separadores estructurales · <code>--line-2</code> (rgba 6%) para subdivisiones internas. Nunca una borde sólida oscura — rompe la calidez.</p>
+</section>
+
+<section id="components">
+  <h2>Componentes</h2>
+
+  <h4>Botones</h4>
+  <table>
+    <thead><tr><th>Variante</th><th>Clase</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td>Primario</td><td><code>.btn.primary</code></td><td>Acción principal por pantalla — una sola por vista</td></tr>
+      <tr><td>Fantasma</td><td><code>.btn.ghost</code></td><td>Acciones secundarias</td></tr>
+      <tr><td>Oscuro</td><td><code>.btn.dark</code></td><td>CTAs sobre fondos cremas</td></tr>
+      <tr><td>WhatsApp</td><td><code>.btn.wa</code></td><td>Cualquier acción que abra WA — verde obligatorio (#25D366)</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Cards · Path (tres caminos)</h4>
+  <p>Fondo <code>--cream</code> · radio 14 · borde <code>--line</code> · padding 28–30. Barra superior de 3px con color de perfil (<code>--terracotta</code> / <code>--clay</code> / <code>--moss</code>) que aparece en hover. El hover eleva la card (<code>translateY(-4px)</code>) y agrega sombra suave.</p>
+
+  <h4>Semanal row</h4>
+  <p>Grid de 6 columnas — fecha (mono) · hora (serif) · título · modalidad · tag de estado (Abierta / Inscripción / Comunidad) · CTA de WA. Fila completa clicable en mobile.</p>
+
+  <h4>FAB WhatsApp</h4>
+  <p>Fixed bottom-right, 60×60, color <code>#25D366</code>, animación <code>pulse</code> cada 2.4s. Al clic abre el modal de presets.</p>
+
+  <h4>Modal de presets WhatsApp</h4>
+  <p>Overlay oscuro con blur · modal de 480px · 5 opciones prellenadas · cada opción muestra título (serif) y preview del mensaje (italic mono). Esc cierra.</p>
+</section>
+
+<section id="imagery">
+  <h2>Imágenes y placeholders</h2>
+  <p>El documento original lo dice claro: <strong>fotos reales, no stock</strong>. En el prototipo usamos un patrón rayado diagonal como placeholder marcado — imposible confundirlo con una foto final.</p>
+
+  <h4>Recetas de placeholder</h4>
+  <ul>
+    <li><strong>Paper</strong> — <code>.ph</code> — beige con rayas sobre <code>--paper-3</code>. Uso general.</li>
+    <li><strong>Clay</strong> — <code>.ph.clay</code> — rojo sobre <code>--clay</code>. Para bloques destacados.</li>
+    <li><strong>Ink</strong> — <code>.ph.ink</code> — oscuro sobre <code>--ink</code>. Para hero alternativos.</li>
+  </ul>
+
+  <h4>Qué fotos se necesitan para lanzar</h4>
+  <ul>
+    <li>Hero · sesión de meditación en el centro · luz cálida natural · grupo diverso de edades</li>
+    <li>Retratos · Ven. Thubten Norbu y Gueshe Lobsang Dawa · en el centro, no composiciones formales</li>
+    <li>3–5 fotos de espacio · altar, zona de práctica, sala de estudio, patio · sin personas</li>
+    <li>Testimonios · 3 retratos naturales (con permiso escrito) · rostro o detalle</li>
+    <li>Eventos · 2–3 fotos de actividad real · pujas, retiros, lecturas</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- ───────── 03 · PRODUCTO ───────── -->
+<section id="sitemap">
+  <div class="eyebrow">03 · Producto</div>
+  <h2>Arquitectura del sitio</h2>
+  <p>17 páginas agrupadas por los tres caminos de lectura. La navegación nunca obliga a elegir un perfil — pero cada CTA sí sabe a quién le habla.</p>
+
+  <div class="tree">
+<span class="folder">/</span> <span class="comment">// home · tres caminos desde el hero</span>
+├── <span class="folder">empieza-aqui/</span> <span class="comment">// El Curioso · FAQ × 8</span>
+├── <span class="folder">meditacion/</span> <span class="comment">// qué es · cómo empezar · guiadas</span>
+├── <span class="folder">budismo/</span>
+│    ├── introduccion
+│    ├── linaje-gelugpa
+│    └── fpmt
+├── <span class="folder">programas/</span> <span class="comment">// El Practicante</span>
+│    ├── descubre-el-budismo
+│    ├── explorando-el-budismo
+│    └── estudios-avanzados
+├── <span class="folder">maestros/</span>
+│    ├── ven-thubten-norbu
+│    └── gueshe-lobsang-dawa
+├── <span class="folder">calendario/</span>
+├── <span class="folder">donar/</span>
+├── <span class="folder">recursos/</span> <span class="comment">// audios · artículos · ebooks</span>
+├── <span class="folder">comunidad/</span> <span class="comment">// La Comunidad</span>
+└── <span class="folder">contacto/</span>
+  </div>
+</section>
+
+<section id="pages">
+  <h2>Inventario de páginas</h2>
+  <div class="page-grid">
+    <div class="page-card">
+      <div class="path">/</div>
+      <div class="name">Home</div>
+      <div class="desc">Hero · Esta semana · Tres caminos · Testimonio · Donar · Newsletter.</div>
+      <div class="tags"><span class="tag curioso">Curioso</span><span class="tag practicante">Practicante</span><span class="tag comunidad">Comunidad</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/empieza-aqui</div>
+      <div class="name">Empieza aquí</div>
+      <div class="desc">8 preguntas frecuentes honestas + CTA a meditación del lunes.</div>
+      <div class="tags"><span class="tag curioso">Curioso</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/programas</div>
+      <div class="name">Programas</div>
+      <div class="desc">Listado de programas FPMT con estructura, duración, requisitos.</div>
+      <div class="tags"><span class="tag practicante">Practicante</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/programas/[slug]</div>
+      <div class="name">Ficha de programa</div>
+      <div class="desc">Módulos, maestros, donativo, fechas, formulario de inscripción.</div>
+      <div class="tags"><span class="tag practicante">Practicante</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/maestros</div>
+      <div class="name">Maestros</div>
+      <div class="desc">Ven. Thubten Norbu y Gueshe Lobsang Dawa — bio, linaje, actividades.</div>
+      <div class="tags"><span class="tag practicante">Practicante</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/calendario</div>
+      <div class="name">Calendario</div>
+      <div class="desc">Vista mensual sincronizada con Google Calendar. Filtros por tipo.</div>
+      <div class="tags"><span class="tag comunidad">Comunidad</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/donar</div>
+      <div class="name">Donar</div>
+      <div class="desc">Relato de misión + opciones (única / recurrente) + desglose de uso.</div>
+      <div class="tags"><span class="tag comunidad">Comunidad</span></div>
+    </div>
+    <div class="page-card">
+      <div class="path">/contacto</div>
+      <div class="name">Contacto</div>
+      <div class="desc">Mapa · horarios · WhatsApp · mail · formulario general.</div>
+      <div class="tags"><span class="tag curioso">Curioso</span><span class="tag comunidad">Comunidad</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="ecosystem">
+  <h2>Ecosistema digital</h2>
+  <p class="lead">El sitio es el hub. Cuatro satélites tienen roles distintos y complementarios.</p>
+
+  <table>
+    <thead><tr><th>Canal</th><th>Rol</th><th>Frecuencia</th><th>KPI principal</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sitio</strong></td><td>Archivo · SEO · punto de cierre</td><td>—</td><td>Sesiones orgánicas</td></tr>
+      <tr><td><strong>Instagram</strong></td><td>Atrae curiosos nuevos · visibilidad</td><td>4 posts/semana</td><td>Seguidores cualificados</td></tr>
+      <tr><td><strong>WhatsApp</strong></td><td>Cierra · resuelve dudas · onboarding</td><td>Respuesta &lt; 2h</td><td>Conversaciones iniciadas</td></tr>
+      <tr><td><strong>Newsletter</strong></td><td>Retiene · comunidad · donaciones</td><td>1/mes</td><td>Open rate + donantes</td></tr>
+      <tr><td><strong>YouTube</strong></td><td>Archivo de enseñanzas · SEO secundario</td><td>1–2/mes (fase 2)</td><td>Retención media</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout ok">
+    <div class="t">Flujo típico de conversión</div>
+    <p>Instagram (atracción) → Sitio (profundidad + confianza) → WhatsApp (primera conversación personal) → Primera visita al centro → Newsletter (retención) → Donante recurrente.</p>
+  </div>
+</section>
+
+<section id="whatsapp">
+  <h2>Protocolo WhatsApp</h2>
+  <p>WhatsApp es donde se cierra. El sitio prepara el mensaje; la persona del centro responde.</p>
+
+  <h4>Mensajes prellenados por contexto</h4>
+  <table>
+    <thead><tr><th>Origen</th><th>Mensaje</th></tr></thead>
+    <tbody>
+      <tr><td>Botón "Es mi primera vez" (hero)</td><td><em>"Hola, me gustaría asistir por primera vez a una meditación guiada. ¿Qué necesito saber?"</em></td></tr>
+      <tr><td>Fila de "Esta semana"</td><td><em>"Hola, vi las actividades de esta semana en el sitio y quisiera más info sobre una de ellas."</em></td></tr>
+      <tr><td>Card de programa</td><td><em>"Hola, me interesa un programa FPMT. ¿Cuándo empieza el siguiente?"</em></td></tr>
+      <tr><td>Card "Apoyar al centro"</td><td><em>"Hola, me gustaría saber cómo contribuir al centro."</em></td></tr>
+      <tr><td>FAB flotante (genérico)</td><td>Abre modal con 5 opciones a elegir</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Formato del link</h4>
+  <pre><code>https://wa.me/52XXXXXXXXXX?text=<span style="color:var(--ochre);">URL_ENCODED_MESSAGE</span></code></pre>
+
+  <h4>Reglas</h4>
+  <ul>
+    <li><strong>Respuesta &lt; 2h</strong> en horario hábil (lun–sáb · 09:00–21:00).</li>
+    <li>Fuera de horario: <strong>auto-mensaje</strong> indicando cuándo se responde.</li>
+    <li>Nunca vender. Nunca hacer follow-up automatizado agresivo.</li>
+    <li>Grupo de comunidad: solo admins publican · máx 2–3 avisos por semana.</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- ───────── 04 · IMPLEMENTACIÓN ───────── -->
+<section id="files">
+  <div class="eyebrow">04 · Implementación</div>
+  <h2>Archivos del proyecto</h2>
+
+  <div class="tree">
+<span class="folder">Khamlungpa Sistema Digital.html</span>  <span class="comment">// canvas principal — exploración completa</span>
+<span class="folder">Khamlungpa Home.html</span>            <span class="comment">// landing funcional standalone</span>
+<span class="folder">Khamlungpa Documentación.html</span>   <span class="comment">// este archivo</span>
+
+<span class="folder">design-canvas.jsx</span>               <span class="comment">// starter · canvas pan/zoom</span>
+<span class="folder">browser-window.jsx</span>              <span class="comment">// starter · chrome desktop</span>
+<span class="folder">ios-frame.jsx</span>                   <span class="comment">// starter · bezel iPhone</span>
+<span class="folder">tweaks-panel.jsx</span>                <span class="comment">// starter · panel de tweaks</span>
+
+<span class="folder">parts/</span>
+├── kw-shared.jsx            <span class="comment">// primitives: KwBtn, KwPh, KwMark, Iconos</span>
+├── kw-designsystem.jsx      <span class="comment">// card de design system</span>
+├── kw-journeys.jsx          <span class="comment">// 3 user journeys paralelos</span>
+├── kw-ecosystem.jsx         <span class="comment">// mapa radial de canales</span>
+├── kw-sitemap.jsx           <span class="comment">// arquitectura de información</span>
+├── kw-site-desktop.jsx      <span class="comment">// Home + Empieza aquí</span>
+├── kw-site-desktop-2.jsx    <span class="comment">// Programas, Maestros, Calendario, Donar, Contacto</span>
+├── kw-site-mobile.jsx       <span class="comment">// vistas mobile</span>
+├── kw-social.jsx            <span class="comment">// WA · IG · Newsletter</span>
+├── kw-roadmap.jsx           <span class="comment">// plan 6 meses + KPIs</span>
+└── kw-app.jsx               <span class="comment">// composición final + Tweaks</span>
+  </div>
+
+  <div class="callout warn">
+    <div class="t">Nota sobre los prototipos</div>
+    <p>El canvas (<code>Khamlungpa Sistema Digital.html</code>) usa React + Babel en runtime — es un artefacto de exploración, no producción. El landing (<code>Khamlungpa Home.html</code>) es HTML/CSS/JS puro y puede usarse como referencia directa para la implementación final.</p>
+  </div>
+</section>
+
+<section id="stack">
+  <h2>Stack técnico recomendado</h2>
+  <p>El documento original no prescribe stack — estas son recomendaciones para que las páginas carguen rápido, sean fáciles de mantener por alguien no-técnico, y soporten el SEO del plan.</p>
+
+  <h4>Opción A · Astro + Decap CMS</h4>
+  <p>Ideal. Estático, ultra rápido, SEO perfecto. CMS headless para que el equipo del centro edite el calendario y páginas sin tocar código. Deploy en Netlify / Vercel gratis.</p>
+
+  <h4>Opción B · Next.js + Sanity</h4>
+  <p>Si se anticipa crecimiento con inscripciones en línea, búsqueda, zonas autenticadas. Más poderoso, mayor curva de aprendizaje.</p>
+
+  <h4>Opción C · WordPress + tema custom</h4>
+  <p>Si el equipo ya conoce WP. Mantenimiento continuo, plugins a revisar, performance menor — pero onboarding trivial.</p>
+
+  <h4>Integraciones</h4>
+  <ul>
+    <li><strong>Google Calendar</strong> · fuente única de verdad para el calendario — el sitio lo lee vía API</li>
+    <li><strong>Mailchimp</strong> · o Buttondown · para la newsletter mensual</li>
+    <li><strong>WhatsApp Business</strong> · número dedicado · etiquetas · respuestas rápidas</li>
+    <li><strong>Stripe / Mercado Pago</strong> · para donaciones recurrentes</li>
+    <li><strong>Google Analytics 4 + Search Console</strong> · para medir los KPIs</li>
+  </ul>
+</section>
+
+<section id="seo">
+  <h2>SEO y metadatos</h2>
+
+  <h4>Metadatos requeridos por página</h4>
+  <ul>
+    <li><code>&lt;html lang="es-MX"&gt;</code> — <strong>obligatorio</strong>. Error común en el sitio actual.</li>
+    <li><code>&lt;title&gt;</code> único por página · 50–60 caracteres · incluye "Khamlungpa" y keyword</li>
+    <li><code>&lt;meta name="description"&gt;</code> único · 140–160 caracteres · CTA implícito</li>
+    <li>Open Graph · <code>og:title</code>, <code>og:description</code>, <code>og:image</code> (1200×630)</li>
+    <li>Favicon + apple-touch-icon (512×512)</li>
+  </ul>
+
+  <h4>JSON-LD estructurado</h4>
+  <p>Aplicar en el template base:</p>
+  <pre><code>{
+  "@context": "https://schema.org",
+  "@type": "ReligiousOrganization",
+  "name": "Centro Khamlungpa",
+  "alternateName": "Khamlungpa FPMT Guadalajara",
+  "url": "https://khamlungpa.com",
+  "foundingDate": "2003",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Guadalajara",
+    "addressRegion": "Jalisco",
+    "addressCountry": "MX"
+  }
+}</code></pre>
+
+  <p>Para cada actividad del calendario, usar <code>@type: "Event"</code> con <code>startDate</code>, <code>location</code>, <code>organizer</code>.</p>
+
+  <h4>Keywords objetivo</h4>
+  <ul>
+    <li><strong>Primarias:</strong> meditación guadalajara · budismo tibetano guadalajara · centro budista gdl · FPMT méxico</li>
+    <li><strong>Long tail:</strong> aprender a meditar guadalajara · linaje gelugpa méxico · retiros budistas jalisco</li>
+    <li><strong>De marca:</strong> khamlungpa · centro khamlungpa · thubten norbu</li>
+  </ul>
+
+  <h4>Infraestructura</h4>
+  <ul>
+    <li><code>sitemap.xml</code> generado automáticamente</li>
+    <li><code>robots.txt</code> permitiendo crawl completo</li>
+    <li>Alta en Google Search Console y Bing Webmaster</li>
+    <li>Google Business Profile con fotos del centro, horarios, reviews</li>
+  </ul>
+</section>
+
+<section id="a11y">
+  <h2>Accesibilidad</h2>
+  <p>No es un extra — es parte del principio "cálido antes que pulido". Si alguien con discapacidad visual no puede entrar, no somos cálidos.</p>
+
+  <h4>Mínimos</h4>
+  <ul>
+    <li><strong>Contraste</strong> · AA al menos (4.5:1 texto, 3:1 UI). La paleta actual lo cumple en todas las combinaciones principales.</li>
+    <li><strong>Foco visible</strong> · no usar <code>outline: none</code> sin alternativa. Los botones del landing ya tienen hover + focus.</li>
+    <li><strong>Alt text</strong> · toda foto final debe describirse. "Sesión de meditación con 8 personas en el centro" — no "foto 1".</li>
+    <li><strong>Landmarks</strong> · <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> ya presentes.</li>
+    <li><strong>Jerarquía H</strong> · un solo H1 por página, sin saltar niveles.</li>
+    <li><strong>Teclado</strong> · modal WA se cierra con <span class="kbd">Esc</span> · nav es navegable con <span class="kbd">Tab</span>.</li>
+    <li><strong>Movimiento</strong> · respetar <code>prefers-reduced-motion</code> para la animación pulse del FAB.</li>
+  </ul>
+</section>
+
+<section id="roadmap">
+  <h2>Roadmap 6 meses</h2>
+  <p>Ordenado por impacto en los journeys. Fases 1 y 2 no requieren rediseño completo — mejoran el sitio actual.</p>
+
+  <div class="phases">
+    <div class="phase">
+      <div class="n">FASE 01</div>
+      <div class="name">Correcciones y quick wins</div>
+      <div class="dur">SEMANAS 1–2</div>
+      <ul>
+        <li><code>lang="es-MX"</code></li>
+        <li>Title/meta por página</li>
+        <li>Links rotos a 404</li>
+        <li>FAB WA + presets</li>
+        <li>Festividades 2026</li>
+        <li>Copyright dinámico</li>
+      </ul>
+    </div>
+    <div class="phase p2">
+      <div class="n">FASE 02</div>
+      <div class="name">Conversión y contenido crítico</div>
+      <div class="dur">SEMANAS 3–6</div>
+      <ul>
+        <li>/empieza-aqui con FAQ</li>
+        <li>/donar con misión</li>
+        <li>Fichas mejoradas</li>
+        <li>WA Business + auto-msg</li>
+        <li>Mailchimp + form</li>
+        <li>Google Business</li>
+        <li>sitemap.xml</li>
+      </ul>
+    </div>
+    <div class="phase p3">
+      <div class="n">FASE 03</div>
+      <div class="name">Rediseño UX/UI</div>
+      <div class="dur">MES 2–3</div>
+      <ul>
+        <li>Hero con 3 caminos</li>
+        <li>Calendario dinámico</li>
+        <li>Fichas completas</li>
+        <li>Perfiles de maestros</li>
+        <li>Testimonios reales</li>
+        <li>Fotos reales</li>
+        <li>JSON-LD completo</li>
+        <li>Mobile-first</li>
+      </ul>
+    </div>
+    <div class="phase p4">
+      <div class="n">FASE 04</div>
+      <div class="name">Ecosistema orgánico</div>
+      <div class="dur">MES 3–6</div>
+      <ul>
+        <li>/recursos · 4 artículos</li>
+        <li>Primer newsletter</li>
+        <li>Instagram · 4/semana</li>
+        <li>Grupo WA comunidad</li>
+        <li>2 audios guiados</li>
+        <li>Primer video YT</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>Prioridades por semana</h4>
+  <table>
+    <thead><tr><th>Semana</th><th>Entregable</th><th>Responsable</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Quick wins técnicos desplegados en producción</td><td>Dev</td></tr>
+      <tr><td>2</td><td>WhatsApp Business configurado + mensajes prellenados</td><td>Centro + Dev</td></tr>
+      <tr><td>3–4</td><td>Página /empieza-aqui publicada con FAQ final</td><td>Contenido + Dev</td></tr>
+      <tr><td>5–6</td><td>/donar + newsletter activa con 1er envío</td><td>Centro + Dev</td></tr>
+      <tr><td>7–12</td><td>Rediseño completo en staging</td><td>Diseño + Dev</td></tr>
+      <tr><td>13</td><td>Launch + redirecciones SEO</td><td>Dev</td></tr>
+      <tr><td>14–26</td><td>Contenido orgánico continuo</td><td>Centro</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="kpis">
+  <h2>KPIs y seguimiento</h2>
+
+  <h4>Métricas primarias</h4>
+  <div class="kpi-grid">
+    <div class="kpi"><div class="k">Sesiones orgánicas</div><div class="v">+120%</div><div class="s">vs mes 0 · GA4</div></div>
+    <div class="kpi"><div class="k">Conversaciones WA iniciadas</div><div class="v">+300%</div><div class="s">con presets · WA Business</div></div>
+    <div class="kpi"><div class="k">Tasa de respuesta</div><div class="v">&lt; 2h</div><div class="s">horario hábil · WA Business</div></div>
+    <div class="kpi"><div class="k">Donantes recurrentes</div><div class="v">≥ 40</div><div class="s">cierre mes 6 · Stripe</div></div>
+  </div>
+
+  <h4>Métricas secundarias</h4>
+  <ul>
+    <li>Tasa de apertura de newsletter ≥ 35%</li>
+    <li>Primeros visitantes al centro que vinieron del sitio ≥ 30% de asistencias nuevas</li>
+    <li>Ranking top-3 en Google para "meditación Guadalajara" + variantes de marca</li>
+    <li>Seguidores de Instagram cualificados (engagement ≥ 4%) — no vanity metrics</li>
+  </ul>
+
+  <h4>Rituales de revisión</h4>
+  <table>
+    <thead><tr><th>Frecuencia</th><th>Qué se revisa</th><th>Acción</th></tr></thead>
+    <tbody>
+      <tr><td>Semanal</td><td>Conversaciones WA · atención y volumen</td><td>Ajustar auto-mensajes</td></tr>
+      <tr><td>Mensual</td><td>GA4 · Search Console · Newsletter</td><td>Contenido del siguiente mes</td></tr>
+      <tr><td>Trimestral</td><td>Review completo · journeys · ajustes</td><td>Priorizar backlog</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<!-- ───────── 05 · HANDOFF ───────── -->
+<section id="content">
+  <div class="eyebrow">05 · Handoff</div>
+  <h2>Contenido requerido antes del lanzamiento</h2>
+  <p class="lead">El diseño está listo. Lo que detiene el lanzamiento es el contenido real — no hay atajo para esto.</p>
+
+  <h4>Del centro</h4>
+  <ul>
+    <li><strong>Fotos reales</strong> · mínimo 12 (ver lista en sección Imágenes)</li>
+    <li><strong>Bios completas</strong> · Ven. Thubten Norbu (300–500 palabras) · Gueshe Lobsang Dawa (300–500 palabras) · línea del linaje tibetano</li>
+    <li><strong>Testimonios con permiso</strong> · 3–5 · texto literal firmado + foto</li>
+    <li><strong>Descripciones de programas</strong> · estructura · duración · donativo sugerido · requisitos previos</li>
+    <li><strong>Calendario 2026</strong> · fechas confirmadas de actividades mensuales y festividades</li>
+    <li><strong>Dirección exacta</strong> · dirección pública · instrucciones de cómo llegar · estacionamiento</li>
+    <li><strong>Número WhatsApp Business</strong> · dedicado · no personal</li>
+    <li><strong>Cuentas bancarias / Stripe</strong> · para donaciones</li>
+  </ul>
+
+  <h4>Del equipo de contenido</h4>
+  <ul>
+    <li>Copy final de /empieza-aqui con las 8 preguntas del Curioso (borrador en el prototipo)</li>
+    <li>Copy de /donar contando la misión del centro en primera persona</li>
+    <li>Primer newsletter (enseñanza breve + calendario del mes + un recurso)</li>
+    <li>10–15 posts de Instagram ya redactados para las primeras 3 semanas</li>
+    <li>4 artículos iniciales de /recursos · 800–1200 palabras · keywords del plan SEO</li>
+  </ul>
+</section>
+
+<section id="checklist">
+  <h2>Checklist de lanzamiento</h2>
+
+  <h4>Técnico</h4>
+  <ul>
+    <li><span class="pill alto">ALTO</span> <code>lang="es-MX"</code> en cada página</li>
+    <li><span class="pill alto">ALTO</span> Titles + metas únicos</li>
+    <li><span class="pill alto">ALTO</span> Favicon + apple-touch-icon + OG image</li>
+    <li><span class="pill alto">ALTO</span> HTTPS + redirect de www</li>
+    <li><span class="pill alto">ALTO</span> sitemap.xml + robots.txt</li>
+    <li><span class="pill alto">ALTO</span> Lighthouse ≥ 90 en Performance, A11y, SEO, Best Practices</li>
+    <li><span class="pill medio">MEDIO</span> JSON-LD Organization + Event</li>
+    <li><span class="pill medio">MEDIO</span> GA4 + Search Console conectados</li>
+    <li><span class="pill medio">MEDIO</span> 404 personalizada con camino de vuelta</li>
+  </ul>
+
+  <h4>Contenido</h4>
+  <ul>
+    <li><span class="pill alto">ALTO</span> Todas las fotos reales en su lugar · sin placeholders</li>
+    <li><span class="pill alto">ALTO</span> Calendario con fechas reales del mes en curso + 2 siguientes</li>
+    <li><span class="pill alto">ALTO</span> 3 testimonios con permiso escrito</li>
+    <li><span class="pill alto">ALTO</span> Todos los CTAs de WhatsApp apuntan al número real</li>
+    <li><span class="pill medio">MEDIO</span> 4 artículos en /recursos</li>
+  </ul>
+
+  <h4>Operación</h4>
+  <ul>
+    <li><span class="pill alto">ALTO</span> WA Business con auto-mensaje fuera de horario</li>
+    <li><span class="pill alto">ALTO</span> Responsable de WA asignado · con backup</li>
+    <li><span class="pill alto">ALTO</span> Mailchimp con plantilla de newsletter lista</li>
+    <li><span class="pill medio">MEDIO</span> Instagram con calendario editorial de 3 semanas</li>
+    <li><span class="pill medio">MEDIO</span> Google Business Profile verificado y completo</li>
+  </ul>
+</section>
+
+<section id="glossary">
+  <h2>Glosario</h2>
+  <table>
+    <tbody>
+      <tr><td><strong>FPMT</strong></td><td>Foundation for the Preservation of the Mahayana Tradition — red internacional de centros budistas fundada por Lama Yeshe y Lama Zopa Rinpoché. Khamlungpa es centro afiliado desde 2005.</td></tr>
+      <tr><td><strong>Gelugpa</strong></td><td>Una de las cuatro escuelas principales del budismo tibetano, fundada por Lama Tsongkhapa (1357–1419). Énfasis en estudio riguroso y práctica monástica.</td></tr>
+      <tr><td><strong>Khamlungpa</strong></td><td>Nombre del maestro tibetano del siglo XI al que el centro rinde homenaje. Pronunciación aproximada: <em>kam-lung-pa</em>.</td></tr>
+      <tr><td><strong>Geshe</strong></td><td>Título académico otorgado tras completar un programa monástico de estudios filosóficos (equivalente a doctorado en budismo tibetano).</td></tr>
+      <tr><td><strong>Puja</strong></td><td>Ceremonia ritual. En el centro se realizan pujas específicas (ej. Tara Blanca) en fechas marcadas del calendario.</td></tr>
+      <tr><td><strong>Sangha</strong></td><td>Comunidad de practicantes. En la documentación usamos "comunidad" para evitar jargón — pero el término es correcto internamente.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<section>
+  <h2 style="margin-top:0;">Archivos relacionados</h2>
+  <div class="link-list">
+    <a href="Khamlungpa Sistema Digital.html">Canvas completo del sistema <span class="arr">→</span></a>
+    <a href="Khamlungpa Home.html">Prototipo funcional del Home <span class="arr">→</span></a>
+  </div>
+
+  <div style="text-align:center;padding:48px 0 0;">
+    <div style="font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink);max-width:540px;margin:0 auto;line-height:1.35;">
+      "¿Qué necesita escuchar esta persona en este momento para sentirse bienvenida<br>y saber cuál es su siguiente paso?"
+    </div>
+    <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--ink-3);margin-top:20px;">
+      — PRINCIPIO RECTOR DEL SISTEMA —
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<script>
+// Scroll spy for sidebar
+const links = document.querySelectorAll('.toc-link');
+const sections = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+function onScroll(){
+  const y = window.scrollY + 100;
+  let active = sections[0];
+  for(const s of sections){ if(s.offsetTop <= y) active = s; }
+  links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + active.id));
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+</script>
+
+</body>
+</html>

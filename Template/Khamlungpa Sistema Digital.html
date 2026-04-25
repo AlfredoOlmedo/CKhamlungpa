@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Khamlungpa · Sistema Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    /* Palette — warm paper + clay */
+    --paper: #F4ECE0;
+    --paper-2: #EFE6D6;
+    --paper-3: #E8DDC8;
+    --ink: #2A2622;
+    --ink-2: #4A423A;
+    --ink-3: #6B6158;
+    --clay: #8B2E1F;       /* deep clay-red */
+    --clay-2: #A94430;
+    --terracotta: #C97B4A;
+    --ochre: #D4A35A;
+    --moss: #5C6B4E;
+    --cream: #FBF7EF;
+    --line: rgba(42,38,34,0.12);
+    --line-2: rgba(42,38,34,0.06);
+
+    /* Type */
+    --serif: "Fraunces", "Times New Roman", serif;
+    --sans: "Inter", -apple-system, system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+
+    /* Radius */
+    --r-sm: 4px;
+    --r-md: 8px;
+    --r-lg: 14px;
+    --r-xl: 22px;
+  }
+  html,body{margin:0;padding:0;background:#E5DDCC;font-family:var(--sans);color:var(--ink);}
+  *{box-sizing:border-box;}
+  /* Prevent scrollbars inside artboards */
+  .kw-art *::-webkit-scrollbar{display:none}
+  .kw-art *{scrollbar-width:none}
+
+  /* Placeholder (striped) */
+  .kw-ph{
+    background:
+      repeating-linear-gradient(135deg, rgba(42,38,34,0.08) 0 1px, transparent 1px 9px),
+      var(--paper-3);
+    color: var(--ink-3);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:8px;
+    border-radius: var(--r-sm);
+    text-transform: lowercase;
+  }
+  .kw-ph.clay{
+    background:
+      repeating-linear-gradient(135deg, rgba(255,255,255,0.18) 0 1px, transparent 1px 9px),
+      var(--clay);
+    color: rgba(255,240,220,0.9);
+  }
+  .kw-ph.ink{
+    background:
+      repeating-linear-gradient(135deg, rgba(255,255,255,0.12) 0 1px, transparent 1px 9px),
+      var(--ink);
+    color: rgba(240,232,220,0.8);
+  }
+
+  /* Eyebrow label */
+  .kw-eyebrow{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--clay);
+  }
+  .kw-overline{
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  /* Serif display */
+  .kw-display{
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  /* Btns (as classes) */
+  .kw-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding: 14px 22px; border-radius: 999px;
+    font-family: var(--sans); font-weight: 500; font-size: 14px;
+    letter-spacing: 0.02em; cursor:pointer; border: none;
+    transition: transform .15s, box-shadow .15s, background .15s;
+  }
+  .kw-btn.primary{ background: var(--clay); color: var(--cream); }
+  .kw-btn.primary:hover{ background: var(--clay-2); transform: translateY(-1px); }
+  .kw-btn.ghost{ background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .kw-btn.ghost:hover{ background: rgba(42,38,34,0.04); }
+  .kw-btn.dark{ background: var(--ink); color: var(--cream); }
+
+  /* Card */
+  .kw-card{
+    background: var(--cream);
+    border-radius: var(--r-lg);
+    border: 1px solid var(--line);
+  }
+
+  /* Rule */
+  .kw-rule{ height:1px; background: var(--line); border:none; margin:0; }
+
+  /* Tight link style */
+  .kw-link{
+    color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1px;
+  }
+  .kw-link:hover{ border-color: var(--clay); color: var(--clay); }
+
+  /* Section titles for canvas */
+  .kw-section-title{
+    font-family: var(--serif);
+    font-size: 40px; font-weight: 400; letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+
+  /* Tibetan endless-knot inspired divider (abstract geometric, not sacred iconography) */
+  .kw-mark{
+    width: 18px; height: 18px; display: inline-block;
+    border: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    position: relative;
+  }
+  .kw-mark::before{
+    content:""; position:absolute; inset: 3px;
+    border: 1.5px solid currentColor;
+  }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React + Babel -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <!-- Starter components -->
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="browser-window.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <!-- App parts -->
+  <script type="text/babel" src="parts/kw-shared.jsx"></script>
+  <script type="text/babel" src="parts/kw-designsystem.jsx"></script>
+  <script type="text/babel" src="parts/kw-journeys.jsx"></script>
+  <script type="text/babel" src="parts/kw-ecosystem.jsx"></script>
+  <script type="text/babel" src="parts/kw-sitemap.jsx"></script>
+  <script type="text/babel" src="parts/kw-site-desktop.jsx"></script>
+  <script type="text/babel" src="parts/kw-site-desktop-2.jsx"></script>
+  <script type="text/babel" src="parts/kw-site-mobile.jsx"></script>
+  <script type="text/babel" src="parts/kw-social.jsx"></script>
+  <script type="text/babel" src="parts/kw-roadmap.jsx"></script>
+  <script type="text/babel" src="parts/kw-app.jsx"></script>
+</body>
+</html>

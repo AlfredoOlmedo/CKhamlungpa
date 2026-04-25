@@ -1,0 +1,692 @@
+CENTRO KHAMLUNGPA
+Diseño de Experiencia del Visitante
+User Journeys · Ecosistema Digital · Touchpoints · Estrategia de Retención
+Basado en benchmarking de Lion&apos;s Roar · FPMT · Tushita · Kadampa México · Casa Tibet · Vipassana · Spirit Rock
+Guadalajara, México  ·  Versión 1.0  ·  2026
+Contenido
+1.  Por qué un enfoque centrado en el visitante	3
+2.  Los tres perfiles de visitante de Khamlungpa	4
+3.  User Journey: El Curioso (25–35 años)	6
+4.  User Journey: El Practicante (35–50 años)	9
+5.  User Journey: La Comunidad (50+ años)	12
+6.  Mapa del Ecosistema Digital	15
+7.  Diseño del Sitio Web por Etapa del Journey	17
+8.  WhatsApp como canal de conversión	22
+9.  Estrategia de Redes Sociales	24
+10.  Sistema de Retención y Comunidad	26
+11.  Hoja de Ruta de Implementación	28
+1. Por qué un enfoque centrado en el visitante
+Los sitios de centros budistas que más crecen no lo hacen porque tengan mejor diseño gráfico. Lo hacen porque entienden que cada persona que llega al sitio tiene una necesidad específica, un nivel de conocimiento diferente y una barrera distinta que vencer antes de dar el primer paso.
+El análisis de los centros más exitosos — Lion&apos;s Roar, Tushita, Kadampa México, Casa Tibet, Vipassana, Spirit Rock — revela una patrón consistente:
+Los sitios que NO crecen hacen...
+Los sitios que SÍ crecen hacen...
+Mostrar información institucional primero
+Responder las preguntas del visitante primero
+Un menú para todos por igual
+Caminos separados por perfil e intención
+Pedir contacto sin dar valor previo
+Dar valor gratuito antes de pedir cualquier cosa
+Actividades sin contexto ni fechas claras
+Cada actividad con nivel, modalidad, facilitador y CTA
+WhatsApp solo en el footer
+WhatsApp con mensaje prellenado por actividad
+Donación ausente o escondida
+Donación integrada al relato de la misión
+El centro Khamlungpa tiene todo lo necesario para estar en la segunda columna. Este documento diseña exactamente cómo lograrlo, touchpoint por touchpoint, para cada uno de los tres perfiles principales de visitante.
+2. Los tres perfiles de visitante de Khamlungpa
+Cada persona que llega al sitio o al centro tiene una historia diferente. Diseñar para &apos;todos&apos; en general significa no diseñar para nadie en particular. Estos tres perfiles cubren el 90% del público real del centro.
+Perfil 1 — El Curioso
+&quot;El Curioso&quot;
+25–35 años · Guadalajara · Primera vez que considera el budismo o la meditación
+Contexto
+Vive en Guadalajara o Zapopan. Trabaja bajo presión, tiene estrés o ansiedad. Vio algo en Instagram, escuchó un podcast sobre mindfulness, o un amigo le recomendó meditar. No sabe si el budismo es para él/ella. Le da miedo sentirse fuera de lugar.
+Pregunta clave
+&quot;¿Puedo ir aunque no sé nada y no soy budista?&quot;
+Motivación
+Calmar el estrés y la ansiedad · Probar algo nuevo · Curiosidad intelectual · Buscar comunidad o sentido
+Miedos
+Sentirse raro o fuera de lugar · No entender nada · Que le pidan convertirse · Que sea costoso · Que haya un compromiso obligatorio
+Cómo llega
+Instagram/TikTok → Sitio web · Google: &apos;meditación Guadalajara&apos; · Recomendación de amigo → WhatsApp
+Lo que necesita del sitio
+Ver que no necesita experiencia · Entender qué pasa en una sesión · Saber cuánto cuesta (o que es donativo libre) · Tener una acción simple y sin riesgo para dar el primer paso
+Referente que lo hace bien
+Kadampa Guadalajara: &apos;No necesitas experiencia previa ni ropa especial. Puedes incorporarte en cualquier momento.&apos; → Botón de inscripción visible.
+Perfil 2 — El Practicante
+&quot;El Practicante&quot;
+35–50 años · Ya meditó o estudió algo de budismo · Busca seriedad y profundidad
+Contexto
+Tiene experiencia previa con meditación (Vipassana, Mindfulness, otro centro). Quizás tomó un curso introductorio antes. Busca una práctica más estructurada, con linaje real, maestros calificados y comunidad seria. Sabe lo que es el Lam Rim o el Dharma.
+Pregunta clave
+&quot;¿Tiene la profundidad que busco? ¿Los maestros son realmente calificados?&quot;
+Motivación
+Profundizar en filosofía budista tibetana · Encontrar un maestro de linaje real · Tener una comunidad de práctica seria · Progresar en el camino
+Miedos
+Que sea superficial o New Age · Que los maestros no tengan formación real · Que la comunidad no sea comprometida · Perder el tiempo con un centro de bajo nivel
+Cómo llega
+Google: &apos;FPMT México&apos;, &apos;budismo tibetano Guadalajara&apos; · Directorio de la FPMT internacional · Recomendación de otro practicante
+Lo que necesita del sitio
+Ver el linaje y la afiliación FPMT claramente · Leer los programas detallados (ya existen en el código) · Conocer los maestros con biografía real · Ver que hay un camino de estudio estructurado de principiante a avanzado
+Referente que lo hace bien
+Tushita Centre: ruta clara de cursos por nivel (introducción → intermedio → avanzado → retiro), cada uno con fechas, facilitador, prerrequisitos y descripción detallada.
+Perfil 3 — La Comunidad
+&quot;La Comunidad&quot;
+50+ años · Ya conoce el centro · Quiere mantenerse conectado y apoyar
+Contexto
+Estudiante recurrente o miembro de la comunidad establecida. Asistió a retiros, tomó cursos con Ven. Norbu u otros maestros. El centro es parte de su vida espiritual. Quiere saber qué hay próximamente, cómo apoyar al centro y sentirse parte de algo.
+Pregunta clave
+&quot;¿Cómo me mantengo conectado y cómo apoyo al centro?&quot;
+Motivación
+Saber el calendario de actividades · Donar o ser benefactor · Conectarse con otros practicantes · Traer amigos o familiares · Acceder a recursos de práctica
+Miedos
+Perder información de actividades · Que el centro cierre por falta de recursos · Sentirse desconectado de la comunidad cuando no puede asistir físicamente
+Cómo llega
+Directo al sitio o Instagram · Grupo de WhatsApp del centro · Newsletter mensual
+Lo que necesita del sitio
+Calendario actualizado siempre · Mecanismo de donación simple · Noticias y actualizaciones del centro · Sentir que el sitio es &apos;vivo&apos; y que la comunidad existe
+Referente que lo hace bien
+Spirit Rock: sección de donaciones integrada al relato de la misión. Sangha Live: comunidad online activa con eventos recurrentes y biblioteca de recursos accesible siempre.
+3. User Journey — El Curioso (25–35 años)
+Objetivo del journey: Que una persona que nunca ha meditado ni conoce el budismo llegue al sitio y termine enviando un WhatsApp o asistiendo a su primera sesión en menos de 72 horas.
+3.1 Mapa de etapas
+Etapa
+Touchpoint
+Qué hace
+Qué siente
+Qué debe hacer Khamlungpa
+1. Descubrimiento
+📱
+Instagram / Google / amigo
+Ve un post, busca &apos;meditación Guadalajara&apos;, o recibe recomendación
+Curiosidad mezclada con incertidumbre. &apos;¿Esto es para mí?&apos;
+Post de IG con frase potente + CTA &apos;Aprende más&apos;. Aparecer en top 3 de Google Maps con fotos del espacio.
+2. Primera visita al sitio
+💻
+Homepage
+Busca entender qué es el lugar y si puede ir sin experiencia
+Evaluando. Si en 10 segundos no entiende, se va
+Hero claro: &apos;¿Primera vez? No necesitas experiencia.&apos; Botón visible: &apos;Empieza aquí&apos;. Foto real del espacio, no imágenes de stock.
+3. Exploración
+🔍
+Página /empieza-aqui
+Lee el FAQ de principiante. Mira los horarios
+Aliviado al ver que no hay requisitos. Curiosidad activa
+FAQ responde sus 6 miedos principales. Calendario con la próxima sesión destacada. Botón WhatsApp con mensaje: &apos;Hola, quiero asistir por primera vez...&apos;
+4. Primer contacto
+💬
+WhatsApp
+Envía mensaje. Recibe respuesta
+Nervioso pero comprometido. La respuesta rápida es clave
+Respuesta en menos de 2 horas. Mensaje cálido, breve, con info práctica: hora, dirección, qué llevar. Sin jargon budista.
+5. Primera visita física
+🧘
+Centro presencial
+Asiste a meditación guiada abierta
+Vulnerable. Observando si se siente bienvenido
+Bienvenida sin presión. Nadie le pregunta si es budista. Espacio cálido. Al final: invitación gentil al próximo evento.
+6. Regreso
+🔄
+WhatsApp / Instagram / Sitio
+Sigue el IG, vuelve al sitio, vuelve al centro
+&apos;Esto me hace bien. Quiero seguir&apos;
+Newsletter con reflexión semanal. Post de IG que muestra la comunidad. Link a próximo curso introductorio.
+7. Conversión a estudiante
+📚
+Inscripción a curso
+Se inscribe a Budismo en Pocas Palabras
+Comprometido. Ya es parte de la comunidad
+Proceso de inscripción simple: 1 mensaje de WhatsApp o formulario corto. Donativo sugerido transparente.
+3.2 Puntos de fricción críticos y soluciones
+Punto de fricción
+Por qué se pierde aquí
+Solución Khamlungpa
+1
+Hero del sitio sin propuesta clara
+El visitante no sabe en 5 segundos si esto es para él
+Texto: &apos;Meditación guiada en Guadalajara. Sin experiencia previa. Abierto a todos.&apos;
+2
+No hay página &apos;Empieza aquí&apos;
+Tiene que explorar todo el sitio para encontrar info básica
+Página /empieza-aqui con 6 preguntas frecuentes del principiante
+3
+WhatsApp solo en el footer
+No hay invitación a contactar en el momento de mayor interés
+Botón flotante + CTA al final de cada página con mensaje prellenado
+4
+Fechas y horarios no visibles inmediatamente
+No puede actuar aunque quiera — no sabe cuándo ir
+Tabla de &apos;Esta semana en el centro&apos; en la homepage, siempre actualizada
+5
+Respuesta lenta por WhatsApp
+Pierde el momentum, se enfría el interés
+Tiempo de respuesta máximo 2 horas en horario hábil. Mensaje automático de bienvenida fuera de horario.
+3.3 Contenido específico para este perfil
+En el sitio web:
+Hero con foto real del espacio y texto: &apos;Meditación y budismo tibetano en Guadalajara. Para curiosos, principiantes y practicantes.&apos;
+Botón prominente: &apos;Primera vez aquí — Empieza aquí&apos;
+Sección &apos;¿Por qué meditar?&apos; con beneficios en lenguaje cotidiano (estrés, ansiedad, claridad mental)
+Video corto (60 seg) del maestro o la comunidad dando la bienvenida
+En Instagram:
+Posts semanales: frases de meditación en diseño limpio con CTA &apos;Únete a nuestra próxima sesión&apos;
+Stories: &apos;Esta semana en el centro — Meditación guiada, martes 20h&apos;
+Reels: clips cortos de meditaciones guiadas (30-60 segundos)
+En WhatsApp (primer contacto):
+&quot;Hola, bienvenido/a a Khamlungpa. Qué bueno que escribes. Nuestra próxima meditación abierta es el [día] a las [hora] en [dirección]. No necesitas experiencia previa ni llevar nada especial. ¿Tienes alguna duda?&quot;  — Respuesta tipo del centro
+4. User Journey — El Practicante (35–50 años)
+Objetivo del journey: Que alguien con experiencia previa en meditación o budismo reconozca a Khamlungpa como un centro serio con linaje real, y se inscriba a un programa estructurado.
+4.1 Mapa de etapas
+Etapa
+Touchpoint
+Qué hace
+Qué siente
+Qué debe hacer Khamlungpa
+1. Búsqueda activa
+🔎
+Google / FPMT directorio
+Busca &apos;FPMT México&apos;, &apos;budismo tibetano Guadalajara&apos;, directorio FPMT
+Evaluador. Busca señales de seriedad y linaje
+Aparecer en directorio FPMT con link activo. Posicionar en Google para &apos;FPMT Guadalajara&apos;. Nombre y afiliación visibles inmediatamente en el sitio.
+2. Evaluación del sitio
+🧐
+Página de maestros + programas
+Lee bios de maestros, revisa los programas de estudio detallados
+Crítico. Busca credenciales reales y estructura seria
+Bio completa de Ven. Norbu: formación, maestros con quienes estudió, años de experiencia. Programas con módulos detallados (ya existen en el código — solo necesitan mejor presentación).
+3. Validación
+✅
+FPMT.org + redes externas
+Verifica la afiliación FPMT, busca información del centro en fuentes externas
+Confirmando. Si todo cuadra, la decisión está tomada
+Badge FPMT visible en header o hero. Link al directorio oficial FPMT. Mencionar años de trayectoria (desde 2003).
+4. Primer contacto
+📧
+WhatsApp / email
+Escribe preguntando por el próximo curso o retiro
+Interesado y directo. Hace preguntas específicas
+Respuesta detallada y sin condescendencia. Información del programa, prerrequisitos, costos, fechas. Tono de par a par.
+5. Primera asistencia
+🧘
+Clase avanzada o retiro
+Asiste a &apos;Explorando el Budismo&apos; o clase del Programa Básico
+Evaluando la calidad del maestro y la comunidad
+La calidad de la enseñanza es el factor decisivo. El sitio lo preparó; la experiencia lo retiene.
+6. Inscripción formal
+📋
+Programa Básico / Explorando
+Se inscribe al programa que le corresponde por nivel
+Comprometido. Ya es parte del Sangha
+Proceso de inscripción con ficha clara: compromiso, materiales, costo, beneficios. Certificación FPMT visible como meta.
+4.2 Contenido específico para este perfil
+En el sitio web:
+Página de maestros con bio extensa: estudios con qué maestros, años de práctica, certificaciones FPMT, qué enseñan específicamente
+Ruta de estudios visual: Budismo en Pocas Palabras → Descubre el Budismo → Explorando el Budismo → Programa Básico (con descripción de prerrequisitos de cada nivel)
+Badge FPMT prominente con texto: &apos;Afiliados a la FPMT desde 2005 · Linaje Gelugpa Lama Tsongkhapa&apos;
+Los 14 módulos de Descubre el Budismo y los 9 del Programa Básico visibles con descripción (ya existen en el código)
+Mención de Gueshe Lobsang Dawa como facilitador del Programa Básico — credencial de peso
+En Instagram:
+Posts sobre filosofía budista tibetana con profundidad: impermanencia, vacuidad, bodichita
+Citas de los maestros clásicos: Lama Tsongkhapa, Lama Zopa, Shantideva
+Anuncios de visita de maestros con su bio completa
+Diferenciador clave vs. Kadampa:
+Ventaja de Khamlungpa: Kadampa tiene mejor UX digital pero Khamlungpa tiene el Programa Básico de la FPMT con certificación real, Gueshe calificado como maestro, y acceso al sistema de estudios de 5 años. Esto es lo que El Practicante está buscando. El sitio debe decirlo con claridad.
+5. User Journey — La Comunidad (50+ años)
+Objetivo del journey: Que los miembros existentes del centro se mantengan conectados, asistan con regularidad, donen, traigan a otros, y sientan que el sitio es un reflejo vivo de la comunidad.
+5.1 Mapa de etapas
+Etapa
+Touchpoint
+Qué hace
+Qué siente
+Qué debe hacer Khamlungpa
+1. Consulta habitual
+📅
+Sitio / WhatsApp del centro
+Consulta el calendario de actividades del mes
+Fidelizado. Solo necesita información actualizada
+Sección &apos;Este mes en el centro&apos; siempre actualizada. Acceso directo al calendario en el menú. Opción de suscribirse al Google Calendar del centro.
+2. Participación
+🙏
+Centro físico o Zoom
+Asiste a clases, pujas, retiros, actividades especiales
+Pertenencia y propósito. La comunidad lo sostiene
+El sitio no necesita convencerlo — necesita no fallarle. Horarios correctos, fechas sin errores, info de modalidad (presencial/online) siempre clara.
+3. Contribución
+💛
+Página /donar
+Hace un donativo o contribución mensual
+Quiere apoyar pero necesita el mecanismo fácil
+Página de donación con historia: &apos;¿Cómo se sostiene el centro?&apos; + opciones claras: pago único, mensual, transferencia. Gracias genuinas en el proceso.
+4. Evangelización
+👥
+Redes / WhatsApp personal
+Comparte contenido del centro con amigos y familia
+Embajador natural. Quiere que otros descubran el centro
+Contenido compartible: citas, videos de meditación, posts de IG con frases. Botón &apos;Comparte esta meditación&apos; en el sitio.
+5. Acceso a recursos
+📖
+Sitio / newsletter
+Accede a recursos de práctica, oraciones, calendario tibetano
+Quiere profundizar en casa
+Sección de recursos: oraciones descargables, calendario budista, guías de práctica. Newsletter mensual con reflexión y actividades.
+5.2 Contenido específico para este perfil
+En el sitio web:
+Calendario siempre actualizado con opción de suscripción (Google Calendar / iCal)
+Página /donar con relato humano: cómo se sostiene el centro, qué permite cada donativo, opciones de monto
+Sección de recursos descargables: oraciones, calendario tibetano, guías de práctica
+Galería de fotos del centro y la comunidad (muestra vida real, no imágenes de stock)
+En WhatsApp (grupo de comunidad):
+Grupo de WhatsApp del centro para miembros: recordatorios de actividades, avisos de maestros visitantes, comparte reflexiones
+Mensaje semanal automático: &apos;Esta semana en Khamlungpa...&apos;
+En Instagram:
+Stories cada semana mostrando el centro &apos;en vivo&apos;: quién llegó, qué se practicó, fotos del espacio
+Foto del grupo después de cada sesión especial o retiro — genera pertenencia
+Agradecimientos públicos a voluntarios y benefactores (con permiso)
+6. Mapa del Ecosistema Digital
+El sitio web no puede funcionar solo. El ecosistema completo de Khamlungpa debe tener piezas que se refuerzan mutuamente, cada una con un rol específico en el journey de cada perfil.
+6.1 Rol de cada canal
+Canal
+Rol principal
+Para El Curioso
+Para El Practicante
+Para La Comunidad
+Sitio web
+Hub central de toda la información
+Primera impresión, eliminar miedos, primer paso
+Credenciales, programas detallados, linaje
+Calendario, recursos, donación
+Google / SEO
+Captación orgánica de nuevos visitantes
+Búsquedas: &apos;meditación Guadalajara&apos;
+Búsquedas: &apos;FPMT México&apos;, &apos;budismo tibetano GDL&apos;
+Búsqueda directa por nombre
+Google Maps / Business
+Presencia local y confianza
+Foto del espacio, horarios, reseñas
+Verificación de existencia real
+Referencia rápida de horario
+Instagram
+Comunidad visual y captación joven
+Primer contacto visual. Posts de meditación
+Contenido filosófico profundo
+Vida de la comunidad, eventos
+WhatsApp
+Conversión y atención personalizada
+Primer contacto sin fricción
+Consulta de programas específicos
+Calendario semanal, grupo activo
+Newsletter (email)
+Retención y profundidad
+N/A (todavía no confía suficiente)
+Reflexiones del Dharma, anuncios de retiros
+Actividades del mes, recursos
+YouTube (futuro)
+Contenido de valor y SEO
+Meditaciones guiadas gratuitas
+Enseñanzas filosóficas, charlas de maestros
+Archivo de enseñanzas pasadas
+6.2 Flujo de conversión por perfil
+El Curioso:
+Instagram/Google  →  Sitio web (homepage)  →  Página /empieza-aqui  →  WhatsApp  →  Primera sesión  →  Instagram follow + Newsletter  →  Inscripción a curso
+El Practicante:
+Google / FPMT Directorio  →  Sitio web (maestros + programas)  →  Validación externa  →  WhatsApp/email  →  Primera clase avanzada  →  Programa Básico / Explorando
+La Comunidad:
+Grupo WhatsApp / Newsletter  →  Calendario del sitio  →  Asistencia regular  →  Página /donar  →  Evangelización a su red  →  Recursos y práctica en casa
+7. Diseño del Sitio Web por Etapa del Journey
+Cada página del sitio existe para servir a un momento específico del journey. A continuación el diseño detallado de las páginas más críticas, con el contenido exacto que debe aparecer en cada una, basado en lo que funciona en los mejores sitios del nicho.
+7.1 Homepage — La puerta de entrada
+Inspiración: Lion&apos;s Roar (mensaje emocional + CTA inmediato) + Kadampa México (actividades por día de la semana visibles) + Spirit Rock (testimonios y donación integrada)
+Sección 1 — Hero (above the fold)
+Elemento
+Contenido exacto recomendado
+Headline H1
+Meditación y budismo tibetano en Guadalajara
+Subheadline
+Un espacio para calmar la mente, estudiar el Dharma y cultivar compasión. Abierto a todos — no necesitas experiencia previa.
+Botón primario
+PRIMERA VEZ AQUÍ  (color naranja, grande, lleva a /empieza-aqui)
+Botón secundario
+VER ACTIVIDADES DE ESTA SEMANA  (color secundario, lleva al calendario)
+Botón flotante
+Ícono WhatsApp fijo en esquina inferior derecha, siempre visible en todo el sitio
+Imagen de fondo
+Foto real del espacio del centro durante una sesión — no imágenes de stock de budas o flores de loto
+Sección 2 — Esta semana en el centro (siempre actualizado)
+Tabla sencilla con las actividades de la semana actual. El dato que más buscan los tres perfiles. Inspirado en Kadampa México que muestra cada clase con día, hora y nivel directamente en el menú.
+Actividad
+Día
+Hora
+Modalidad
+Acción
+Meditación guiada
+Lunes
+20:00
+Presencial + Online
+→ Confirmar asistencia por WhatsApp
+Explorando el Budismo
+Jueves
+20:00
+Presencial + Online
+→ Más información del curso
+Meditación corta
+Martes y Jueves
+08:30
+Solo Online
+→ Pedir link por WhatsApp
+Sección 3 — Tres caminos (por perfil de visitante)
+Inspirado en Tushita que separa claramente entre cursos introductorios, intermedios, online y retiros. Tres tarjetas visuales que llevan a cada perfil al lugar correcto del sitio.
+Primera vez
+Quiero profundizar
+Soy parte del centro
+Para quien nunca meditó o no conoce el budismo. Empezá sin compromiso.
+→ Ver meditaciones abiertas
+→ Preguntas frecuentes
+→ Escríbenos por WhatsApp
+Para quien ya tiene práctica y busca estudiar el budismo tibetano en profundidad.
+→ Programas de estudio FPMT
+→ Conocer a los maestros
+→ Ruta de aprendizaje
+Para miembros y practicantes regulares que quieren mantenerse conectados.
+→ Calendario del mes
+→ Cómo apoyar al centro
+→ Recursos de práctica
+Sección 4 — Quiénes somos (credibilidad rápida)
+Texto de 3 líneas máximo: fundado en 2003, afiliado a FPMT desde 2005, único centro tibetano activo en Guadalajara
+Logo FPMT con link al directorio oficial
+Número de años de trayectoria: &apos;20+ años acompañando la práctica en Guadalajara&apos;
+Foto del maestro residente (Ven. Norbu) con su nombre y rol
+Sección 5 — Testimonios
+Inspirado en Spirit Rock. Dos o tres citas reales de practicantes (con nombre y tiempo en el centro). Humaniza el espacio y genera confianza para los tres perfiles.
+&quot;Llegué sin saber nada de budismo, buscando calmar mi ansiedad. Tres años después, es parte esencial de mi vida.&quot;  — Practicante regular, 3 años en el centro
+Sección 6 — Donación (integrada al relato)
+Inspirado en Spirit Rock y Vipassana. No es un botón frío de &apos;donar&apos; sino parte de la narrativa de la comunidad.
+Texto sugerido: &apos;El centro Khamlungpa se sostiene por la generosidad de la comunidad. No hay cuota obligatoria — cada donativo, grande o pequeño, permite que las enseñanzas del Dharma sigan siendo accesibles en Guadalajara.&apos;  →  Botón: Contribuir al centro
+7.2 Página /empieza-aqui — La clave para El Curioso
+Inspiración: FPMT &apos;New to Buddhism?&apos; + Kadampa Guadalajara &apos;no necesitas experiencia previa&apos;. Esta es la página más importante para el perfil de mayor crecimiento.
+Contenido exacto que debe responder esta página, en orden de importancia:
+#
+Pregunta del visitante
+Respuesta de Khamlungpa
+1
+¿Tengo que ser budista para venir?
+No. El centro está abierto a cualquier persona curiosa, independientemente de su religión o creencias.
+2
+¿Necesito experiencia previa en meditación?
+No. Las sesiones abiertas de meditación guiada son para cualquier nivel. El instructor guía todo el proceso.
+3
+¿Qué pasa en una sesión de meditación?
+Llegás, te sentás cómodamente (hay sillas disponibles si no puedes sentarte en el suelo). El instructor explica brevemente y guía la meditación. Dura 60 minutos. No hay que hacer nada especial.
+4
+¿Tiene costo?
+Las meditaciones abiertas son de donativo voluntario — contribuís lo que puedas. Los cursos tienen un donativo sugerido que se comunica al momento de inscribirse.
+5
+¿Necesito llevar algo especial o vestirme de alguna manera?
+No hay código de vestimenta. Ropa cómoda está bien. No necesitas traer nada.
+6
+¿Puedo ir una sola vez sin compromiso?
+Sí. Podés asistir a cualquier meditación abierta sin inscripción ni compromiso. Llegás, participás y te vas.
+7
+¿Hay clases online?
+Sí. Varias actividades tienen modalidad online por Zoom. Solo escribí por WhatsApp para recibir el link.
+8
+¿Por dónde empiezo?
+El mejor primer paso es asistir a una meditación guiada abierta. Son los lunes a las 20:00h, presencial y online. Escribí por WhatsApp y te mandamos la info.
+CTA al final de la página: BOTÓN GRANDE: &apos;Quiero asistir a mi primera sesión — Escríbenos por WhatsApp&apos; con mensaje prellenado: &apos;Hola, me interesa asistir por primera vez a una meditación guiada. ¿Qué necesito saber?&apos;
+7.3 Páginas de Programas — La clave para El Practicante
+Cada programa debe tener una ficha estructurada. El contenido ya existe en el código HTML — solo necesita mejor presentación. Esta es la estructura exacta por programa:
+Campo
+Qué debe mostrar
+Nombre del programa
+Título claro sin abreviaciones
+Nivel
+Principiante / Intermedio / Avanzado — con descripción de qué se necesita saber antes
+Duración
+Número de semanas/meses, frecuencia de clases
+Modalidad
+Presencial / Online / Mixto con días y horarios concretos
+Facilitador
+Nombre + foto + 3 líneas de bio con sus maestros y formación
+Para quién es
+2-3 oraciones en lenguaje cotidiano, no jerga budista
+Qué aprenderás
+Lista de 5-8 bullets de los módulos principales (ya existen en el código)
+Donativo/Costo
+Monto sugerido o política de donativo — nunca &apos;consultar&apos;
+Prerrequisitos
+Qué programa conviene hacer antes (construye la ruta de estudios)
+Próxima edición
+Fecha de inicio de la siguiente edición o &apos;Avisarme cuando haya lugar&apos;
+CTA
+Botón WhatsApp con mensaje prellenado específico para ese programa
+8. WhatsApp como canal de conversión
+WhatsApp es el canal más importante para la conversión en el contexto mexicano. Todos los centros exitosos lo usan como primer punto de contacto humano. El problema actual de Khamlungpa es que WhatsApp está solo en el footer, sin mensajes prellenados y sin estrategia de respuesta.
+8.1 Botón flotante en el sitio
+Posición: fijo en la esquina inferior derecha, visible en todas las páginas
+Ícono: logo oficial de WhatsApp, tamaño 56px
+Tooltip al hover: &apos;Escríbenos — respondemos en menos de 2 horas&apos;
+En mobile: toca para abrir WhatsApp directamente
+8.2 Mensajes prellenados por página
+Cada CTA de WhatsApp debe abrir con un mensaje prellenado relevante. Esto reduce la fricción del visitante (no tiene que escribir) y ayuda al centro a dar una respuesta más útil y rápida.
+Página de origen
+Mensaje prellenado
+Homepage / General
+Hola, me interesa conocer el Centro Khamlungpa. ¿Pueden decirme más sobre las actividades y cómo puedo asistir?
+/empieza-aqui
+Hola, me gustaría asistir por primera vez a una meditación guiada. Es mi primera vez. ¿Qué necesito saber?
+/meditacion (sesión abierta)
+Hola, me interesa la meditación guiada del lunes/miércoles. ¿Está disponible esta semana? ¿Necesito inscribirme?
+Descubre el Budismo
+Hola, me interesa el curso Descubre el Budismo. ¿Cuándo comienza la próxima edición y cuál es el donativo sugerido?
+Explorando el Budismo
+Hola, quiero información sobre el curso Explorando el Budismo. Ya tengo experiencia previa. ¿Cuáles son los prerrequisitos?
+Programa Básico
+Hola, me interesa el Programa Básico de la FPMT. ¿Podrían darme información sobre el próximo ciclo, duración y compromiso?
+Calendario (evento específico)
+Hola, vi el evento [nombre] del [fecha] en el calendario. ¿Cómo puedo confirmar mi asistencia?
+/donar
+Hola, quiero hacer una contribución al centro. ¿Cuáles son las opciones de donativo disponibles?
+8.3 Protocolo de respuesta
+Regla de oro: Una respuesta en menos de 2 horas durante horario hábil convierte 3x más que una respuesta al día siguiente. Este es el factor más impactante y menos costoso de mejorar.
+Estructura de respuesta para El Curioso:
+Saludo cálido y personalizado — NO copiar/pegar genérico
+Responder exactamente lo que preguntó en 2-3 líneas
+Dar la información práctica: día, hora, dirección, modalidad
+Una sola invitación a la acción — no abrumar con información
+Cerrar con apertura: &apos;Si tenés más preguntas, con gusto te respondo&apos;
+Herramientas recomendadas:
+WhatsApp Business (gratuito): permite mensajes de bienvenida automáticos fuera de horario, etiquetas de contacto y respuestas rápidas guardadas
+Mensaje automático fuera de horario: &apos;Hola, gracias por escribirnos. En este momento estamos fuera de horario. Te respondemos mañana antes de las 10am. Mientras tanto, podés ver nuestro calendario en khamlungpa.com&apos;
+Etiquetas en WhatsApp Business: Curioso, Practicante, Comunidad, Primera vez, Inscripto
+8.4 Grupo de comunidad (WhatsApp)
+Para La Comunidad (50+ años), crear un grupo de WhatsApp del centro es la herramienta de retención más efectiva y de menor costo.
+Nombre del grupo: &apos;Centro Khamlungpa — Comunidad&apos;
+Solo administradores pueden publicar (evita ruido)
+Contenido semanal: recordatorio de actividades, reflexión del Dharma, avisos importantes
+Máximo 2-3 mensajes por semana — la moderación es clave para que nadie lo silencie
+9. Estrategia de Redes Sociales
+Principio guía: Las redes sociales atraen. El sitio web convierte. WhatsApp cierra. Cada canal tiene un rol en la cadena — no son intercambiables.
+9.1 Instagram — Canal de captación principal
+Instagram es el punto de entrada más efectivo para El Curioso. Kadampa México y Casa Tibet lo usan principalmente para mostrar comunidad, actividades y contenido de meditación accesible. El objetivo no es el número de seguidores sino la calidad de la intención de quien llega.
+Pilares de contenido (4 tipos de posts, rotar semanalmente)
+Pilar
+Formato
+Frecuencia
+Ejemplo de contenido
+Meditación práctica
+Carrusel o Reel 30-60s
+2x por semana
+&apos;3 minutos para calmar la mente — practica con nosotros&apos; + audio guiado
+Filosofía accesible
+Imagen con cita + texto corto
+1x por semana
+Frase de Lama Zopa o Shantideva con explicación en 3 líneas sin jargon
+Vida del centro
+Foto real, Story, Reel
+1x por semana
+Foto de la sesión del lunes, el espacio, los practicantes (con permiso)
+Invitación directa
+Story o post con CTA
+1x por semana
+&apos;Esta semana: Meditación guiada — Lunes 20h — Presencial y online — Link en bio&apos;
+Bio del perfil de Instagram (recomendada)
+Centro Khamlungpa Guadalajara
+Meditación · Budismo Tibetano · FPMT
+Abierto a todos — sin experiencia previa
+Presencial + Online · Guadalajara, Mex
+khamlungpa.com
+Integración Instagram → Sitio
+El link en bio lleva a una página de &apos;Linktree&apos; simplificada en el sitio propio (/links) con: Actividades de esta semana, Primer vez aquí, Calendario, WhatsApp
+Cada post que mencione una actividad debe terminar con: &apos;Link en bio para más info y WhatsApp directo&apos;
+9.2 Facebook — Canal de comunidad establecida
+Casa Tibet tiene 148,000 seguidores en Facebook — su audiencia principal son los 35+ años. Para Khamlungpa, Facebook no es prioridad de captación pero sí de retención de La Comunidad.
+Publicar el mismo contenido de Instagram (cross-posting automático)
+Usar Eventos de Facebook para cada actividad especial — genera recordatorios automáticos
+La página ya existe — solo necesita ser más activa y tener horarios actualizados
+9.3 Google Business Profile — El canal más subestimado
+Dato clave: El 46% de todas las búsquedas en Google tienen intención local. &apos;Meditación Guadalajara&apos; sin un perfil de Google Business optimizado es tráfico regalado a Kadampa.
+Completar al 100%: descripción, horarios, categoría (&apos;Centro de meditación&apos;, &apos;Templo budista&apos;), fotos del espacio interior y exterior
+Publicar en Google Business 1-2 veces por semana (aparece en los resultados de Maps)
+Responder TODAS las reseñas — positivas y negativas — con nombre y de forma personalizada
+Crear &apos;Google Post&apos; para cada evento especial o visita de maestro
+10. Sistema de Retención y Comunidad
+Atraer es solo la primera parte. Los centros más exitosos retienen porque tienen sistemas que mantienen el contacto entre visitas, celebran el progreso del practicante y hacen sentir a cada persona que pertenece a algo real.
+10.1 Newsletter mensual
+Referencia: Lion&apos;s Roar tiene varios newsletters segmentados con miles de suscriptores. Para Khamlungpa, uno bien hecho cada mes es suficiente para empezar.
+Estructura recomendada del newsletter (1 email mensual):
+Sección
+Contenido
+Asunto del email
+Algo humano, no institucional. Ej: &apos;Qué aprendimos este mes en el centro&apos;
+Apertura
+Reflexión breve de Ven. Norbu — 2-3 párrafos en primera persona, no formal
+Actividades del mes
+Calendario del mes próximo con días, horarios y links de inscripción
+Recurso gratuito
+Un audio de meditación, una oración, un texto descargable — algo de valor real
+Historia de la comunidad
+Una foto del grupo, un testimonio breve, algo que muestre vida real
+Cómo apoyar
+Botón de donación con una sola línea: &apos;Tu apoyo sostiene el Dharma en Guadalajara&apos;
+Cierre
+Frase de uno de los maestros del linaje — despedida cálida
+Herramienta: Mailchimp (gratuito hasta 500 suscriptores). El formulario de suscripción debe estar en la homepage y en el footer de todas las páginas.
+10.2 Ruta de estudios visible (retención del Practicante)
+El sistema de retención más poderoso para El Practicante es que pueda ver claramente a dónde va. Tushita lo hace con su ruta de cursos por nivel. Khamlungpa tiene todos los programas necesarios — solo falta mostrar la progresión.
+Nivel
+Programa
+Duración
+Modalidad
+Certificación
+Principiante
+Budismo en Pocas Palabras
+Talleres puntuales
+Presencial + Online
+—
+Principiante
+Descubre el Budismo
+~2 años · 14 módulos
+Presencial + Online
+Certificado FPMT
+Intermedio
+Explorando el Budismo
+3 años · 10 módulos
+Presencial + Online
+Certificado FPMT
+Intermedio
+70 Temas
+Continuado
+Presencial + Online
+—
+Avanzado
+Programa Básico
+5 años · 9 módulos
+Presencial
+Diploma FPMT
+10.3 Donación como parte de la identidad del centro
+Vipassana y Spirit Rock demuestran que cuando la donación se integra al relato de la misión — no como un botón transaccional sino como un acto de práctica — la gente dona con más frecuencia y con más generosidad.
+Elementos de la página /donar:
+Titular: &apos;Tu generosidad sostiene el Dharma en Guadalajara&apos;
+Historia corta: &apos;¿Cómo se sostiene Khamlungpa? El centro opera gracias a los donativos voluntarios de estudiantes y visitantes. No hay cuota obligatoria porque queremos que las enseñanzas sean accesibles para todos.&apos;
+Tres niveles sugeridos: Donativo puntual / Apoyo mensual / Benefactor (con descripción de a qué contribuye cada monto)
+Mecanismo: Transferencia SPEI + MercadoPago (tarjeta) + PayPal para donantes internacionales
+Cierre: Frase del linaje sobre la generosidad como práctica espiritual
+11. Hoja de Ruta de Implementación
+Las fases están ordenadas por impacto en los journeys de los tres perfiles. Las primeras dos fases no requieren rediseño visual completo — mejoran directamente la conversión del sitio actual.
+Fase 1 — Correcciones y quick wins (Semanas 1–2)
+Impacto principal: Elimina fricciones que hoy hacen perder visitantes del Curioso y del Practicante antes de que tomen acción.
+#
+Tarea
+Journey impactado
+Esfuerzo
+Impacto
+1
+Cambiar lang=&apos;en&apos; a lang=&apos;es-MX&apos;
+Los tres
+30 min
+Alto
+2
+Título único y meta description por página
+Curioso (SEO)
+3 horas
+Alto
+3
+Corregir 4 links rotos a 404.html
+Los tres
+30 min
+Alto
+4
+Agregar botón flotante de WhatsApp con mensaje prellenado
+Curioso + Practicante
+1 hora
+Alto
+5
+Poner título visible en modal del Ebook
+Curioso
+15 min
+Medio
+6
+Actualizar festividades a 2026
+Comunidad
+30 min
+Medio
+7
+Corregir typo de email en Etica.html
+Los tres
+5 min
+Medio
+8
+Actualizar copyright con JS dinámico
+Los tres
+10 min
+Bajo
+Fase 2 — Conversión y contenido crítico (Semanas 3–6)
+Impacto principal: Crea las páginas que más necesita El Curioso (/empieza-aqui) y activa el canal de retención de La Comunidad (newsletter + donación).
+Crear página /empieza-aqui con el FAQ completo de 8 preguntas (contenido de esta sección del documento)
+Crear página /donar con relato de la misión y mecanismo de pago
+Mejorar fichas de todos los programas: agregar nivel, modalidad, fechas y CTA de WhatsApp
+Unificar el nav y footer en todos los archivos (o migrar a sistema de includes JS)
+Configurar WhatsApp Business con mensajes automáticos fuera de horario
+Crear perfil en Mailchimp y agregar formulario de newsletter a homepage y footer
+Optimizar Google Business Profile: fotos, horarios, descripción completa
+Crear sitemap.xml y enviar a Google Search Console
+Fase 3 — Rediseño UX/UI (Mes 2–3)
+Impacto principal: Moderniza la primera impresión para los tres perfiles. El Curioso ve un sitio confiable y claro. El Practicante ve seriedad institucional. La Comunidad ve vida real del centro.
+Nuevo hero con las tres opciones de entrada por perfil
+Tabla dinámica &apos;Esta semana en el centro&apos; conectada a Google Calendar
+Rediseño de fichas de programas con la estructura definida en esta sección
+Perfiles completos de maestros: Ven. Norbu, Gueshe Lobsang Dawa, otros facilitadores
+Sección de testimonios reales (2-3 practicantes)
+Galería de fotos reales del espacio y la comunidad
+Implementar JSON-LD LocalBusiness y Event para SEO técnico
+Diseño mobile-first revisado — más del 70% del tráfico llegará por celular
+Fase 4 — Ecosistema y contenido orgánico (Mes 3–6)
+Impacto principal: Construye la presencia orgánica que funciona sin publicidad paga. Un artículo bien hecho sobre &apos;meditación en Guadalajara&apos; puede traer visitas por años.
+Lanzar sección /recursos con los primeros 4 artículos SEO (convertir módulos de cursos existentes)
+Primer newsletter mensual enviado a la lista existente del centro
+Estrategia de Instagram: 4 posts semanales con los 4 pilares definidos
+Grupo de WhatsApp de comunidad para practicantes regulares
+Primeros 2 audios de meditación guiada para descarga (lead magnet)
+Primer video de YouTube: meditación guiada de 15 minutos con Ven. Norbu
+Una última reflexión
+Los centros budistas más exitosos digitalmente no lo son por su tecnología ni por su presupuesto. Lo son porque cada decisión de diseño — cada palabra en la homepage, cada CTA, cada respuesta de WhatsApp — parte de la misma pregunta:
+&quot;¿Qué necesita escuchar esta persona en este momento para sentirse bienvenida y saber cuál es su siguiente paso?&quot;
+Khamlungpa tiene la enseñanza. Tiene el linaje. Tiene la comunidad. Este proyecto es simplemente hacer que todo eso sea más visible, más accesible y más fácil de encontrar para las personas que lo están buscando — aunque todavía no sepan exactamente qué están buscando.
+— Centro Khamlungpa · Diseño de Experiencia del Visitante · 2026 —
