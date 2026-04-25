@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programas — Centro Khamlungpa | Estudios Budistas Tibetanos</title>
+<meta name="description" content="Programas de meditación y estudios budistas. Desde Budismo en Pocas Palabras hasta Programa Básico FPMT. Elige tu nivel y comienza tu práctica.">
+<link rel="canonical" href="https://khamlungpa.com/programas">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Language" content="es-MX">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khamlungpa.com/programas">
+<meta property="og:title" content="Programas — Centro Khamlungpa">
+<meta property="og:description" content="Programas de meditación y estudios budistas tibetanos.">
+<meta property="og:image" content="https://khamlungpa.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#F4ECE0;
+    --paper-2:#EFE6D6;
+    --paper-3:#E8DDC8;
+    --ink:#2A2622;
+    --ink-2:#4A423A;
+    --ink-3:#6B6158;
+    --clay:#8B2E1F;
+    --clay-2:#A94430;
+    --terracotta:#C97B4A;
+    --ochre:#D4A35A;
+    --moss:#5C6B4E;
+    --cream:#FBF7EF;
+    --line:rgba(42,38,34,0.12);
+    --line-2:rgba(42,38,34,0.06);
+    --serif:"Fraunces","Times New Roman",serif;
+    --sans:"Inter",-apple-system,system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
+  ::selection{background:var(--clay);color:var(--cream);}
+
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--clay);}
+  .display{font-family:var(--serif);font-weight:400;letter-spacing:-0.022em;line-height:1.02;color:var(--ink);}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 22px;border-radius:999px;
+    font-family:var(--sans);font-weight:500;font-size:14.5px;
+    letter-spacing:0.01em;cursor:pointer;border:none;
+    transition:transform .15s ease, background .15s ease, box-shadow .15s ease;
+    text-decoration:none;
+  }
+  .btn.primary{background:var(--clay);color:var(--cream);}
+  .btn.primary:hover{background:var(--clay-2);transform:translateY(-1px);box-shadow:0 8px 22px rgba(139,46,31,0.22);}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+  .btn.ghost:hover{background:rgba(42,38,34,0.04);border-color:var(--ink-3);}
+  .btn.wa{background:#25D366;color:#fff;}
+  .btn.wa:hover{background:#1fb958;}
+  .btn.wa-small{padding:10px 16px;font-size:13px;}
+  .footer-address{font-size:12px;color:rgba(251,247,239,0.60);margin-top:8px;}
+
+  header{
+    position:sticky;top:0;z-index:40;
+    background:rgba(244,236,224,0.9);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid transparent;
+    transition:border-color .2s, background .2s;
+  }
+  header.scrolled{border-bottom-color:var(--line);background:rgba(244,236,224,0.96);}
+  .nav{
+    max-width:1320px;margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 40px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand-txt-1{font-family:var(--serif);font-size:21px;line-height:1;letter-spacing:-0.01em;}
+  .brand-txt-2{font-family:var(--mono);font-size:9px;color:var(--ink-3);letter-spacing:0.12em;margin-top:3px;}
+  nav.links{display:flex;gap:28px;}
+  nav.links a{
+    font-size:13.5px;padding:6px 0;position:relative;color:var(--ink);
+    transition:color .15s;
+  }
+  nav.links a::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;
+    height:1px;background:var(--clay);
+    transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
+  }
+  nav.links a:hover{color:var(--clay);}
+  nav.links a:hover::after,
+  nav.links a.active::after{transform:scaleX(1);}
+  nav.links a.active{color:var(--clay);}
+  .nav-cta{display:flex;gap:10px;align-items:center;}
+  .menu-toggle{display:none;}
+
+  .hero{
+    max-width:1320px;margin:0 auto;
+    padding:80px 40px;
+    text-align:center;
+  }
+  .hero h1{font-size:clamp(48px, 6.2vw, 72px);margin-top:14px;}
+  .hero p{
+    font-size:16px;color:var(--ink-2);max-width:700px;
+    line-height:1.55;margin-top:20px;margin-left:auto;margin-right:auto;
+  }
+
+  section{scroll-margin-top:80px;}
+  .section-inner{max-width:1320px;margin:0 auto;padding:80px 40px;}
+  .section-head{margin-bottom:48px;}
+  .section-head h2{font-family:var(--serif);font-size:44px;font-weight:400;letter-spacing:-0.02em;margin-bottom:12px;}
+
+  .programs-list{display:grid;gap:32px;}
+  .program-detail{
+    background:var(--cream);border-radius:12px;padding:40px;
+    border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;
+  }
+  .program-detail:nth-child(even){grid-template-columns:1fr 1fr;}
+  .program-detail:nth-child(even) .program-info{order:2;}
+  .program-detail:nth-child(even) .program-highlights{order:1;}
+  .program-header{margin-bottom:20px;}
+  .program-level{font-family:var(--mono);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay);margin-bottom:8px;}
+  .program-title{font-family:var(--serif);font-size:32px;letter-spacing:-0.01em;margin-bottom:16px;}
+  .program-desc{color:var(--ink-2);line-height:1.7;margin-bottom:24px;}
+  .program-meta{display:flex;flex-direction:column;gap:12px;margin-bottom:24px;}
+  .meta-item{display:flex;gap:8px;align-items:start;font-size:14px;}
+  .meta-item strong{color:var(--clay);min-width:80px;}
+  .program-cta{display:flex;gap:10px;flex-wrap:wrap;}
+
+  .program-highlights{background:var(--paper-3);padding:24px;border-radius:8px;}
+  .highlights-title{font-weight:600;margin-bottom:16px;font-size:14px;}
+  .highlights-list{list-style:none;}
+  .highlights-list li{
+    padding:8px 0;font-size:13px;color:var(--ink-2);
+    position:relative;padding-left:20px;
+  }
+  .highlights-list li::before{
+    content:"✓";position:absolute;left:0;color:var(--clay);font-weight:bold;
+  }
+
+  footer{background:var(--ink);color:var(--cream);padding:56px 40px;margin-top:80px;}
+  .foot-inner{max-width:1320px;margin:0 auto;}
+  .foot-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:40px;margin-bottom:40px;}
+  .foot-col h4{font-family:var(--serif);font-size:16px;margin-bottom:18px;}
+  .foot-col ul{list-style:none;}
+  .foot-col a{color:rgba(251,247,239,0.72);font-size:13px;padding:6px 0;display:block;transition:color .15s;}
+  .foot-col a:hover{color:var(--cream);}
+  .foot-col p{font-size:13px;color:rgba(251,247,239,0.72);line-height:1.6;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;font-size:12px;color:rgba(251,247,239,0.56);}
+
+  .fab{
+    position:fixed;bottom:24px;right:24px;
+    width:60px;height:60px;border-radius:30px;
+    background:#25D366;color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 12px rgba(37,211,102,0.3);
+    z-index:30;transition:transform .2s, box-shadow .2s;
+    cursor:pointer;
+  }
+  .fab:hover{transform:scale(1.1);box-shadow:0 8px 24px rgba(37,211,102,0.4);}
+
+  @media (max-width: 768px){
+    .nav{padding:14px 18px;}
+    nav.links{display:none;}
+    .menu-toggle{display:flex;}
+    .hero{padding:56px 20px 40px;}
+    .section-inner{padding:56px 20px;}
+    .program-detail{grid-template-columns:1fr !important;gap:24px;}
+    .program-detail:nth-child(even) .program-info{order:auto !important;}
+    .program-detail:nth-child(even) .program-highlights{order:auto !important;}
+    .program-title{font-size:24px;}
+    .fab{width:54px;height:54px;bottom:16px;right:16px;}
+  }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="nav">
+    <a href="/" class="brand" aria-label="Inicio Khamlungpa">
+      <svg width="26" height="26" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+        <rect x="7" y="7" width="6" height="6" transform="rotate(45 10 10)" stroke="var(--clay)" stroke-width="1.3"/>
+      </svg>
+      <div>
+        <div class="brand-txt-1">Khamlungpa</div>
+        <div class="brand-txt-2">FPMT · GUADALAJARA · DESDE 2003</div>
+      </div>
+    </a>
+    <nav class="links" id="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/empieza-aqui">Empieza aquí</a>
+      <a href="/maestros">Maestros</a>
+      <a href="/programas" class="active">Programas</a>
+      <a href="/donar">Donar</a>
+    </nav>
+    <div class="nav-cta">
+      <button type="button" class="btn wa wa-small" onclick="openWA()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 21l1.6-5.2A8.5 8.5 0 1 1 8.2 19.4L3 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.8 8.6c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.6l-.4.5c-.1.1-.2.3 0 .6.3.5.8 1.2 1.4 1.6.7.5 1.3.8 1.6.9.3.1.5 0 .6-.1l.6-.6c.1-.2.3-.2.5-.1l1.5.7c.3.1.5.2.5.4 0 .2 0 1.1-.4 1.5-.4.4-1.4.9-2 .8-.5 0-1.3-.2-2.8-.8-2.4-.9-3.9-3.3-4-3.5-.1-.2-1-1.3-1-2.5 0-1.2.6-1.8.9-2.1Z" fill="currentColor"/></svg>
+        WhatsApp
+      </button>
+      <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero">
+    <div class="eyebrow">Nuestros programas</div>
+    <h1 class="display">Elige tu camino en la práctica budista</h1>
+    <p>Desde meditación guiada para principiantes hasta estudios avanzados de filosofía budista. Todos nuestros programas están diseñados para apoyar tu transformación espiritual.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="programs-list">
+
+      <div class="program-detail">
+        <div class="program-info">
+          <div class="program-header">
+            <div class="program-level">Principiante</div>
+            <h2 class="program-title">Budismo en Pocas Palabras</h2>
+          </div>
+          <p class="program-desc">Introducción a los conceptos fundamentales del budismo tibetano. En este curso se introducen los aspectos más básicos e importantes de la filosofía, psicología y preceptos budistas, así como las técnicas y métodos de meditación.</p>
+          <div class="program-meta">
+            <div class="meta-item">
+              <strong>Nivel:</strong>
+              <span>Principiante — sin experiencia previa necesaria</span>
+            </div>
+            <div class="meta-item">
+              <strong>Duración:</strong>
+              <span>Por definir</span>
+            </div>
+            <div class="meta-item">
+              <strong>Formato:</strong>
+              <span>Teórico y práctico con debates</span>
+            </div>
+          </div>
+          <div class="program-cta">
+            <button type="button" class="btn primary" onclick="openWA()">Inscribirse</button>
+            <button type="button" class="btn ghost" onclick="openWA()">Más info</button>
+          </div>
+        </div>
+        <div class="program-highlights">
+          <div class="highlights-title">Qué aprenderás</div>
+          <ul class="highlights-list">
+            <li>Conceptos fundamentales del budismo</li>
+            <li>Filosofía y psicología budista</li>
+            <li>Técnicas básicas de meditación</li>
+            <li>Preceptos budistas laicos</li>
+            <li>Métodos prácticos para la vida diaria</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="program-detail">
+        <div class="program-info">
+          <div class="program-header">
+            <div class="program-level">Intermedio</div>
+            <h2 class="program-title">Descubre el Budismo</h2>
+          </div>
+          <p class="program-desc">Programa estructurado de aproximadamente 2 años con 14 módulos que presentan temas fundamentales de la doctrina budista. Ofrece una formación completa en meditación, filosofía y práctica budista desde una perspectiva occidental y laica.</p>
+          <div class="program-meta">
+            <div class="meta-item">
+              <strong>Nivel:</strong>
+              <span>Intermedio — después de Budismo en Pocas Palabras</span>
+            </div>
+            <div class="meta-item">
+              <strong>Duración:</strong>
+              <span>2 años (14 módulos)</span>
+            </div>
+            <div class="meta-item">
+              <strong>Dirigido por:</strong>
+              <span>Ven. Norbu, Adriana Amezcua</span>
+            </div>
+          </div>
+          <div class="program-cta">
+            <button type="button" class="btn primary" onclick="openWA()">Inscribirse</button>
+            <button type="button" class="btn ghost" onclick="openWA()">Más info</button>
+          </div>
+        </div>
+        <div class="program-highlights">
+          <div class="highlights-title">Módulos principales</div>
+          <ul class="highlights-list">
+            <li>La mente y su potencial</li>
+            <li>Cómo meditar</li>
+            <li>Muerte y renacimiento</li>
+            <li>Todo sobre el karma</li>
+            <li>Samsara y Nirvana</li>
+            <li>Y 9 módulos más...</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="program-detail">
+        <div class="program-info">
+          <div class="program-header">
+            <div class="program-level">Avanzado</div>
+            <h2 class="program-title">Explorando el Budismo</h2>
+          </div>
+          <p class="program-desc">Programa de nivel intermedio con 10 temas principales que profundizan en conceptos filosóficos budistas más avanzados. Dura 3 años e incluye meditación, discusión y debate, preparándote para estudios budistas aún más profundos.</p>
+          <div class="program-meta">
+            <div class="meta-item">
+              <strong>Nivel:</strong>
+              <span>Avanzado — después de Descubre el Budismo</span>
+            </div>
+            <div class="meta-item">
+              <strong>Duración:</strong>
+              <span>3 años (10 temas principales)</span>
+            </div>
+            <div class="meta-item">
+              <strong>Dirigido por:</strong>
+              <span>Ven. Norbu</span>
+            </div>
+          </div>
+          <div class="program-cta">
+            <button type="button" class="btn primary" onclick="openWA()">Inscribirse</button>
+            <button type="button" class="btn ghost" onclick="openWA()">Más info</button>
+          </div>
+        </div>
+        <div class="program-highlights">
+          <div class="highlights-title">Temas explorados</div>
+          <ul class="highlights-list">
+            <li>Explorando la mente (budismo, ciencia, neurociencia)</li>
+            <li>Las 4 verdades nobles</li>
+            <li>Adiestrando nuestra mente</li>
+            <li>Escuelas filosóficas budistas</li>
+            <li>Principios del debate budista</li>
+            <li>Y más...</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="program-detail">
+        <div class="program-info">
+          <div class="program-header">
+            <div class="program-level">Especializado</div>
+            <h2 class="program-title">Programa Básico FPMT</h2>
+          </div>
+          <p class="program-desc">Programa de 5 años de estudios budistas avanzados diseñado por Lama Zopa Rimpoché. Para estudiantes que desean avanzar más allá de los cursos introductorios y comprometerse a un estudio y práctica profundos de los textos raíz de la tradición.</p>
+          <div class="program-meta">
+            <div class="meta-item">
+              <strong>Nivel:</strong>
+              <span>Especializado — certificación oficial FPMT</span>
+            </div>
+            <div class="meta-item">
+              <strong>Duración:</strong>
+              <span>5 años con certificación final</span>
+            </div>
+            <div class="meta-item">
+              <strong>Dirige:</strong>
+              <span>Gueshe Lobsang Dawa</span>
+            </div>
+          </div>
+          <div class="program-cta">
+            <button type="button" class="btn primary" onclick="openWA()">Inscribirse</button>
+            <button type="button" class="btn ghost" onclick="openWA()">Más info</button>
+          </div>
+        </div>
+        <div class="program-highlights">
+          <div class="highlights-title">Incluye</div>
+          <ul class="highlights-list">
+            <li>9 temas principales de estudio</li>
+            <li>Textos raíz y comentarios</li>
+            <li>Exámenes por tema y final</li>
+            <li>Grupo de estudio y meditación</li>
+            <li>Retiros de Lam Rim (3 meses)</li>
+            <li>Certificado oficial FPMT</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h4>Centro Khamlungpa</h4>
+        <p>Meditación y budismo tibetano en Guadalajara desde 2003.</p>
+        <p class="footer-address">Río de Janeiro 2675, Providencia<br>44630 Guadalajara, Jalisco</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/maestros">Maestros</a></li>
+          <li><a href="/programas">Programas</a></li>
+          <li><a href="/calendario">Calendario</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="/empieza-aqui">Empieza aquí</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/donar">Donar</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacidad">Privacidad</a></li>
+          <li><a href="/terminos">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Centro Khamlungpa. Todos los derechos reservados.</div>
+      <div>Afiliado FPMT desde 2005</div>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="fab" onclick="openWA()" aria-label="Abrir WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21l1.6-5.2A8.5 8.5 0 1 1 8.2 19.4L3 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M8.8 8.6c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.6l-.4.5c-.1.1-.2.3 0 .6.3.5.8 1.2 1.4 1.6.7.5 1.3.8 1.6.9.3.1.5 0 .6-.1l.6-.6c.1-.2.3-.2.5-.1l1.5.7c.3.1.5.2.5.4 0 .2 0 1.1-.4 1.5-.4.4-1.4.9-2 .8-.5 0-1.3-.2-2.8-.8-2.4-.9-3.9-3.3-4-3.5-.1-.2-1-1.3-1-2.5 0-1.2.6-1.8.9-2.1Z" fill="currentColor"/></svg>
+</button>
+
+<script>
+function openWA(){
+  const msg = encodeURIComponent("Hola, me gustaría obtener más información sobre los programas.");
+  window.open(`https://wa.me/5233318374?text=${msg}`, '_blank');
+}
+
+function toggleMenu(){
+  document.getElementById('nav-links').classList.toggle('open');
+}
+
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  header.classList.toggle('scrolled', window.scrollY > 0);
+});
+</script>
+
+</body>
+</html>
