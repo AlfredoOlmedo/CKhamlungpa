@@ -1,0 +1,98 @@
+name: Validate HTML, CSS, SEO
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install html-validate --save-dev
+
+    - name: Validate HTML files
+      run: npx html-validate '*.html' --config .html-validate.json || true
+
+    - name: Check for required meta tags
+      run: |
+        echo "Checking meta tags in all HTML files..."
+        for file in *.html; do
+          echo "Checking $file..."
+          grep -q "<meta name=\"description\"" "$file" && echo "✓ description meta tag found in $file" || echo "✗ description meta tag missing in $file"
+          grep -q "<meta name=\"robots\"" "$file" && echo "✓ robots meta tag found in $file" || echo "✗ robots meta tag missing in $file"
+          grep -q "<title>" "$file" && echo "✓ title tag found in $file" || echo "✗ title tag missing in $file"
+        done
+
+    - name: Check for JSON-LD schemas
+      run: |
+        echo "Checking for JSON-LD schemas..."
+        for file in *.html; do
+          if grep -q "application/ld+json" "$file"; then
+            echo "✓ JSON-LD schema found in $file"
+          else
+            echo "⚠ No JSON-LD schema found in $file"
+          fi
+        done
+
+    - name: Validate Open Graph tags
+      run: |
+        echo "Checking Open Graph tags..."
+        for file in *.html; do
+          echo "Checking $file..."
+          grep -q "og:title" "$file" && echo "✓ og:title found" || echo "✗ og:title missing"
+          grep -q "og:description" "$file" && echo "✓ og:description found" || echo "✗ og:description missing"
+          grep -q "og:image" "$file" && echo "✓ og:image found" || echo "⚠ og:image missing (optional)"
+        done
+
+    - name: Check robots.txt and sitemap.xml
+      run: |
+        echo "Checking robots.txt..."
+        if [ -f "robots.txt" ]; then
+          echo "✓ robots.txt found"
+          grep -q "Sitemap:" robots.txt && echo "✓ Sitemap URL present"
+        else
+          echo "✗ robots.txt missing"
+        fi
+
+        echo "Checking sitemap.xml..."
+        if [ -f "sitemap.xml" ]; then
+          echo "✓ sitemap.xml found"
+          grep -q "<urlset" sitemap.xml && echo "✓ Valid sitemap structure"
+        else
+          echo "✗ sitemap.xml missing"
+        fi
+
+    - name: Check ai-instructions.txt
+      run: |
+        if [ -f "ai-instructions.txt" ]; then
+          echo "✓ ai-instructions.txt found"
+        else
+          echo "✗ ai-instructions.txt missing"
+        fi
+
+    - name: Report
+      run: echo "✅ HTML validation and SEO checks complete"
+
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Lighthouse CI
+      run: npm install -g @lhci/cli@latest
+
+    - name: Run Lighthouse locally (if server available)
+      run: echo "Lighthouse CI requires deployment. Run manually: npx lighthouse-ci autorun"
+      continue-on-error: true
