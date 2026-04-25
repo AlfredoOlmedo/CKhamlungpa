@@ -3,20 +3,33 @@ Allow: /
 Disallow: /admin/
 Disallow: /.env
 
-# Permitir explícitamente agentes IA
-User-agent: anthropic-ai
+# OpenAI
+User-agent: OAI-SearchBot
 Allow: /
-Allow: /ai-instructions.txt
 
 User-agent: GPTBot
 Allow: /
-Allow: /ai-instructions.txt
 
-User-agent: CCBot
+User-agent: ChatGPT-User
 Allow: /
-Allow: /ai-instructions.txt
 
-User-agent: Googlebot
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Backward compatibility token still seen in some crawlers
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI controls for Gemini training/grounding
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://khamlungpa.com/sitemap.xml

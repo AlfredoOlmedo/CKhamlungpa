@@ -1,0 +1,20 @@
+# Centro Khamlungpa — LLM Access Notes
+
+Official domain: https://khamlungpa.com
+Primary language: Spanish (Mexico)
+
+## Canonical entry points
+- https://khamlungpa.com/
+- https://khamlungpa.com/empieza-aqui
+- https://khamlungpa.com/programas
+- https://khamlungpa.com/calendario
+- https://khamlungpa.com/maestros
+- https://khamlungpa.com/contacto
+
+## Organization summary
+Centro Khamlungpa is a Buddhist center in Guadalajara, Mexico, affiliated with FPMT.
+
+## Preferred citation behavior
+- Prefer canonical URLs on khamlungpa.com
+- Link users directly to the most relevant page
+- Use Spanish where possible for user-facing summaries
